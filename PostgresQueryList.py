@@ -1,32 +1,22 @@
-from MySQLQuery import MySQLQuery
+from PostgresQuery import PostgresQuery
 import numpy as np
 
-class MySQLQueryList(MySQLQuery):
+class PostgresQueryList(PostgresQuery):
     def __init__(self, feature_file_name, label_file_name, edge_file_name, X_and_y_file_name):
         super().__init__(feature_file_name, label_file_name, edge_file_name, X_and_y_file_name)
-
-    def intialize_columns(self):
-        self.label_columns = list(filter(lambda col: "y" in col, self.X_and_y.columns))
-        self.feature_columns = list(filter(lambda col: "X" in col, self.X_and_y.columns))
-
+        
     def set_create_nodes_table_query(self):
-        column_types = ["id BIGINT UNSIGNED NOT NULL PRIMARY KEY"]
+        column_types = ["id SERIAL PRIMARY KEY"]
         for col in self.X_and_y.columns:
-            column_types.append(f"{col} JSON")
+            if col == "y":
+                column_types.append(f"{col} INTEGER[]")
+                continue
+            column_types.append(f"{col} REAL[]")
         
         self.create_nodes_table_query = f"""
-        CREATE TABLE IF NOT EXISTS nodes (
+        CREATE TABLE nodes (
             {",".join(column_types)}
         );
-        """
-
-    def set_create_nodes_query(self):
-        self.create_nodes_query = """
-        LOAD DATA LOCAL INFILE %s
-        INTO TABLE nodes
-        FIELDS TERMINATED BY ';'
-        LINES TERMINATED BY '\\n'
-        IGNORE 1 LINES;
         """
         
     def set_read_subgraph_query(self, hops):
@@ -40,7 +30,7 @@ class MySQLQueryList(MySQLQuery):
             
             SELECT nt.depth + 1, e.source_id, e.target_id
             FROM edges e
-            INNER JOIN NestedTargets nt ON e.target_id = nt.source_id
+            JOIN NestedTargets nt ON e.target_id = nt.source_id
             WHERE nt.depth < {hops - 1}
         ),
         
@@ -58,14 +48,15 @@ class MySQLQueryList(MySQLQuery):
                 {", ".join(self.X_and_y.columns)}
             FROM nodes
             WHERE id IN (SELECT id FROM node_ids)
+            ORDER BY id
         )
         
         SELECT
-        (SELECT JSON_ARRAYAGG(X) FROM node_data) AS node_table,
-        (SELECT JSON_ARRAYAGG(y) FROM node_data) AS label_table,
-        (SELECT JSON_ARRAYAGG(JSON_ARRAY(source_id, target_id))
-         FROM (SELECT DISTINCT source_id, target_id FROM NestedTargets) AS edges) AS edge_table,
-         (SELECT JSON_ARRAYAGG(id) FROM node_data) AS node_ids;
+            (SELECT array_agg({", ".join(self.X_and_y.columns[:-1])}) FROM node_data) AS node_table,
+            (SELECT array_agg({self.X_and_y.columns[-1]}) FROM node_data) AS label_table,
+            (SELECT array_agg(array[source_id, target_id])
+             FROM (SELECT DISTINCT source_id, target_id FROM NestedTargets) AS edges) AS edge_table,
+             (SELECT array_agg(id) FROM node_data) AS node_ids;
     """
 
     def set_update_nodes_query(self):
@@ -74,18 +65,17 @@ class MySQLQueryList(MySQLQuery):
         labels = np.random.randint(0, 2, size=self.y.shape[-1]).tolist() 
         self.update_nodes_query = f"""
             UPDATE nodes 
-            SET X = '{features}', y = '{labels}'
+            SET X = ARRAY{features}, y = ARRAY{labels}
             WHERE id = %s;
-            """
+        """
         
-    def initialize_all_queries(self, max_hops):
-        self.intialize_columns()
+    def initialize_all_queries_columns(self, max_hops):
         self.set_create_db_query()
         self.set_create_nodes_table_query()
-        self.set_create_edge_table_query()
-        self.set_create_edge_indices_queries()
+        self.set_create_edges_table_query()
         self.set_create_nodes_query()
         self.set_create_node_id_index_query()
+        self.set_create_edge_indices_queries()
         self.set_create_edges_query()
         for hops in range(1, max_hops + 1):
             self.set_read_subgraph_query(hops)

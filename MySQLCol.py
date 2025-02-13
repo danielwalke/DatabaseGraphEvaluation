@@ -2,14 +2,14 @@ from Data import Data
 import numpy as np
 from Subgraph import Subgraph
 import time
-from MySQLQueryList import MySQLQueryList
+from MySQLQuery import MySQLQuery
 from MySQLConnector import MySQLConnector
 import json
 
-class MySQLList(MySQLQueryList, MySQLConnector):
+class MySQLCol(MySQLQuery, MySQLConnector):
     def __init__(self, feature_file_name, label_file_name, edge_file_name, X_and_y_file_name, max_hops = 3):
-        MySQLQueryList.__init__(self, feature_file_name, label_file_name, edge_file_name, X_and_y_file_name)
-        self.intialize_mysql_list_data(feature_file_name, label_file_name, edge_file_name, X_and_y_file_name)
+        MySQLQuery.__init__(self, feature_file_name, label_file_name, edge_file_name, X_and_y_file_name)
+        self.intialize_column_data(feature_file_name, label_file_name, edge_file_name, X_and_y_file_name)
         self.initialize_all_queries(max_hops)
         super(MySQLConnector, self).__init__()
         self.db_name = self.X_and_y_file_name.split(".")[0].lower()
@@ -17,7 +17,7 @@ class MySQLList(MySQLQueryList, MySQLConnector):
 
     @staticmethod
     def file_suffix():
-        return "mysql_list"
+        return "col"
 
     @staticmethod
     def db_name():
@@ -42,9 +42,6 @@ class MySQLList(MySQLQueryList, MySQLConnector):
         return time.time() - start
             
     def read(self, seed_node_id, hops):
-        self.session.execute("SET SESSION group_concat_max_len = 86777215;")
-        self.session.execute("SET GLOBAL max_allowed_packet = 8073741824;")  # 1GB
-        
         start = time.time()
         self.session.execute(self.read_subgraph_query_dict[hops] %  seed_node_id)
         results = self.session.fetchall()[0]

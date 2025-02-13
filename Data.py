@@ -55,14 +55,23 @@ class Data:
         self.X_and_y.to_csv(f"syn_data/{X_and_y_file_name}", sep = ";", index = True)
         self.X_and_y_file_name = X_and_y_file_name
 
-    def intialize_column_data(self, feature_file_name, label_file_name, edge_file_name, X_and_y_file_name):
+    def read_and_initialize_data(self, feature_file_name, label_file_name, edge_file_name):
         self.read_features_col(feature_file_name)
         self.read_labels_col(label_file_name)
         self.read_edges(edge_file_name)
+
+    def intialize_column_data(self, feature_file_name, label_file_name, edge_file_name, X_and_y_file_name):
+        self.read_and_initialize_data(feature_file_name, label_file_name, edge_file_name)
         self.create_X_and_y_col(X_and_y_file_name)
 
     def intialize_mysql_list_data(self, feature_file_name, label_file_name, edge_file_name, X_and_y_file_name):
-        self.read_features_col(feature_file_name)
-        self.read_labels_col(label_file_name)
-        self.read_edges(edge_file_name)
+        self.read_and_initialize_data(feature_file_name, label_file_name, edge_file_name)
         self.create_X_and_y_list_mysql(X_and_y_file_name)
+
+    def intialize_postgres_list_data(self, feature_file_name, label_file_name, edge_file_name, X_and_y_file_name):
+        self.read_and_initialize_data(feature_file_name, label_file_name, edge_file_name)
+        self.create_X_and_y_list_postgres(X_and_y_file_name)
+
+    def intialize_neo4j_list_data(self, feature_file_name, label_file_name, edge_file_name, X_and_y_file_name):
+        self.read_and_initialize_data(feature_file_name, label_file_name, edge_file_name)
+        self.create_X_and_y_list_neo4j(X_and_y_file_name)

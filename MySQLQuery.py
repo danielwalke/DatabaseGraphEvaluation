@@ -104,13 +104,11 @@ class MySQLQuery(Data):
          FROM (SELECT DISTINCT source_id, target_id FROM NestedTargets) AS edges) AS edge_table,
          (SELECT JSON_ARRAYAGG(id) FROM node_data) AS node_ids;
     """
-        ## ORDER BY id seems to increase speed
-        ## TODO set seed node id
 
     def set_update_nodes_query(self):
         np.random.seed(42)
-        features = np.random.rand(len(self.feature_columns)).tolist()
-        labels = np.random.randint(0, 2, size=len(self.label_columns)).tolist()  
+        features = np.random.rand(self.X.shape[-1]).tolist()
+        labels = np.random.randint(0, 2, size=self.y.shape[-1]).tolist() 
         self.update_nodes_query = f"""
             UPDATE nodes 
             SET {",".join([f'{col} = {features[i]}' for i, col in enumerate(self.feature_columns)])}, {",".join([f'{col} = {int(labels[i])}' for i, col in enumerate(self.label_columns)])}

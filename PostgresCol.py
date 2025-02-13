@@ -2,26 +2,27 @@ from Data import Data
 import numpy as np
 from Subgraph import Subgraph
 import time
-from MySQLQueryList import MySQLQueryList
-from MySQLConnector import MySQLConnector
-import json
+from PostgresQuery import PostgresQuery
+from PostgresConnector import PostgresConnector
+import psycopg2
+from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 
-class MySQLList(MySQLQueryList, MySQLConnector):
+class PostgresCol(PostgresQuery, PostgresConnector):
     def __init__(self, feature_file_name, label_file_name, edge_file_name, X_and_y_file_name, max_hops = 3):
-        MySQLQueryList.__init__(self, feature_file_name, label_file_name, edge_file_name, X_and_y_file_name)
-        self.intialize_mysql_list_data(feature_file_name, label_file_name, edge_file_name, X_and_y_file_name)
-        self.initialize_all_queries(max_hops)
-        super(MySQLConnector, self).__init__()
+        PostgresQuery.__init__(self, feature_file_name, label_file_name, edge_file_name, X_and_y_file_name)
+        self.intialize_column_data(feature_file_name, label_file_name, edge_file_name, X_and_y_file_name)
+        self.initialize_all_queries_columns(max_hops)
+        super(PostgresConnector, self).__init__()
         self.db_name = self.X_and_y_file_name.split(".")[0].lower()
         self.session = None
 
     @staticmethod
     def file_suffix():
-        return "mysql_list"
+        return "col"
 
     @staticmethod
     def db_name():
-        return "mysql"
+        return "postgres"
 
     def create(self):
         conn = self.connect()
@@ -34,33 +35,29 @@ class MySQLList(MySQLQueryList, MySQLConnector):
         self.session = conn.cursor()
         self.session.execute(self.create_nodes_table_query)
         self.session.execute(self.create_edges_table_query)
-        self.session.execute(self.create_nodes_query, (f"syn_data/{self.X_and_y_file_name}",))
+        with open("syn_data/" + self.X_and_y_file_name, 'r') as f:
+            self.session.copy_expert(self.create_nodes_query, f)
         self.session.execute(self.create_node_id_index_query)
-        self.session.execute(self.create_edges_query, (f"syn_data/{self.edge_file_name}",))
+        with open("syn_data/" +self.edge_file_name, 'r') as f:
+            self.session.copy_expert(self.create_edges_query, f)
         for query in self.create_edge_index_queries:
             self.session.execute(query)
         return time.time() - start
             
     def read(self, seed_node_id, hops):
-        self.session.execute("SET SESSION group_concat_max_len = 86777215;")
-        self.session.execute("SET GLOBAL max_allowed_packet = 8073741824;")  # 1GB
-        
         start = time.time()
         self.session.execute(self.read_subgraph_query_dict[hops] %  seed_node_id)
         results = self.session.fetchall()[0]
-        if None in results: return None, None
-                
-        labels = np.array(json.loads(results[1]))
-        subgraph_node_features = np.array(json.loads(results[0]))
-        subgraph_edges = np.array(json.loads(results[2])).transpose()
-        node_ids = np.array(json.loads(results[-1]))
-        id_sort_idx = np.argsort(node_ids)
-        node_ids = node_ids[id_sort_idx]
-        features = subgraph_node_features[id_sort_idx]
-        labels = labels[id_sort_idx]
+        labels = np.array(results[1])
+        subgraph_node_features = np.array(results[0])
+        if results[0] is None: return None, None
+        
+        subgraph_edges = np.array(results[2]).transpose()
+        node_ids = np.array(results[-1]) #subgraph_node_features[:, 0]
         cols_source = np.searchsorted(node_ids, subgraph_edges[0])
         cols_target = np.searchsorted(node_ids, subgraph_edges[1])
         remapped_edge_index = np.concatenate([np.expand_dims(cols_source, axis = 0), np.expand_dims(cols_target, axis = 0)], axis = 0)
+        features = subgraph_node_features
         read_time = time.time() - start    
         return read_time, Subgraph(features = features, labels = labels, edge_index = remapped_edge_index, node_ids = node_ids)
     
