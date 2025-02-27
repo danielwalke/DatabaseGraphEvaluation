@@ -43,6 +43,8 @@ class MySQLCol(MySQLQuery, MySQLConnector):
             
     def read(self, seed_node_id, hops):
         start = time.time()
+        self.session.execute(self.group_concat_max_query)
+        self.session.execute(self.allowed_packet_max_query)
         self.session.execute(self.read_subgraph_query_dict[hops] %  seed_node_id)
         results = self.session.fetchall()[0]
         if None in results: return None, None

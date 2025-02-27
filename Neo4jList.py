@@ -25,9 +25,12 @@ class Neo4jList(Neo4jQueryList, Neo4jConnector):
 
     def create(self):
         start = time.time()
-        self.session.run(self.create_nodes_query, file=f"file:///{self.X_and_y_file_name}")
+        # self.session.run(self.create_nodes_query, file=f"file:///{self.X_and_y_file_name}")
+        # self.session.run(self.create_node_id_index_query)
+        # self.session.run(self.create_edges_query, file=f"file:///{self.edge_file_name}")
+        self.session.run(self.create_nodes_query, file=f"file:///home/dwalke/git/db_eval/syn_data/{self.X_and_y_file_name}")
         self.session.run(self.create_node_id_index_query)
-        self.session.run(self.create_edges_query, file=f"file:///{self.edge_file_name}")
+        self.session.run(self.create_edges_query, file=f"file:///home/dwalke/git/db_eval/syn_data/{self.edge_file_name}")
         return time.time() - start
             
     def read(self, seed_node_id, hops):

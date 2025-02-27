@@ -80,6 +80,8 @@ class MySQLQueryList(MySQLQuery):
         
     def initialize_all_queries(self, max_hops):
         self.intialize_columns()
+        self.set_group_concat_max_query()
+        self.set_allowed_packet_max_query()
         self.set_create_db_query()
         self.set_create_nodes_table_query()
         self.set_create_edge_table_query()

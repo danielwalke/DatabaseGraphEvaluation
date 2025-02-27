@@ -4,7 +4,7 @@ import torch
 from torch_geometric.utils import sort_edge_index
 import gc
 from InMemorySubgraphReader import InMemSubGraphReader
-from tqdm.notebook import tqdm
+from tqdm import tqdm
 
 class CRUD_Evaluator(InMemSubGraphReader):
     def __init__(self, Dbms_evaluator_class, feature_file_name, label_file_name, edge_file_name, X_and_y_file_name):
@@ -16,7 +16,7 @@ class CRUD_Evaluator(InMemSubGraphReader):
         print("Create")
         return self.dbms_evaluator.create()
 
-    def read(self, hops, assert_reads = True, random_sample_size = 1_000):
+    def read(self, hops, assert_ids = True,assert_edge_index = True, assert_features = True, assert_labels = True, random_sample_size = 1_000):
         print("Read")
         np.random.seed(42)
         seed_node_ids = np.random.choice(np.arange(self.X_and_y.shape[0]), size = random_sample_size, replace = False)
@@ -27,27 +27,31 @@ class CRUD_Evaluator(InMemSubGraphReader):
             if subgraph is None: continue
             complete_query_time += query_time
             
-            if not assert_reads: continue
             start = time.time()
             test_subgraph = self.get_subgraph_from_in_mem_graph(seed_node_id, hops)        
             complete_test_time += time.time() - start         
-            assert (sort_edge_index(torch.from_numpy(test_subgraph.edge_index)) == sort_edge_index(torch.from_numpy(subgraph.edge_index))).sum() / (test_subgraph.edge_index.shape[-1] * test_subgraph.edge_index.shape[0]), "Edges does not match"
-            del test_subgraph.edge_index
-            del subgraph.edge_index
-            gc.collect()
-            assert np.allclose(subgraph.node_ids, test_subgraph.node_ids), "Node ids does not match"
-            del test_subgraph.node_ids
-            del subgraph.node_ids
-            gc.collect()
-            assert np.allclose(subgraph.features.astype(np.float32), test_subgraph.features.astype(np.float32)), "Features does not match"
-            del test_subgraph.features
-            del subgraph.features
-            gc.collect()
-            assert np.allclose(subgraph.labels.astype(np.int8), test_subgraph.labels.astype(np.int8)), "Labels does not match"
-            ## Could unsqueeze labels solve the malloc problem?
-            del test_subgraph.labels
-            del subgraph.labels
-            gc.collect()
+
+            if assert_ids:
+                assert np.allclose(subgraph.node_ids, test_subgraph.node_ids), "Node ids does not match"
+                del test_subgraph.node_ids
+                del subgraph.node_ids
+                gc.collect()
+            if assert_edge_index:
+                assert (sort_edge_index(torch.from_numpy(test_subgraph.edge_index)) == sort_edge_index(torch.from_numpy(subgraph.edge_index))).sum() / (test_subgraph.edge_index.shape[-1] * test_subgraph.edge_index.shape[0]), "Edges does not match"
+                del test_subgraph.edge_index
+                del subgraph.edge_index
+                gc.collect()
+            if assert_features:
+                assert np.allclose(subgraph.features.astype(np.float32), test_subgraph.features.astype(np.float32)), "Features does not match"
+                del test_subgraph.features
+                del subgraph.features
+                gc.collect()
+            if assert_labels:
+                assert np.allclose(subgraph.labels.astype(np.int8), test_subgraph.labels.astype(np.int8)), "Labels does not match"
+                ## Could unsqueeze labels solve the malloc problem?
+                del test_subgraph.labels
+                del subgraph.labels
+                gc.collect()
         return complete_query_time, complete_test_time
             
             

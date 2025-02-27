@@ -11,21 +11,21 @@ class Evaluator:
         pass
 
     def evaluate(self):
-        print("Evaluate Neo4j (all features and labels in columns)")
-        neo4j_col_evaluator = DBMSEvaluator(Neo4jCol)
-        neo4j_col_evaluator.evaluate()
+        # print("Evaluate Neo4j (all features and labels in columns)")
+        # neo4j_col_evaluator = DBMSEvaluator(Neo4jCol)
+        # neo4j_col_evaluator.evaluate()
 
-        print("Evaluate Neo4j (all features and labels in lists)")
-        neo4j_list_evaluator = DBMSEvaluator(Neo4jList)
-        neo4j_list_evaluator.evaluate()
+        # print("Evaluate Neo4j (all features and labels in lists)")
+        # neo4j_list_evaluator = DBMSEvaluator(Neo4jList)
+        # neo4j_list_evaluator.evaluate()
 
-        print("Evaluate Postgres (all features and labels in columns)")
-        postgres_col_evaluator = DBMSEvaluator(PostgresCol)
-        postgres_col_evaluator.evaluate()
+        # print("Evaluate Postgres (all features and labels in columns)")
+        # postgres_col_evaluator = DBMSEvaluator(PostgresCol)
+        # postgres_col_evaluator.evaluate()
 
-        print("Evaluate Postgres (all features and labels in lists)")
-        postgres_list_evaluator = DBMSEvaluator(PostgresList)
-        postgres_list_evaluator.evaluate()
+        # print("Evaluate Postgres (all features and labels in lists)")
+        # postgres_list_evaluator = DBMSEvaluator(PostgresList)
+        # postgres_list_evaluator.evaluate()
 
         print("Evaluate MySQL (all features and labels in columns)")
         mysql_col_evaluator = DBMSEvaluator(MySQLCol)

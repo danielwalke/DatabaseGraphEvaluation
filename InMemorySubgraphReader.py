@@ -30,6 +30,7 @@ class InMemSubGraphReader(Data):
 
     def get_subgraph_from_in_mem_graph(self, seed_node_id, hops):
         subgraph_edge_index = self.recurse_edge_index_iterative([seed_node_id], hops)
+        
         unique_node_ids, remapping = np.unique(subgraph_edge_index, return_inverse=True)
         
         features = self.X.iloc[unique_node_ids, :].values

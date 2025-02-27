@@ -42,8 +42,8 @@ class MySQLList(MySQLQueryList, MySQLConnector):
         return time.time() - start
             
     def read(self, seed_node_id, hops):
-        self.session.execute("SET SESSION group_concat_max_len = 86777215;")
-        self.session.execute("SET GLOBAL max_allowed_packet = 8073741824;")  # 1GB
+        self.session.execute(self.group_concat_max_query)
+        self.session.execute(self.allowed_packet_max_query)
         
         start = time.time()
         self.session.execute(self.read_subgraph_query_dict[hops] %  seed_node_id)

@@ -22,7 +22,7 @@ class Neo4jConnector:
         return GraphDatabase.driver(uri, auth=(user, password))
 
     def connect(self):
-        uri = f"bolt://localhost:{7688}"
+        uri = f"bolt://localhost:{7687}"
         username = "neo4j"
         password = "password"
         

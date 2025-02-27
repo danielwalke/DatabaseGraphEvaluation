@@ -18,9 +18,9 @@ class Neo4jQuery(Data):
         self.label_columns_setter = "\n".join([f"SET p['{col}'] = toInteger(line['{col}'])" for col in self.label_columns])
         self.feature_columns_setter = "\n".join([f"SET p['{col}'] = toFloat(line['{col}'])" for col in self.feature_columns])
         feature_columns_getter = ",".join([f"node['{col}']" for col in self.feature_columns])
-        self.feature_columns_getter = f'[{feature_columns_getter}] as nodeFeatures'
+        self.feature_columns_getter = f'[{feature_columns_getter}]'
         label_columns_getter = ",".join([f"node['{col}']" for col in self.label_columns])
-        self.label_columns_getter = f'[{label_columns_getter}] as nodeLabels'
+        self.label_columns_getter = f'[{label_columns_getter}]'
 
     def set_create_nodes_columns_query(self):
         self.create_nodes_query = f"""
@@ -30,7 +30,7 @@ class Neo4jQuery(Data):
                       MERGE (p:Node {{id: index - 2}})
                       {self.label_columns_setter}
                       {self.feature_columns_setter}
-                    }} IN TRANSACTIONS OF 10000 ROWS
+                    }} IN TRANSACTIONS OF 1000 ROWS
                     """
 
     def set_create_node_id_index_query(self):
@@ -44,10 +44,37 @@ class Neo4jQuery(Data):
                 CALL (line) {
                     MATCH (s:Node {id: toInteger(line[0])}), (t:Node {id: toInteger(line[1])})
                     CREATE (s)-[r:connects]->(t)
-                } IN TRANSACTIONS OF 10000 ROWS
+                } IN TRANSACTIONS OF 1000 ROWS
                 """
         
     def set_read_subgraph_columns_query(self, hops):
+        # if hops == 1:
+        #     self.read_subgraph_query_dict[hops] = f"""
+        #     MATCH (t:Node {{id: $seed_node_id}})
+        #     MATCH (t:Node)<-[]-(n:Node)
+        #     WITH apoc.coll.toSet(apoc.coll.flatten(COLLECT(apoc.coll.pairsMin([t,n])))) as edges
+        #     WITH edges, apoc.coll.toSet(apoc.coll.flatten(edges)) as uniqueNodes
+        #     RETURN [edge in edges | [edge[0].id, edge[1].id]] as edges, [node in uniqueNodes | node.id] as idCollection, [node in uniqueNodes | {self.feature_columns_getter}] as nodeFeatures, [node in uniqueNodes | {self.label_columns_getter}] as nodeLabels;
+        #     """
+        #     return 
+        # if hops == 2:
+        #     self.read_subgraph_query_dict[hops] = f"""
+        #     MATCH (t:Node {{id: $seed_node_id}})
+        #     MATCH (t:Node)<-[]-(n:Node)-[]-(nn:Node)
+        #     WITH apoc.coll.toSet(apoc.coll.flatten(COLLECT(apoc.coll.pairsMin([t,n, nn])))) as edges
+        #     WITH edges, apoc.coll.toSet(apoc.coll.flatten(edges)) as uniqueNodes
+        #     RETURN [edge in edges | [edge[0].id, edge[1].id]] as edges, [node in uniqueNodes | node.id] as idCollection, [node in uniqueNodes | {self.feature_columns_getter}] as nodeFeatures, [node in uniqueNodes | {self.label_columns_getter}] as nodeLabels;
+        #     """
+        #     return 
+        # if hops == 3:
+        #     self.read_subgraph_query_dict[hops] = f"""
+        #     MATCH (t:Node {{id: $seed_node_id}})
+        #     MATCH (t:Node)<-[]-(n:Node)-[]-(nn:Node)-[]-(nnn:Node)
+        #     WITH apoc.coll.toSet(apoc.coll.flatten(COLLECT(apoc.coll.pairsMin([t,n, nn, nnn])))) as edges
+        #     WITH edges, apoc.coll.toSet(apoc.coll.flatten(edges)) as uniqueNodes
+        #     RETURN [edge in edges | [edge[0].id, edge[1].id]] as edges, [node in uniqueNodes | node.id] as idCollection, [node in uniqueNodes | {self.feature_columns_getter}] as nodeFeatures, [node in uniqueNodes | {self.label_columns_getter}] as nodeLabels;
+        #     """
+        #     return 
         self.read_subgraph_query_dict[hops] = f"""
             MATCH (t {{id: $seed_node_id}})
             MATCH (s)-[r*0..{hops}]->(t)
@@ -60,7 +87,7 @@ class Neo4jQuery(Data):
             UNWIND (startNodes + [endNode]) AS node
             WITH edges, COLLECT(DISTINCT node) AS uniqueNodes
             UNWIND uniqueNodes AS node
-            WITH edges, node.id as nodeId, {self.feature_columns_getter}, {self.label_columns_getter}
+            WITH edges, node.id as nodeId, {self.feature_columns_getter} as nodeFeatures, {self.label_columns_getter} as nodeLabels
             ORDER BY nodeId
             RETURN 
               edges,
@@ -68,7 +95,51 @@ class Neo4jQuery(Data):
               collect(nodeLabels) AS labels,
               collect(nodeFeatures) AS features
         """
-        ## ORDER BY nodeId seems to increase speed 
+         ## ORDER BY nodeId seems to increase speed 
+         ## TODO Remove ORDER here?
+        # self.read_subgraph_query_dict[hops] = f"""
+        # MATCH (n:Node {{id: $seed_node_id}})
+        # CALL apoc.path.spanningTree(n,{{minLevel: 1, maxLevel: {hops}, relationshipFilter: "<connects"}}) 
+        # YIELD path
+        # WITH 
+        #   COLLECT(nodes(path)) AS allNodesPaths,  
+        #   COLLECT(apoc.coll.pairsMin(nodes(path))) AS allEdgesPairs  
+        # WITH 
+        #   apoc.coll.toSet(apoc.coll.flatten(allNodesPaths)) AS uniqueNodes, 
+        #   apoc.coll.toSet(apoc.coll.flatten(allEdgesPairs)) AS uniqueEdges 
+        # RETURN 
+        #     [e IN uniqueEdges | [e[1].id, e[0].id]] AS edges,
+        #       [node IN uniqueNodes | node.id] AS idCollection, 
+        #       [node IN uniqueNodes | {self.label_columns_getter}] AS labels, 
+        #       [node IN uniqueNodes | {self.feature_columns_getter}] AS features;         
+        # """
+        # CALL apoc.path.subgraphAll(n, {{minLevel: 0, maxLevel:{hops}, relationshipFilter: "connects"}})
+        # YIELD nodes, relationships
+        # WITH nodes, [r IN relationships WHERE NOT r IN excludedRelationships] AS filteredRelationships
+        # WITH [node in nodes | node.id] AS idCollection, [node in nodes | {self.label_columns_getter}] AS labels, [node in nodes | {self.feature_columns_getter}] AS features, [rel in filteredRelationships | [startNode(rel).id, endNode(rel).id]] as edges
+        # RETURN DISTINCT edges, idCollection, labels, features;
+
+#     MATCH (n:Node {id: $seed_node_id})
+# CALL apoc.path.expandConfig(n, {
+#     minLevel: 1, 
+#     maxLevel: {hops}, 
+#     relationshipFilter: "<connects",
+#     uniqueness: "NODE_GLOBAL"
+# }) 
+# YIELD path
+# WITH 
+#     COLLECT(nodes(path)) AS allNodesPaths,  
+#     COLLECT(apoc.coll.pairsMin(nodes(path))) AS allEdgesPairs  
+# WITH 
+#     apoc.coll.toSet(apoc.coll.flatten(allNodesPaths)) AS uniqueNodes, 
+#     apoc.coll.toSet(apoc.coll.flatten(allEdgesPairs)) AS uniqueEdges 
+# RETURN 
+#     [e IN uniqueEdges | [e[1].id, e[0].id]] AS edges,
+#     [node IN uniqueNodes | node.id] AS idCollection, 
+#     [node IN uniqueNodes | {self.label_columns_getter}] AS labels, 
+#     [node IN uniqueNodes | {self.feature_columns_getter}] AS features;
+
+       
 
     def set_update_nodes_query(self):
         np.random.seed(42)
@@ -91,7 +162,11 @@ class Neo4jQuery(Data):
                 """
 
     def set_delete_query(self):
-        self.delete_query = "MATCH (n) DETACH DELETE(n)"
+        self.delete_query = """
+        MATCH (n)
+        CALL { WITH n
+        DETACH DELETE n
+        } IN TRANSACTIONS OF 10000 ROWS;"""
         
     def initialize_all_queries_columns(self, max_hops):
         self.intialize_columns_getters_and_setters()

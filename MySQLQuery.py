@@ -7,6 +7,8 @@ class MySQLQuery(Data):
         
         self.label_columns = []
         self.feature_columns = []
+        self.group_concat_max_query = None
+        self.allowed_packet_max_query = None
         self.create_db_query = None
         self.create_nodes_table_query = None
         self.create_edges_table_query = None
@@ -18,10 +20,17 @@ class MySQLQuery(Data):
         self.update_nodes_query = None
         self.update_edges_query = None
         self.delete_query = None
+        
 
     def intialize_columns(self):
         self.label_columns = list(filter(lambda col: "y" in col, self.X_and_y.columns))
         self.feature_columns = list(filter(lambda col: "f" in col, self.X_and_y.columns))
+
+    def set_group_concat_max_query(self):
+        self.group_concat_max_query = "SET SESSION group_concat_max_len = 86777215;"
+
+    def set_allowed_packet_max_query(self):
+        self.allowed_packet_max_query = "SET GLOBAL max_allowed_packet = 8073741824;"
 
     def set_create_db_query(self):
         self.create_db_query = "CREATE DATABASE %s;"
@@ -123,6 +132,8 @@ class MySQLQuery(Data):
         
     def initialize_all_queries(self, max_hops):
         self.intialize_columns()
+        self.set_group_concat_max_query()
+        self.set_allowed_packet_max_query()
         self.set_create_db_query()
         self.set_create_nodes_table_query()
         self.set_create_edge_table_query()
