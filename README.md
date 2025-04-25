@@ -46,8 +46,8 @@ pip install -r requirements.txt
 3) DBMSEvaluator is executor that iterates over all datasets
 
 <img src="/docu/Documentation-DBEval.drawio.png" height="600">
-1) DBMSEValuator executes CRUDEvaluator which executes all CRUD operations \n
-2) The connectors represent drivers to connect to the database (A)\n
-3) These are used in the evaluators for each database that are executed in CRUDEvaluators (B)\n
-4) The queries used in the evaluators for all CURD operations are listed in Queries (C)\n
-5) The data reader (E) reads all data from input files\n
+1) DBMSEValuator executes CRUDEvaluator which executes all CRUD operations
+2) The connectors represent drivers to connect to the database (A)
+3) These are used in the evaluators for each database that are executed in CRUDEvaluators (B)
+4) The queries used in the evaluators for all CURD operations are listed in Queries (C)
+5) The data reader (E) reads all data from input files
