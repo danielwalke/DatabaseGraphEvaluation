@@ -38,4 +38,4 @@ pip install -r requirements.txt
 ```
 
 ## Docu
-[![Alt text](images/[example.png](https://github.com/danielwalke/DatabaseGraphEvaluation/blob/main/docu/Documentation-MainDocu.drawio.png))](https://github.com/danielwalke/DatabaseGraphEvaluation/blob/main/docu/Documentation-MainDocu.drawio.png)
+![Documentation Structure](/Documentation-MainDocu.drawio.png)
