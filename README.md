@@ -38,4 +38,4 @@ pip install -r requirements.txt
 ```
 
 ## Docu
-![Documentation Structure](/Documentation-MainDocu.drawio.png)
+![Documentation Structure](docu/Documentation-MainDocu.drawio.png)
