@@ -35,6 +35,7 @@ cd DatabaseGraphEvaluation
 # Optional: create virtual env
 # python -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
+```
 
 ## Docu
 [![Alt text](images/[example.png](https://github.com/danielwalke/DatabaseGraphEvaluation/blob/main/docu/Documentation-MainDocu.drawio.png))](https://github.com/danielwalke/DatabaseGraphEvaluation/blob/main/docu/Documentation-MainDocu.drawio.png)
