@@ -1,0 +1,10 @@
+numpy==1.25.0
+psycopg==2.9.10
+perun==0.8.9
+neo4j==5.18.0
+mysqlclient==2.2.7
+notebook==7.0.6
+pandas==2.2.0
+tqdm==4.67.1
+torch==2.3.0+cu121
+torch_geometric==2.5.3
