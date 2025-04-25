@@ -37,6 +37,100 @@ cd DatabaseGraphEvaluation
 pip install -r requirements.txt
 ```
 
+## 🛠️ Local Database Setup (Ubuntu)
+
+This section explains how to install and configure **PostgreSQL**, **Neo4j**, and **MySQL** on Ubuntu with a unified credential scheme. Each service uses:
+
+- **Username**: `postgres` / `neo4j` / `root`
+- **Password**: `password`
+- **Ports** (default):
+  - PostgreSQL: `5432`
+  - MySQL: `3306`
+  - Neo4j: `7474 (HTTP)`, `7687 (Bolt)`
+
+---
+
+### 1️⃣ PostgreSQL Setup
+
+```bash
+sudo apt update
+sudo apt install postgresql postgresql-contrib -y
+
+# Set password for the 'postgres' user
+sudo -u postgres psql -c "ALTER USER postgres WITH PASSWORD 'password';"
+
+# Restart PostgreSQL
+sudo systemctl restart postgresql
+```
+
+✅ Access with:
+```bash
+psql -U postgres -h localhost
+```
+
+---
+
+### 2️⃣ Neo4j Setup
+
+```bash
+# Add repository and key
+wget -O - https://debian.neo4j.com/neotechnology.gpg.key | sudo gpg --dearmor -o /usr/share/keyrings/neo4j.gpg
+echo "deb [signed-by=/usr/share/keyrings/neo4j.gpg] https://debian.neo4j.com stable 5" | sudo tee /etc/apt/sources.list.d/neo4j.list
+
+# Install and start
+sudo apt update
+sudo apt install neo4j -y
+sudo systemctl enable neo4j
+sudo systemctl start neo4j
+```
+
+✅ Set password:
+- Open [http://localhost:7474](http://localhost:7474)
+- Login with:
+  - **Username**: `neo4j`
+  - **Initial Password**: `neo4j`
+- You will be prompted to change it → set to `password`
+
+---
+
+### 3️⃣ MySQL Setup (with Local File Uploads)
+
+```bash
+sudo apt update
+sudo apt install mysql-server -y
+
+# Secure install (optional)
+sudo mysql_secure_installation
+```
+
+Set password and enable `local_infile`:
+
+```bash
+sudo mysql -u root
+
+-- Inside MySQL shell:
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+SET GLOBAL local_infile = 1;
+EXIT;
+```
+
+Enable local file import permanently:
+
+```bash
+echo "[mysqld]
+local_infile=1" | sudo tee -a /etc/mysql/mysql.conf.d/mysqld.cnf
+
+sudo systemctl restart mysql
+```
+
+✅ Test with:
+```bash
+mysql -u root -p --local-infile=1
+```
+
+---
+All three databases are now configured with consistent credentials and ready for integration with your GNN benchmarking pipeline. 🚀
+
 ## Docu
 
 <img src="/docu/Documentation-MainDocu.drawio.png" height="400">
