@@ -150,7 +150,7 @@ All three databases are now configured with consistent credentials and ready for
 2) Evaluator is executed, which performs the pre-specified number of iterations for the specified databases
 3) DBMSEvaluator is an executor that iterates over all datasets
 
-<img src="/docu/Documentation-DBEval.drawio.png" width="600">
+<img src="/docu/Documentation-DBEval.drawio.png" width="900">
 
 1) DBMSEValuator executes CRUDEvaluator which executes all CRUD operations
 2) The connectors represent drivers to connect to the database (A)
