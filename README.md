@@ -131,13 +131,24 @@ mysql -u root -p --local-infile=1
 ---
 All three databases are now configured with consistent credentials and ready for integration with your GNN benchmarking pipeline. 🚀
 
+## Generating synthetic datasets
+1) Graphs with a fixed number of input edges:
+  ```bash
+   python SynthDataGeneration.py
+  ```
+2) Graphs with various numbers of input edges (scale-free graphs):
+  ```bash
+   python SynthRealDistGraphs.py
+  ```
+
+
 ## Docu
 
 <img src="/docu/Documentation-MainDocu.drawio.png" height="400">
 
-1) First, main.py serves as entry point.
-2) Evaluator is executed which performs the pre-specified number of iterations for the specified databases
-3) DBMSEvaluator is executor that iterates over all datasets
+1) First, main.py serves as the entry point.
+2) Evaluator is executed, which performs the pre-specified number of iterations for the specified databases
+3) DBMSEvaluator is an executor that iterates over all datasets
 
 <img src="/docu/Documentation-DBEval.drawio.png" width="600">
 
