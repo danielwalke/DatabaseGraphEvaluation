@@ -1,6 +1,6 @@
 from neo4j import GraphDatabase
 
-class Neo4jConnector:
+class Neo4jConnectorEE:
     def __init__(self):
         self.driver = None
         pass
@@ -19,12 +19,12 @@ class Neo4jConnector:
             GraphDatabase.driver: The Neo4j driver instance for the connection.
         """
         ## TODO Change if auth is required
-        return GraphDatabase.driver(uri, auth=(user, password)) #
+        return GraphDatabase.driver(uri) #, auth=(user, password)
 
     def connect(self):
         ## TODO Change best on required port
-        uri = f"bolt://localhost:{7687}"
+        uri = f"bolt://localhost:{7688}"
         username = "neo4j"
         password = "password"
         
-        self.driver = Neo4jConnector.connect_to_neo4j(uri, username, password)
+        self.driver = Neo4jConnectorEE.connect_to_neo4j(uri, username, password)

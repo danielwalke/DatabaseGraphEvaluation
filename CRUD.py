@@ -6,31 +6,35 @@ import gc
 from InMemorySubgraphReader import InMemSubGraphReader
 from tqdm import tqdm
 
+    
 class CRUD_Evaluator(InMemSubGraphReader):
     def __init__(self, Dbms_evaluator_class, feature_file_name, label_file_name, edge_file_name, X_and_y_file_name):
         self.dbms_evaluator = Dbms_evaluator_class(feature_file_name, label_file_name, edge_file_name, X_and_y_file_name)
         super().__init__(feature_file_name, label_file_name, edge_file_name, X_and_y_file_name)
-        pass
 
     def create(self):
         print("Create")
-        return self.dbms_evaluator.create()
+        create_time = self.dbms_evaluator.create()
+        return create_time
 
     def read(self, hops, assert_ids = True,assert_edge_index = True, assert_features = True, assert_labels = True, random_sample_size = 1_000):
+        random_sample_size = 10
         print("Read")
         np.random.seed(42)
-        seed_node_ids = np.random.choice(np.arange(self.X_and_y.shape[0]), size = random_sample_size, replace = False)
+        seed_node_ids = np.random.choice(np.arange(self.X_and_y.shape[0]), size = random_sample_size, replace = False).tolist()
+        # raise Exception("")
+        
         complete_query_time = 0
         complete_test_time = 0
         for seed_node_id in tqdm(seed_node_ids, desc=f"Reading subgraphs of order {str(hops)}"):
-            query_time, subgraph = self.dbms_evaluator.read(seed_node_id, hops)
+            query_time, subgraph = self.dbms_evaluator.read(int(seed_node_id), hops)
             if subgraph is None: continue
             complete_query_time += query_time
             
             start = time.time()
-            test_subgraph = self.get_subgraph_from_in_mem_graph(seed_node_id, hops)        
-            complete_test_time += time.time() - start         
-
+            test_subgraph = self.get_subgraph_from_in_mem_graph(int(seed_node_id), hops)        
+            complete_test_time += time.time() - start
+            
             if assert_ids:
                 assert np.allclose(subgraph.node_ids, test_subgraph.node_ids), "Node ids does not match"
                 del test_subgraph.node_ids
@@ -53,20 +57,25 @@ class CRUD_Evaluator(InMemSubGraphReader):
                 del subgraph.labels
                 gc.collect()
         return complete_query_time, complete_test_time
+
+    def read_subgraph_for_training(self, seed_node_id, hops):
+        query_time, subgraph = self.dbms_evaluator.read(int(seed_node_id), hops)
+        return query_time, subgraph
             
             
 
     def update_nodes(self, random_sample_size = 1_000):
-        print("Update nodes")
+        print("Update nodes")            
         np.random.seed(42)
         node_ids = np.random.choice(np.arange(self.X_and_y.shape[0]), size = random_sample_size, replace = False).tolist()
         overall_update_time = 0
         for node_id in tqdm(node_ids, desc="Updating nodes"):
-            update_time = self.dbms_evaluator.update_nodes(node_id)
+            update_time = self.dbms_evaluator.update_nodes(int(node_id))
             overall_update_time += update_time
         return overall_update_time
 
     def update_edges(self, random_sample_size = 1_000):
+        random_sample_size = 10
         print("Update edges")
         np.random.seed(42)
         edge_ids = np.random.choice(np.arange(self.edge_index.shape[-1]),

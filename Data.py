@@ -38,22 +38,34 @@ class Data:
         
         self.X_and_y["X"] = self.X_and_y["X"].apply(lambda x: f"{{{','.join(map(str, x))}}}")
         self.X_and_y["y"] = self.X_and_y["y"].apply(lambda x: f"{{{','.join(map(str, x))}}}")
-        self.X_and_y.to_csv(f"syn_data/{X_and_y_file_name}", sep = ",", index = True)
         self.X_and_y_file_name = X_and_y_file_name
+        self.X_and_y.to_csv(f"syn_data/{X_and_y_file_name}", sep = ",", index = True)
+
+    def create_X_and_y_list_sqlite(self, X_and_y_file_name):
+        self.X_and_y = pd.DataFrame()
+        self.X_and_y["X"] = self.X.apply(lambda row: [row[column] for column in self.X.columns], axis=1)
+        self.X_and_y["y"] = self.y.apply(lambda row: [int(row[column]) for column in self.y.columns], axis=1)
+        
+        self.X_and_y["X"] = self.X_and_y["X"].apply(lambda x: f"[{', '.join(map(str, x))}]")
+        self.X_and_y["y"] = self.X_and_y["y"].apply(lambda x: f"[{', '.join(map(str, x))}]")
+        self.X_and_y_file_name = X_and_y_file_name
+        self.X_and_y.to_csv(f"syn_data/{X_and_y_file_name}", sep = ",", index = True)
+        
 
     def create_X_and_y_list_neo4j(self, X_and_y_file_name):
         self.X_and_y = pd.DataFrame()
         self.X_and_y["X"] = self.X.apply(lambda row: [row[column] for column in self.X.columns], axis=1)
         self.X_and_y["y"] = self.y.apply(lambda row: [int(row[column]) for column in self.y.columns], axis=1)
-        self.X_and_y.to_csv(f"syn_data/{X_and_y_file_name}", sep = ",", index = True)
         self.X_and_y_file_name = X_and_y_file_name
+        self.X_and_y.to_csv(f"syn_data/{X_and_y_file_name}", sep = ",", index = True)
 
     def create_X_and_y_list_mysql(self, X_and_y_file_name):
         self.X_and_y = pd.DataFrame()
         self.X_and_y["X"] = self.X.apply(lambda row: [row[column] for column in self.X.columns], axis=1)
         self.X_and_y["y"] = self.y.apply(lambda row: [int(row[column]) for column in self.y.columns], axis=1)
-        self.X_and_y.to_csv(f"syn_data/{X_and_y_file_name}", sep = ";", index = True)
         self.X_and_y_file_name = X_and_y_file_name
+        self.X_and_y.to_csv(f"syn_data/{X_and_y_file_name}", sep = ";", index = True)
+        
 
     def read_and_initialize_data(self, feature_file_name, label_file_name, edge_file_name):
         self.read_features_col(feature_file_name)
@@ -75,3 +87,7 @@ class Data:
     def intialize_neo4j_list_data(self, feature_file_name, label_file_name, edge_file_name, X_and_y_file_name):
         self.read_and_initialize_data(feature_file_name, label_file_name, edge_file_name)
         self.create_X_and_y_list_neo4j(X_and_y_file_name)
+
+    def intialize_sqlite_list_data(self, feature_file_name, label_file_name, edge_file_name, X_and_y_file_name):
+        self.read_and_initialize_data(feature_file_name, label_file_name, edge_file_name)
+        self.create_X_and_y_list_sqlite(X_and_y_file_name)

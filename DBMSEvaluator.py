@@ -55,6 +55,7 @@ class DBMSEvaluator:
     def evaluate(self, i):
         self.output_df = pd.DataFrame(columns = ["name", "create", "update_nodes", "update_edges", "delete"])
         print(f"Iteration {i}")
-        # self.eval_ppi()
+        ## TODO Change
+        #self.eval_ppi()
         self.eval_synth()
         self.output_df.to_csv(f"results/{self.Dbms_evaluator_class.db_name()}_{self.Dbms_evaluator_class.file_suffix()}_{i}.csv")
