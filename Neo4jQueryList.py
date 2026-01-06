@@ -13,24 +13,24 @@ class Neo4jQueryList(Neo4jQuery):
         self.delete_query = None
 
     def set_create_nodes_columns_query(self):
-        # self.create_nodes_query = """
-        #         LOAD CSV WITH HEADERS FROM $file AS line
-        #         WITH line, linenumber() AS index
-        #         CALL (line, index) {
-        #           MERGE (p:Node {id: index - 2})
-        #           SET p.label = apoc.convert.fromJsonList(line["y"])
-        #           SET p.features = apoc.convert.fromJsonList(line["X"])
-        #         } IN TRANSACTIONS OF 1000 ROWS
-        #         """
         self.create_nodes_query = """
                 LOAD CSV WITH HEADERS FROM $file AS line
-                WITH line, linenumber() AS index,
-                     split(trim(replace(replace(line.y, '[', ''), ']', '')), ',') AS labelList,
-                     split(trim(replace(replace(line.X, '[', ''), ']', '')), ',') AS featureList
-                MERGE (p:Node {id: index - 2})
-                SET p.label = [x IN labelList | toFloat(trim(x))],
-                    p.features = [x IN featureList | toFloat(trim(x))]
+                WITH line, linenumber() AS index
+                CALL (line, index) {
+                  CREATE (p:Node {id: index - 2})
+                  SET p.label = split(line.y, ";")
+                  SET p.features = split(line.X, ";")
+                } IN TRANSACTIONS OF 1000 ROWS
                 """
+        # self.create_nodes_query = """                
+        #         LOAD CSV WITH HEADERS FROM $file AS line
+        #         WITH line, linenumber() AS index,
+        #              split(trim(replace(replace(line.y, '[', ''), ']', '')), ',') AS labelList,
+        #              split(trim(replace(replace(line.X, '[', ''), ']', '')), ',') AS featureList
+        #         MERGE (p:Node {id: index - 2})
+        #         SET p.label = [x IN labelList | toFloat(trim(x))],
+        #             p.features = [x IN featureList | toFloat(trim(x))]
+        #         """
         
     def set_read_subgraph_columns_query(self, hops):
         # self.read_subgraph_query_dict[hops] = f"""

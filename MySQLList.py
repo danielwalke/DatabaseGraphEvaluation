@@ -17,7 +17,7 @@ class MySQLList(MySQLQueryList, MySQLConnector):
 
     @staticmethod
     def file_suffix():
-        return "mysql_list"
+        return "list"
 
     @staticmethod
     def db_name():

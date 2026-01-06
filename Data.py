@@ -54,8 +54,8 @@ class Data:
 
     def create_X_and_y_list_neo4j(self, X_and_y_file_name):
         self.X_and_y = pd.DataFrame()
-        self.X_and_y["X"] = self.X.apply(lambda row: [row[column] for column in self.X.columns], axis=1)
-        self.X_and_y["y"] = self.y.apply(lambda row: [int(row[column]) for column in self.y.columns], axis=1)
+        self.X_and_y["X"] = self.X.astype(str).agg(";".join, axis=1)
+        self.X_and_y["y"] = self.y.astype(str).agg(";".join, axis=1)
         self.X_and_y_file_name = X_and_y_file_name
         self.X_and_y.to_csv(f"syn_data/{X_and_y_file_name}", sep = ",", index = True)
 

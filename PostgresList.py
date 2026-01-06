@@ -18,7 +18,7 @@ class PostgresList(PostgresQueryList, PostgresConnector):
 
     @staticmethod
     def file_suffix():
-        return "postgres_list"
+        return "list"
 
     @staticmethod
     def db_name():

@@ -20,7 +20,6 @@ def is_stable(data):
     conf_interval = stderr * stats.t.ppf((1 + 0.95) / 2., n - 1)
 
     margin_of_error_percent = (conf_interval / mean) * 100
-    print(margin_of_error_percent)
     return margin_of_error_percent < 5.0
 
 class DBMSEvaluator:
@@ -36,1345 +35,1345 @@ class DBMSEvaluator:
 
     
     @monitor()
-    def neo4j_col_1015074_SBC_create(self, crud_evaluator):
+    def neo4jce_col_1015074_SBC_create(self, crud_evaluator):
         create_time = crud_evaluator.create()
         return create_time
 
             
     @monitor()
-    def neo4j_col_1015074_SBC_read_1(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_1015074_SBC_read_1(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_1015074_SBC_read_2(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_1015074_SBC_read_2(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_1015074_SBC_read_3(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_1015074_SBC_read_3(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_1015074_SBC_update_nodes(self, crud_evaluator):
+    def neo4jce_col_1015074_SBC_update_nodes(self, crud_evaluator):
         update_node_time = crud_evaluator.update_nodes()
         return update_node_time
 
             
     @monitor()
-    def neo4j_col_1015074_SBC_update_edges(self, crud_evaluator):
+    def neo4jce_col_1015074_SBC_update_edges(self, crud_evaluator):
         update_edge_time = crud_evaluator.update_edges()
         return update_edge_time
 
             
     @monitor()
-    def neo4j_col_1015074_SBC_delete(self, crud_evaluator):
+    def neo4jce_col_1015074_SBC_delete(self, crud_evaluator):
         delete_time = crud_evaluator.delete()
         return delete_time
 
             
     @monitor()
-    def neo4j_col_ppi_create(self, crud_evaluator):
+    def neo4jce_col_ppi_create(self, crud_evaluator):
         create_time = crud_evaluator.create()
         return create_time
 
             
     @monitor()
-    def neo4j_col_ppi_read_1(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_ppi_read_1(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_ppi_read_2(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_ppi_read_2(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_ppi_read_3(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_ppi_read_3(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_ppi_update_nodes(self, crud_evaluator):
+    def neo4jce_col_ppi_update_nodes(self, crud_evaluator):
         update_node_time = crud_evaluator.update_nodes()
         return update_node_time
 
             
     @monitor()
-    def neo4j_col_ppi_update_edges(self, crud_evaluator):
+    def neo4jce_col_ppi_update_edges(self, crud_evaluator):
         update_edge_time = crud_evaluator.update_edges()
         return update_edge_time
 
             
     @monitor()
-    def neo4j_col_ppi_delete(self, crud_evaluator):
+    def neo4jce_col_ppi_delete(self, crud_evaluator):
         delete_time = crud_evaluator.delete()
         return delete_time
 
             
     @monitor()
-    def neo4j_col_1000_5_create(self, crud_evaluator):
+    def neo4jce_col_1000_5_create(self, crud_evaluator):
         create_time = crud_evaluator.create()
         return create_time
 
             
     @monitor()
-    def neo4j_col_1000_5_read_1(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_1000_5_read_1(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_1000_5_read_2(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_1000_5_read_2(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_1000_5_read_3(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_1000_5_read_3(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_1000_5_update_nodes(self, crud_evaluator):
+    def neo4jce_col_1000_5_update_nodes(self, crud_evaluator):
         update_node_time = crud_evaluator.update_nodes()
         return update_node_time
 
             
     @monitor()
-    def neo4j_col_1000_5_update_edges(self, crud_evaluator):
+    def neo4jce_col_1000_5_update_edges(self, crud_evaluator):
         update_edge_time = crud_evaluator.update_edges()
         return update_edge_time
 
             
     @monitor()
-    def neo4j_col_1000_5_delete(self, crud_evaluator):
+    def neo4jce_col_1000_5_delete(self, crud_evaluator):
         delete_time = crud_evaluator.delete()
         return delete_time
 
             
     @monitor()
-    def neo4j_col_1000_10_create(self, crud_evaluator):
+    def neo4jce_col_1000_10_create(self, crud_evaluator):
         create_time = crud_evaluator.create()
         return create_time
 
             
     @monitor()
-    def neo4j_col_1000_10_read_1(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_1000_10_read_1(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_1000_10_read_2(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_1000_10_read_2(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_1000_10_read_3(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_1000_10_read_3(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_1000_10_update_nodes(self, crud_evaluator):
+    def neo4jce_col_1000_10_update_nodes(self, crud_evaluator):
         update_node_time = crud_evaluator.update_nodes()
         return update_node_time
 
             
     @monitor()
-    def neo4j_col_1000_10_update_edges(self, crud_evaluator):
+    def neo4jce_col_1000_10_update_edges(self, crud_evaluator):
         update_edge_time = crud_evaluator.update_edges()
         return update_edge_time
 
             
     @monitor()
-    def neo4j_col_1000_10_delete(self, crud_evaluator):
+    def neo4jce_col_1000_10_delete(self, crud_evaluator):
         delete_time = crud_evaluator.delete()
         return delete_time
 
             
     @monitor()
-    def neo4j_col_1000_20_create(self, crud_evaluator):
+    def neo4jce_col_1000_20_create(self, crud_evaluator):
         create_time = crud_evaluator.create()
         return create_time
 
             
     @monitor()
-    def neo4j_col_1000_20_read_1(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_1000_20_read_1(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_1000_20_read_2(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_1000_20_read_2(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_1000_20_read_3(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_1000_20_read_3(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_1000_20_update_nodes(self, crud_evaluator):
+    def neo4jce_col_1000_20_update_nodes(self, crud_evaluator):
         update_node_time = crud_evaluator.update_nodes()
         return update_node_time
 
             
     @monitor()
-    def neo4j_col_1000_20_update_edges(self, crud_evaluator):
+    def neo4jce_col_1000_20_update_edges(self, crud_evaluator):
         update_edge_time = crud_evaluator.update_edges()
         return update_edge_time
 
             
     @monitor()
-    def neo4j_col_1000_20_delete(self, crud_evaluator):
+    def neo4jce_col_1000_20_delete(self, crud_evaluator):
         delete_time = crud_evaluator.delete()
         return delete_time
 
             
     @monitor()
-    def neo4j_col_1000_SF_create(self, crud_evaluator):
+    def neo4jce_col_1000_SF_create(self, crud_evaluator):
         create_time = crud_evaluator.create()
         return create_time
 
             
     @monitor()
-    def neo4j_col_1000_SF_read_1(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_1000_SF_read_1(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_1000_SF_read_2(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_1000_SF_read_2(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_1000_SF_read_3(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_1000_SF_read_3(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_1000_SF_update_nodes(self, crud_evaluator):
+    def neo4jce_col_1000_SF_update_nodes(self, crud_evaluator):
         update_node_time = crud_evaluator.update_nodes()
         return update_node_time
 
             
     @monitor()
-    def neo4j_col_1000_SF_update_edges(self, crud_evaluator):
+    def neo4jce_col_1000_SF_update_edges(self, crud_evaluator):
         update_edge_time = crud_evaluator.update_edges()
         return update_edge_time
 
             
     @monitor()
-    def neo4j_col_1000_SF_delete(self, crud_evaluator):
+    def neo4jce_col_1000_SF_delete(self, crud_evaluator):
         delete_time = crud_evaluator.delete()
         return delete_time
 
             
     @monitor()
-    def neo4j_col_10000_5_create(self, crud_evaluator):
+    def neo4jce_col_10000_5_create(self, crud_evaluator):
         create_time = crud_evaluator.create()
         return create_time
 
             
     @monitor()
-    def neo4j_col_10000_5_read_1(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_10000_5_read_1(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_10000_5_read_2(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_10000_5_read_2(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_10000_5_read_3(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_10000_5_read_3(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_10000_5_update_nodes(self, crud_evaluator):
+    def neo4jce_col_10000_5_update_nodes(self, crud_evaluator):
         update_node_time = crud_evaluator.update_nodes()
         return update_node_time
 
             
     @monitor()
-    def neo4j_col_10000_5_update_edges(self, crud_evaluator):
+    def neo4jce_col_10000_5_update_edges(self, crud_evaluator):
         update_edge_time = crud_evaluator.update_edges()
         return update_edge_time
 
             
     @monitor()
-    def neo4j_col_10000_5_delete(self, crud_evaluator):
+    def neo4jce_col_10000_5_delete(self, crud_evaluator):
         delete_time = crud_evaluator.delete()
         return delete_time
 
             
     @monitor()
-    def neo4j_col_10000_10_create(self, crud_evaluator):
+    def neo4jce_col_10000_10_create(self, crud_evaluator):
         create_time = crud_evaluator.create()
         return create_time
 
             
     @monitor()
-    def neo4j_col_10000_10_read_1(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_10000_10_read_1(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_10000_10_read_2(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_10000_10_read_2(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_10000_10_read_3(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_10000_10_read_3(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_10000_10_update_nodes(self, crud_evaluator):
+    def neo4jce_col_10000_10_update_nodes(self, crud_evaluator):
         update_node_time = crud_evaluator.update_nodes()
         return update_node_time
 
             
     @monitor()
-    def neo4j_col_10000_10_update_edges(self, crud_evaluator):
+    def neo4jce_col_10000_10_update_edges(self, crud_evaluator):
         update_edge_time = crud_evaluator.update_edges()
         return update_edge_time
 
             
     @monitor()
-    def neo4j_col_10000_10_delete(self, crud_evaluator):
+    def neo4jce_col_10000_10_delete(self, crud_evaluator):
         delete_time = crud_evaluator.delete()
         return delete_time
 
             
     @monitor()
-    def neo4j_col_10000_20_create(self, crud_evaluator):
+    def neo4jce_col_10000_20_create(self, crud_evaluator):
         create_time = crud_evaluator.create()
         return create_time
 
             
     @monitor()
-    def neo4j_col_10000_20_read_1(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_10000_20_read_1(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_10000_20_read_2(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_10000_20_read_2(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_10000_20_read_3(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_10000_20_read_3(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_10000_20_update_nodes(self, crud_evaluator):
+    def neo4jce_col_10000_20_update_nodes(self, crud_evaluator):
         update_node_time = crud_evaluator.update_nodes()
         return update_node_time
 
             
     @monitor()
-    def neo4j_col_10000_20_update_edges(self, crud_evaluator):
+    def neo4jce_col_10000_20_update_edges(self, crud_evaluator):
         update_edge_time = crud_evaluator.update_edges()
         return update_edge_time
 
             
     @monitor()
-    def neo4j_col_10000_20_delete(self, crud_evaluator):
+    def neo4jce_col_10000_20_delete(self, crud_evaluator):
         delete_time = crud_evaluator.delete()
         return delete_time
 
             
     @monitor()
-    def neo4j_col_10000_SF_create(self, crud_evaluator):
+    def neo4jce_col_10000_SF_create(self, crud_evaluator):
         create_time = crud_evaluator.create()
         return create_time
 
             
     @monitor()
-    def neo4j_col_10000_SF_read_1(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_10000_SF_read_1(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_10000_SF_read_2(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_10000_SF_read_2(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_10000_SF_read_3(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_10000_SF_read_3(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_10000_SF_update_nodes(self, crud_evaluator):
+    def neo4jce_col_10000_SF_update_nodes(self, crud_evaluator):
         update_node_time = crud_evaluator.update_nodes()
         return update_node_time
 
             
     @monitor()
-    def neo4j_col_10000_SF_update_edges(self, crud_evaluator):
+    def neo4jce_col_10000_SF_update_edges(self, crud_evaluator):
         update_edge_time = crud_evaluator.update_edges()
         return update_edge_time
 
             
     @monitor()
-    def neo4j_col_10000_SF_delete(self, crud_evaluator):
+    def neo4jce_col_10000_SF_delete(self, crud_evaluator):
         delete_time = crud_evaluator.delete()
         return delete_time
 
             
     @monitor()
-    def neo4j_col_100000_5_create(self, crud_evaluator):
+    def neo4jce_col_100000_5_create(self, crud_evaluator):
         create_time = crud_evaluator.create()
         return create_time
 
             
     @monitor()
-    def neo4j_col_100000_5_read_1(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_100000_5_read_1(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_100000_5_read_2(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_100000_5_read_2(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_100000_5_read_3(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_100000_5_read_3(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_100000_5_update_nodes(self, crud_evaluator):
+    def neo4jce_col_100000_5_update_nodes(self, crud_evaluator):
         update_node_time = crud_evaluator.update_nodes()
         return update_node_time
 
             
     @monitor()
-    def neo4j_col_100000_5_update_edges(self, crud_evaluator):
+    def neo4jce_col_100000_5_update_edges(self, crud_evaluator):
         update_edge_time = crud_evaluator.update_edges()
         return update_edge_time
 
             
     @monitor()
-    def neo4j_col_100000_5_delete(self, crud_evaluator):
+    def neo4jce_col_100000_5_delete(self, crud_evaluator):
         delete_time = crud_evaluator.delete()
         return delete_time
 
             
     @monitor()
-    def neo4j_col_100000_10_create(self, crud_evaluator):
+    def neo4jce_col_100000_10_create(self, crud_evaluator):
         create_time = crud_evaluator.create()
         return create_time
 
             
     @monitor()
-    def neo4j_col_100000_10_read_1(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_100000_10_read_1(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_100000_10_read_2(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_100000_10_read_2(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_100000_10_read_3(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_100000_10_read_3(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_100000_10_update_nodes(self, crud_evaluator):
+    def neo4jce_col_100000_10_update_nodes(self, crud_evaluator):
         update_node_time = crud_evaluator.update_nodes()
         return update_node_time
 
             
     @monitor()
-    def neo4j_col_100000_10_update_edges(self, crud_evaluator):
+    def neo4jce_col_100000_10_update_edges(self, crud_evaluator):
         update_edge_time = crud_evaluator.update_edges()
         return update_edge_time
 
             
     @monitor()
-    def neo4j_col_100000_10_delete(self, crud_evaluator):
+    def neo4jce_col_100000_10_delete(self, crud_evaluator):
         delete_time = crud_evaluator.delete()
         return delete_time
 
             
     @monitor()
-    def neo4j_col_100000_20_create(self, crud_evaluator):
+    def neo4jce_col_100000_20_create(self, crud_evaluator):
         create_time = crud_evaluator.create()
         return create_time
 
             
     @monitor()
-    def neo4j_col_100000_20_read_1(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_100000_20_read_1(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_100000_20_read_2(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_100000_20_read_2(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_100000_20_read_3(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_100000_20_read_3(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_100000_20_update_nodes(self, crud_evaluator):
+    def neo4jce_col_100000_20_update_nodes(self, crud_evaluator):
         update_node_time = crud_evaluator.update_nodes()
         return update_node_time
 
             
     @monitor()
-    def neo4j_col_100000_20_update_edges(self, crud_evaluator):
+    def neo4jce_col_100000_20_update_edges(self, crud_evaluator):
         update_edge_time = crud_evaluator.update_edges()
         return update_edge_time
 
             
     @monitor()
-    def neo4j_col_100000_20_delete(self, crud_evaluator):
+    def neo4jce_col_100000_20_delete(self, crud_evaluator):
         delete_time = crud_evaluator.delete()
         return delete_time
 
             
     @monitor()
-    def neo4j_col_100000_SF_create(self, crud_evaluator):
+    def neo4jce_col_100000_SF_create(self, crud_evaluator):
         create_time = crud_evaluator.create()
         return create_time
 
             
     @monitor()
-    def neo4j_col_100000_SF_read_1(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_100000_SF_read_1(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_100000_SF_read_2(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_100000_SF_read_2(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_100000_SF_read_3(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_100000_SF_read_3(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_100000_SF_update_nodes(self, crud_evaluator):
+    def neo4jce_col_100000_SF_update_nodes(self, crud_evaluator):
         update_node_time = crud_evaluator.update_nodes()
         return update_node_time
 
             
     @monitor()
-    def neo4j_col_100000_SF_update_edges(self, crud_evaluator):
+    def neo4jce_col_100000_SF_update_edges(self, crud_evaluator):
         update_edge_time = crud_evaluator.update_edges()
         return update_edge_time
 
             
     @monitor()
-    def neo4j_col_100000_SF_delete(self, crud_evaluator):
+    def neo4jce_col_100000_SF_delete(self, crud_evaluator):
         delete_time = crud_evaluator.delete()
         return delete_time
 
             
     @monitor()
-    def neo4j_col_1000000_5_create(self, crud_evaluator):
+    def neo4jce_col_1000000_5_create(self, crud_evaluator):
         create_time = crud_evaluator.create()
         return create_time
 
             
     @monitor()
-    def neo4j_col_1000000_5_read_1(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_1000000_5_read_1(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_1000000_5_read_2(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_1000000_5_read_2(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_1000000_5_read_3(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_1000000_5_read_3(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_1000000_5_update_nodes(self, crud_evaluator):
+    def neo4jce_col_1000000_5_update_nodes(self, crud_evaluator):
         update_node_time = crud_evaluator.update_nodes()
         return update_node_time
 
             
     @monitor()
-    def neo4j_col_1000000_5_update_edges(self, crud_evaluator):
+    def neo4jce_col_1000000_5_update_edges(self, crud_evaluator):
         update_edge_time = crud_evaluator.update_edges()
         return update_edge_time
 
             
     @monitor()
-    def neo4j_col_1000000_5_delete(self, crud_evaluator):
+    def neo4jce_col_1000000_5_delete(self, crud_evaluator):
         delete_time = crud_evaluator.delete()
         return delete_time
 
             
     @monitor()
-    def neo4j_col_1000000_SF_create(self, crud_evaluator):
+    def neo4jce_col_1000000_SF_create(self, crud_evaluator):
         create_time = crud_evaluator.create()
         return create_time
 
             
     @monitor()
-    def neo4j_col_1000000_SF_read_1(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_1000000_SF_read_1(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_1000000_SF_read_2(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_1000000_SF_read_2(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_1000000_SF_read_3(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_col_1000000_SF_read_3(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_col_1000000_SF_update_nodes(self, crud_evaluator):
+    def neo4jce_col_1000000_SF_update_nodes(self, crud_evaluator):
         update_node_time = crud_evaluator.update_nodes()
         return update_node_time
 
             
     @monitor()
-    def neo4j_col_1000000_SF_update_edges(self, crud_evaluator):
+    def neo4jce_col_1000000_SF_update_edges(self, crud_evaluator):
         update_edge_time = crud_evaluator.update_edges()
         return update_edge_time
 
             
     @monitor()
-    def neo4j_col_1000000_SF_delete(self, crud_evaluator):
+    def neo4jce_col_1000000_SF_delete(self, crud_evaluator):
         delete_time = crud_evaluator.delete()
         return delete_time
 
             
     @monitor()
-    def neo4j_list_1015074_SBC_create(self, crud_evaluator):
+    def neo4jce_list_1015074_SBC_create(self, crud_evaluator):
         create_time = crud_evaluator.create()
         return create_time
 
             
     @monitor()
-    def neo4j_list_1015074_SBC_read_1(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_1015074_SBC_read_1(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_1015074_SBC_read_2(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_1015074_SBC_read_2(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_1015074_SBC_read_3(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_1015074_SBC_read_3(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_1015074_SBC_update_nodes(self, crud_evaluator):
+    def neo4jce_list_1015074_SBC_update_nodes(self, crud_evaluator):
         update_node_time = crud_evaluator.update_nodes()
         return update_node_time
 
             
     @monitor()
-    def neo4j_list_1015074_SBC_update_edges(self, crud_evaluator):
+    def neo4jce_list_1015074_SBC_update_edges(self, crud_evaluator):
         update_edge_time = crud_evaluator.update_edges()
         return update_edge_time
 
             
     @monitor()
-    def neo4j_list_1015074_SBC_delete(self, crud_evaluator):
+    def neo4jce_list_1015074_SBC_delete(self, crud_evaluator):
         delete_time = crud_evaluator.delete()
         return delete_time
 
             
     @monitor()
-    def neo4j_list_ppi_create(self, crud_evaluator):
+    def neo4jce_list_ppi_create(self, crud_evaluator):
         create_time = crud_evaluator.create()
         return create_time
 
             
     @monitor()
-    def neo4j_list_ppi_read_1(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_ppi_read_1(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_ppi_read_2(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_ppi_read_2(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_ppi_read_3(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_ppi_read_3(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_ppi_update_nodes(self, crud_evaluator):
+    def neo4jce_list_ppi_update_nodes(self, crud_evaluator):
         update_node_time = crud_evaluator.update_nodes()
         return update_node_time
 
             
     @monitor()
-    def neo4j_list_ppi_update_edges(self, crud_evaluator):
+    def neo4jce_list_ppi_update_edges(self, crud_evaluator):
         update_edge_time = crud_evaluator.update_edges()
         return update_edge_time
 
             
     @monitor()
-    def neo4j_list_ppi_delete(self, crud_evaluator):
+    def neo4jce_list_ppi_delete(self, crud_evaluator):
         delete_time = crud_evaluator.delete()
         return delete_time
 
             
     @monitor()
-    def neo4j_list_1000_5_create(self, crud_evaluator):
+    def neo4jce_list_1000_5_create(self, crud_evaluator):
         create_time = crud_evaluator.create()
         return create_time
 
             
     @monitor()
-    def neo4j_list_1000_5_read_1(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_1000_5_read_1(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_1000_5_read_2(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_1000_5_read_2(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_1000_5_read_3(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_1000_5_read_3(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_1000_5_update_nodes(self, crud_evaluator):
+    def neo4jce_list_1000_5_update_nodes(self, crud_evaluator):
         update_node_time = crud_evaluator.update_nodes()
         return update_node_time
 
             
     @monitor()
-    def neo4j_list_1000_5_update_edges(self, crud_evaluator):
+    def neo4jce_list_1000_5_update_edges(self, crud_evaluator):
         update_edge_time = crud_evaluator.update_edges()
         return update_edge_time
 
             
     @monitor()
-    def neo4j_list_1000_5_delete(self, crud_evaluator):
+    def neo4jce_list_1000_5_delete(self, crud_evaluator):
         delete_time = crud_evaluator.delete()
         return delete_time
 
             
     @monitor()
-    def neo4j_list_1000_10_create(self, crud_evaluator):
+    def neo4jce_list_1000_10_create(self, crud_evaluator):
         create_time = crud_evaluator.create()
         return create_time
 
             
     @monitor()
-    def neo4j_list_1000_10_read_1(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_1000_10_read_1(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_1000_10_read_2(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_1000_10_read_2(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_1000_10_read_3(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_1000_10_read_3(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_1000_10_update_nodes(self, crud_evaluator):
+    def neo4jce_list_1000_10_update_nodes(self, crud_evaluator):
         update_node_time = crud_evaluator.update_nodes()
         return update_node_time
 
             
     @monitor()
-    def neo4j_list_1000_10_update_edges(self, crud_evaluator):
+    def neo4jce_list_1000_10_update_edges(self, crud_evaluator):
         update_edge_time = crud_evaluator.update_edges()
         return update_edge_time
 
             
     @monitor()
-    def neo4j_list_1000_10_delete(self, crud_evaluator):
+    def neo4jce_list_1000_10_delete(self, crud_evaluator):
         delete_time = crud_evaluator.delete()
         return delete_time
 
             
     @monitor()
-    def neo4j_list_1000_20_create(self, crud_evaluator):
+    def neo4jce_list_1000_20_create(self, crud_evaluator):
         create_time = crud_evaluator.create()
         return create_time
 
             
     @monitor()
-    def neo4j_list_1000_20_read_1(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_1000_20_read_1(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_1000_20_read_2(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_1000_20_read_2(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_1000_20_read_3(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_1000_20_read_3(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_1000_20_update_nodes(self, crud_evaluator):
+    def neo4jce_list_1000_20_update_nodes(self, crud_evaluator):
         update_node_time = crud_evaluator.update_nodes()
         return update_node_time
 
             
     @monitor()
-    def neo4j_list_1000_20_update_edges(self, crud_evaluator):
+    def neo4jce_list_1000_20_update_edges(self, crud_evaluator):
         update_edge_time = crud_evaluator.update_edges()
         return update_edge_time
 
             
     @monitor()
-    def neo4j_list_1000_20_delete(self, crud_evaluator):
+    def neo4jce_list_1000_20_delete(self, crud_evaluator):
         delete_time = crud_evaluator.delete()
         return delete_time
 
             
     @monitor()
-    def neo4j_list_1000_SF_create(self, crud_evaluator):
+    def neo4jce_list_1000_SF_create(self, crud_evaluator):
         create_time = crud_evaluator.create()
         return create_time
 
             
     @monitor()
-    def neo4j_list_1000_SF_read_1(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_1000_SF_read_1(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_1000_SF_read_2(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_1000_SF_read_2(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_1000_SF_read_3(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_1000_SF_read_3(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_1000_SF_update_nodes(self, crud_evaluator):
+    def neo4jce_list_1000_SF_update_nodes(self, crud_evaluator):
         update_node_time = crud_evaluator.update_nodes()
         return update_node_time
 
             
     @monitor()
-    def neo4j_list_1000_SF_update_edges(self, crud_evaluator):
+    def neo4jce_list_1000_SF_update_edges(self, crud_evaluator):
         update_edge_time = crud_evaluator.update_edges()
         return update_edge_time
 
             
     @monitor()
-    def neo4j_list_1000_SF_delete(self, crud_evaluator):
+    def neo4jce_list_1000_SF_delete(self, crud_evaluator):
         delete_time = crud_evaluator.delete()
         return delete_time
 
             
     @monitor()
-    def neo4j_list_10000_5_create(self, crud_evaluator):
+    def neo4jce_list_10000_5_create(self, crud_evaluator):
         create_time = crud_evaluator.create()
         return create_time
 
             
     @monitor()
-    def neo4j_list_10000_5_read_1(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_10000_5_read_1(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_10000_5_read_2(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_10000_5_read_2(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_10000_5_read_3(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_10000_5_read_3(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_10000_5_update_nodes(self, crud_evaluator):
+    def neo4jce_list_10000_5_update_nodes(self, crud_evaluator):
         update_node_time = crud_evaluator.update_nodes()
         return update_node_time
 
             
     @monitor()
-    def neo4j_list_10000_5_update_edges(self, crud_evaluator):
+    def neo4jce_list_10000_5_update_edges(self, crud_evaluator):
         update_edge_time = crud_evaluator.update_edges()
         return update_edge_time
 
             
     @monitor()
-    def neo4j_list_10000_5_delete(self, crud_evaluator):
+    def neo4jce_list_10000_5_delete(self, crud_evaluator):
         delete_time = crud_evaluator.delete()
         return delete_time
 
             
     @monitor()
-    def neo4j_list_10000_10_create(self, crud_evaluator):
+    def neo4jce_list_10000_10_create(self, crud_evaluator):
         create_time = crud_evaluator.create()
         return create_time
 
             
     @monitor()
-    def neo4j_list_10000_10_read_1(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_10000_10_read_1(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_10000_10_read_2(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_10000_10_read_2(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_10000_10_read_3(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_10000_10_read_3(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_10000_10_update_nodes(self, crud_evaluator):
+    def neo4jce_list_10000_10_update_nodes(self, crud_evaluator):
         update_node_time = crud_evaluator.update_nodes()
         return update_node_time
 
             
     @monitor()
-    def neo4j_list_10000_10_update_edges(self, crud_evaluator):
+    def neo4jce_list_10000_10_update_edges(self, crud_evaluator):
         update_edge_time = crud_evaluator.update_edges()
         return update_edge_time
 
             
     @monitor()
-    def neo4j_list_10000_10_delete(self, crud_evaluator):
+    def neo4jce_list_10000_10_delete(self, crud_evaluator):
         delete_time = crud_evaluator.delete()
         return delete_time
 
             
     @monitor()
-    def neo4j_list_10000_20_create(self, crud_evaluator):
+    def neo4jce_list_10000_20_create(self, crud_evaluator):
         create_time = crud_evaluator.create()
         return create_time
 
             
     @monitor()
-    def neo4j_list_10000_20_read_1(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_10000_20_read_1(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_10000_20_read_2(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_10000_20_read_2(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_10000_20_read_3(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_10000_20_read_3(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_10000_20_update_nodes(self, crud_evaluator):
+    def neo4jce_list_10000_20_update_nodes(self, crud_evaluator):
         update_node_time = crud_evaluator.update_nodes()
         return update_node_time
 
             
     @monitor()
-    def neo4j_list_10000_20_update_edges(self, crud_evaluator):
+    def neo4jce_list_10000_20_update_edges(self, crud_evaluator):
         update_edge_time = crud_evaluator.update_edges()
         return update_edge_time
 
             
     @monitor()
-    def neo4j_list_10000_20_delete(self, crud_evaluator):
+    def neo4jce_list_10000_20_delete(self, crud_evaluator):
         delete_time = crud_evaluator.delete()
         return delete_time
 
             
     @monitor()
-    def neo4j_list_10000_SF_create(self, crud_evaluator):
+    def neo4jce_list_10000_SF_create(self, crud_evaluator):
         create_time = crud_evaluator.create()
         return create_time
 
             
     @monitor()
-    def neo4j_list_10000_SF_read_1(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_10000_SF_read_1(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_10000_SF_read_2(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_10000_SF_read_2(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_10000_SF_read_3(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_10000_SF_read_3(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_10000_SF_update_nodes(self, crud_evaluator):
+    def neo4jce_list_10000_SF_update_nodes(self, crud_evaluator):
         update_node_time = crud_evaluator.update_nodes()
         return update_node_time
 
             
     @monitor()
-    def neo4j_list_10000_SF_update_edges(self, crud_evaluator):
+    def neo4jce_list_10000_SF_update_edges(self, crud_evaluator):
         update_edge_time = crud_evaluator.update_edges()
         return update_edge_time
 
             
     @monitor()
-    def neo4j_list_10000_SF_delete(self, crud_evaluator):
+    def neo4jce_list_10000_SF_delete(self, crud_evaluator):
         delete_time = crud_evaluator.delete()
         return delete_time
 
             
     @monitor()
-    def neo4j_list_100000_5_create(self, crud_evaluator):
+    def neo4jce_list_100000_5_create(self, crud_evaluator):
         create_time = crud_evaluator.create()
         return create_time
 
             
     @monitor()
-    def neo4j_list_100000_5_read_1(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_100000_5_read_1(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_100000_5_read_2(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_100000_5_read_2(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_100000_5_read_3(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_100000_5_read_3(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_100000_5_update_nodes(self, crud_evaluator):
+    def neo4jce_list_100000_5_update_nodes(self, crud_evaluator):
         update_node_time = crud_evaluator.update_nodes()
         return update_node_time
 
             
     @monitor()
-    def neo4j_list_100000_5_update_edges(self, crud_evaluator):
+    def neo4jce_list_100000_5_update_edges(self, crud_evaluator):
         update_edge_time = crud_evaluator.update_edges()
         return update_edge_time
 
             
     @monitor()
-    def neo4j_list_100000_5_delete(self, crud_evaluator):
+    def neo4jce_list_100000_5_delete(self, crud_evaluator):
         delete_time = crud_evaluator.delete()
         return delete_time
 
             
     @monitor()
-    def neo4j_list_100000_10_create(self, crud_evaluator):
+    def neo4jce_list_100000_10_create(self, crud_evaluator):
         create_time = crud_evaluator.create()
         return create_time
 
             
     @monitor()
-    def neo4j_list_100000_10_read_1(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_100000_10_read_1(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_100000_10_read_2(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_100000_10_read_2(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_100000_10_read_3(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_100000_10_read_3(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_100000_10_update_nodes(self, crud_evaluator):
+    def neo4jce_list_100000_10_update_nodes(self, crud_evaluator):
         update_node_time = crud_evaluator.update_nodes()
         return update_node_time
 
             
     @monitor()
-    def neo4j_list_100000_10_update_edges(self, crud_evaluator):
+    def neo4jce_list_100000_10_update_edges(self, crud_evaluator):
         update_edge_time = crud_evaluator.update_edges()
         return update_edge_time
 
             
     @monitor()
-    def neo4j_list_100000_10_delete(self, crud_evaluator):
+    def neo4jce_list_100000_10_delete(self, crud_evaluator):
         delete_time = crud_evaluator.delete()
         return delete_time
 
             
     @monitor()
-    def neo4j_list_100000_20_create(self, crud_evaluator):
+    def neo4jce_list_100000_20_create(self, crud_evaluator):
         create_time = crud_evaluator.create()
         return create_time
 
             
     @monitor()
-    def neo4j_list_100000_20_read_1(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_100000_20_read_1(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_100000_20_read_2(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_100000_20_read_2(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_100000_20_read_3(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_100000_20_read_3(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_100000_20_update_nodes(self, crud_evaluator):
+    def neo4jce_list_100000_20_update_nodes(self, crud_evaluator):
         update_node_time = crud_evaluator.update_nodes()
         return update_node_time
 
             
     @monitor()
-    def neo4j_list_100000_20_update_edges(self, crud_evaluator):
+    def neo4jce_list_100000_20_update_edges(self, crud_evaluator):
         update_edge_time = crud_evaluator.update_edges()
         return update_edge_time
 
             
     @monitor()
-    def neo4j_list_100000_20_delete(self, crud_evaluator):
+    def neo4jce_list_100000_20_delete(self, crud_evaluator):
         delete_time = crud_evaluator.delete()
         return delete_time
 
             
     @monitor()
-    def neo4j_list_100000_SF_create(self, crud_evaluator):
+    def neo4jce_list_100000_SF_create(self, crud_evaluator):
         create_time = crud_evaluator.create()
         return create_time
 
             
     @monitor()
-    def neo4j_list_100000_SF_read_1(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_100000_SF_read_1(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_100000_SF_read_2(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_100000_SF_read_2(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_100000_SF_read_3(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_100000_SF_read_3(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_100000_SF_update_nodes(self, crud_evaluator):
+    def neo4jce_list_100000_SF_update_nodes(self, crud_evaluator):
         update_node_time = crud_evaluator.update_nodes()
         return update_node_time
 
             
     @monitor()
-    def neo4j_list_100000_SF_update_edges(self, crud_evaluator):
+    def neo4jce_list_100000_SF_update_edges(self, crud_evaluator):
         update_edge_time = crud_evaluator.update_edges()
         return update_edge_time
 
             
     @monitor()
-    def neo4j_list_100000_SF_delete(self, crud_evaluator):
+    def neo4jce_list_100000_SF_delete(self, crud_evaluator):
         delete_time = crud_evaluator.delete()
         return delete_time
 
             
     @monitor()
-    def neo4j_list_1000000_5_create(self, crud_evaluator):
+    def neo4jce_list_1000000_5_create(self, crud_evaluator):
         create_time = crud_evaluator.create()
         return create_time
 
             
     @monitor()
-    def neo4j_list_1000000_5_read_1(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_1000000_5_read_1(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_1000000_5_read_2(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_1000000_5_read_2(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_1000000_5_read_3(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_1000000_5_read_3(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_1000000_5_update_nodes(self, crud_evaluator):
+    def neo4jce_list_1000000_5_update_nodes(self, crud_evaluator):
         update_node_time = crud_evaluator.update_nodes()
         return update_node_time
 
             
     @monitor()
-    def neo4j_list_1000000_5_update_edges(self, crud_evaluator):
+    def neo4jce_list_1000000_5_update_edges(self, crud_evaluator):
         update_edge_time = crud_evaluator.update_edges()
         return update_edge_time
 
             
     @monitor()
-    def neo4j_list_1000000_5_delete(self, crud_evaluator):
+    def neo4jce_list_1000000_5_delete(self, crud_evaluator):
         delete_time = crud_evaluator.delete()
         return delete_time
 
             
     @monitor()
-    def neo4j_list_1000000_SF_create(self, crud_evaluator):
+    def neo4jce_list_1000000_SF_create(self, crud_evaluator):
         create_time = crud_evaluator.create()
         return create_time
 
             
     @monitor()
-    def neo4j_list_1000000_SF_read_1(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_1000000_SF_read_1(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_1000000_SF_read_2(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_1000000_SF_read_2(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_1000000_SF_read_3(self, crud_evaluator, hops, assert_features_and_labels):
+    def neo4jce_list_1000000_SF_read_3(self, crud_evaluator, hops, assert_features_and_labels):
         read_time, test_time = crud_evaluator.read(hops, assert_ids = True ,assert_edge_index = True, assert_features = assert_features_and_labels, assert_labels = assert_features_and_labels)
         return read_time, test_time
 
                 
     @monitor()
-    def neo4j_list_1000000_SF_update_nodes(self, crud_evaluator):
+    def neo4jce_list_1000000_SF_update_nodes(self, crud_evaluator):
         update_node_time = crud_evaluator.update_nodes()
         return update_node_time
 
             
     @monitor()
-    def neo4j_list_1000000_SF_update_edges(self, crud_evaluator):
+    def neo4jce_list_1000000_SF_update_edges(self, crud_evaluator):
         update_edge_time = crud_evaluator.update_edges()
         return update_edge_time
 
             
     @monitor()
-    def neo4j_list_1000000_SF_delete(self, crud_evaluator):
+    def neo4jce_list_1000000_SF_delete(self, crud_evaluator):
         delete_time = crud_evaluator.delete()
         return delete_time
 
@@ -6774,12 +6773,13 @@ class DBMSEvaluator:
             create_time, update_node_time, update_edge_time, delete_time = None, None, None, None
             read_times, read_times_mem = {}, {}
     
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "neo4j" == self.Dbms_evaluator_class.db_name() and "1015074_SBC" == dataset_name:
+            db_match = "neo4jce" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "1015074_SBC" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -6789,24 +6789,16 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
-                    create_time = self.neo4j_col_1015074_SBC_create(crud_evaluator)
+                    create_time = self.neo4jce_col_1015074_SBC_create(crud_evaluator)
                     self.time_store[evaluation_dict_key]["create"].append(create_time)
                     self.is_create_stable = is_stable(self.time_store[evaluation_dict_key]["create"])
                 assert_features_and_labels = num_nodes <= 10_000 ## Tested separaely but costs too much RAM here
                 read_times, read_times_mem = dict(), dict()
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '1']):
 
-                    read_time, test_time = self.neo4j_col_1015074_SBC_read_1(crud_evaluator, 1, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_1015074_SBC_read_1(crud_evaluator, 1, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '1'].append(read_time)
                     read_times['1'] = read_time
                     read_times_mem['1'] = test_time
@@ -6817,7 +6809,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '2']):
 
-                    read_time, test_time = self.neo4j_col_1015074_SBC_read_2(crud_evaluator, 2, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_1015074_SBC_read_2(crud_evaluator, 2, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '2'].append(read_time)
                     read_times['2'] = read_time
                     read_times_mem['2'] = test_time
@@ -6828,7 +6820,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '3']):
 
-                    read_time, test_time = self.neo4j_col_1015074_SBC_read_3(crud_evaluator, 3, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_1015074_SBC_read_3(crud_evaluator, 3, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '3'].append(read_time)
                     read_times['3'] = read_time
                     read_times_mem['3'] = test_time
@@ -6839,25 +6831,26 @@ class DBMSEvaluator:
                 
                 update_node_time, update_edge_time, delete_time = None, None, None
                 if not is_stable(self.time_store[evaluation_dict_key]["update_nodes"]):
-                    update_node_time = self.neo4j_col_1015074_SBC_update_nodes(crud_evaluator)
+                    update_node_time = self.neo4jce_col_1015074_SBC_update_nodes(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_nodes"].append(update_node_time)
                     self.is_update_nodes_stable = True
                 if not is_stable(self.time_store[evaluation_dict_key]["update_edges"]):
-                    update_edge_time = self.neo4j_col_1015074_SBC_update_edges(crud_evaluator)
+                    update_edge_time = self.neo4jce_col_1015074_SBC_update_edges(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_edges"].append(update_edge_time)
                     self.is_update_edges_stable = True
                 if not everything_is_stable:
-                    delete_time = self.neo4j_col_1015074_SBC_delete(crud_evaluator)
+                    delete_time = self.neo4jce_col_1015074_SBC_delete(crud_evaluator)
                     self.time_store[evaluation_dict_key]["delete"].append(delete_time)
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "neo4j" == self.Dbms_evaluator_class.db_name() and "ppi" == dataset_name:
+            db_match = "neo4jce" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "ppi" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -6867,24 +6860,16 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
-                    create_time = self.neo4j_col_ppi_create(crud_evaluator)
+                    create_time = self.neo4jce_col_ppi_create(crud_evaluator)
                     self.time_store[evaluation_dict_key]["create"].append(create_time)
                     self.is_create_stable = is_stable(self.time_store[evaluation_dict_key]["create"])
                 assert_features_and_labels = num_nodes <= 10_000 ## Tested separaely but costs too much RAM here
                 read_times, read_times_mem = dict(), dict()
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '1']):
 
-                    read_time, test_time = self.neo4j_col_ppi_read_1(crud_evaluator, 1, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_ppi_read_1(crud_evaluator, 1, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '1'].append(read_time)
                     read_times['1'] = read_time
                     read_times_mem['1'] = test_time
@@ -6895,7 +6880,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '2']):
 
-                    read_time, test_time = self.neo4j_col_ppi_read_2(crud_evaluator, 2, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_ppi_read_2(crud_evaluator, 2, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '2'].append(read_time)
                     read_times['2'] = read_time
                     read_times_mem['2'] = test_time
@@ -6906,7 +6891,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '3']):
 
-                    read_time, test_time = self.neo4j_col_ppi_read_3(crud_evaluator, 3, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_ppi_read_3(crud_evaluator, 3, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '3'].append(read_time)
                     read_times['3'] = read_time
                     read_times_mem['3'] = test_time
@@ -6917,25 +6902,26 @@ class DBMSEvaluator:
                 
                 update_node_time, update_edge_time, delete_time = None, None, None
                 if not is_stable(self.time_store[evaluation_dict_key]["update_nodes"]):
-                    update_node_time = self.neo4j_col_ppi_update_nodes(crud_evaluator)
+                    update_node_time = self.neo4jce_col_ppi_update_nodes(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_nodes"].append(update_node_time)
                     self.is_update_nodes_stable = True
                 if not is_stable(self.time_store[evaluation_dict_key]["update_edges"]):
-                    update_edge_time = self.neo4j_col_ppi_update_edges(crud_evaluator)
+                    update_edge_time = self.neo4jce_col_ppi_update_edges(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_edges"].append(update_edge_time)
                     self.is_update_edges_stable = True
                 if not everything_is_stable:
-                    delete_time = self.neo4j_col_ppi_delete(crud_evaluator)
+                    delete_time = self.neo4jce_col_ppi_delete(crud_evaluator)
                     self.time_store[evaluation_dict_key]["delete"].append(delete_time)
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "neo4j" == self.Dbms_evaluator_class.db_name() and "1000_5" == dataset_name:
+            db_match = "neo4jce" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -6945,24 +6931,16 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
-                    create_time = self.neo4j_col_1000_5_create(crud_evaluator)
+                    create_time = self.neo4jce_col_1000_5_create(crud_evaluator)
                     self.time_store[evaluation_dict_key]["create"].append(create_time)
                     self.is_create_stable = is_stable(self.time_store[evaluation_dict_key]["create"])
                 assert_features_and_labels = num_nodes <= 10_000 ## Tested separaely but costs too much RAM here
                 read_times, read_times_mem = dict(), dict()
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '1']):
 
-                    read_time, test_time = self.neo4j_col_1000_5_read_1(crud_evaluator, 1, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_1000_5_read_1(crud_evaluator, 1, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '1'].append(read_time)
                     read_times['1'] = read_time
                     read_times_mem['1'] = test_time
@@ -6973,7 +6951,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '2']):
 
-                    read_time, test_time = self.neo4j_col_1000_5_read_2(crud_evaluator, 2, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_1000_5_read_2(crud_evaluator, 2, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '2'].append(read_time)
                     read_times['2'] = read_time
                     read_times_mem['2'] = test_time
@@ -6984,7 +6962,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '3']):
 
-                    read_time, test_time = self.neo4j_col_1000_5_read_3(crud_evaluator, 3, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_1000_5_read_3(crud_evaluator, 3, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '3'].append(read_time)
                     read_times['3'] = read_time
                     read_times_mem['3'] = test_time
@@ -6995,25 +6973,26 @@ class DBMSEvaluator:
                 
                 update_node_time, update_edge_time, delete_time = None, None, None
                 if not is_stable(self.time_store[evaluation_dict_key]["update_nodes"]):
-                    update_node_time = self.neo4j_col_1000_5_update_nodes(crud_evaluator)
+                    update_node_time = self.neo4jce_col_1000_5_update_nodes(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_nodes"].append(update_node_time)
                     self.is_update_nodes_stable = True
                 if not is_stable(self.time_store[evaluation_dict_key]["update_edges"]):
-                    update_edge_time = self.neo4j_col_1000_5_update_edges(crud_evaluator)
+                    update_edge_time = self.neo4jce_col_1000_5_update_edges(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_edges"].append(update_edge_time)
                     self.is_update_edges_stable = True
                 if not everything_is_stable:
-                    delete_time = self.neo4j_col_1000_5_delete(crud_evaluator)
+                    delete_time = self.neo4jce_col_1000_5_delete(crud_evaluator)
                     self.time_store[evaluation_dict_key]["delete"].append(delete_time)
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "neo4j" == self.Dbms_evaluator_class.db_name() and "1000_10" == dataset_name:
+            db_match = "neo4jce" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_10" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -7023,24 +7002,16 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
-                    create_time = self.neo4j_col_1000_10_create(crud_evaluator)
+                    create_time = self.neo4jce_col_1000_10_create(crud_evaluator)
                     self.time_store[evaluation_dict_key]["create"].append(create_time)
                     self.is_create_stable = is_stable(self.time_store[evaluation_dict_key]["create"])
                 assert_features_and_labels = num_nodes <= 10_000 ## Tested separaely but costs too much RAM here
                 read_times, read_times_mem = dict(), dict()
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '1']):
 
-                    read_time, test_time = self.neo4j_col_1000_10_read_1(crud_evaluator, 1, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_1000_10_read_1(crud_evaluator, 1, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '1'].append(read_time)
                     read_times['1'] = read_time
                     read_times_mem['1'] = test_time
@@ -7051,7 +7022,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '2']):
 
-                    read_time, test_time = self.neo4j_col_1000_10_read_2(crud_evaluator, 2, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_1000_10_read_2(crud_evaluator, 2, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '2'].append(read_time)
                     read_times['2'] = read_time
                     read_times_mem['2'] = test_time
@@ -7062,7 +7033,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '3']):
 
-                    read_time, test_time = self.neo4j_col_1000_10_read_3(crud_evaluator, 3, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_1000_10_read_3(crud_evaluator, 3, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '3'].append(read_time)
                     read_times['3'] = read_time
                     read_times_mem['3'] = test_time
@@ -7073,25 +7044,26 @@ class DBMSEvaluator:
                 
                 update_node_time, update_edge_time, delete_time = None, None, None
                 if not is_stable(self.time_store[evaluation_dict_key]["update_nodes"]):
-                    update_node_time = self.neo4j_col_1000_10_update_nodes(crud_evaluator)
+                    update_node_time = self.neo4jce_col_1000_10_update_nodes(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_nodes"].append(update_node_time)
                     self.is_update_nodes_stable = True
                 if not is_stable(self.time_store[evaluation_dict_key]["update_edges"]):
-                    update_edge_time = self.neo4j_col_1000_10_update_edges(crud_evaluator)
+                    update_edge_time = self.neo4jce_col_1000_10_update_edges(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_edges"].append(update_edge_time)
                     self.is_update_edges_stable = True
                 if not everything_is_stable:
-                    delete_time = self.neo4j_col_1000_10_delete(crud_evaluator)
+                    delete_time = self.neo4jce_col_1000_10_delete(crud_evaluator)
                     self.time_store[evaluation_dict_key]["delete"].append(delete_time)
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "neo4j" == self.Dbms_evaluator_class.db_name() and "1000_20" == dataset_name:
+            db_match = "neo4jce" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_20" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -7101,24 +7073,16 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
-                    create_time = self.neo4j_col_1000_20_create(crud_evaluator)
+                    create_time = self.neo4jce_col_1000_20_create(crud_evaluator)
                     self.time_store[evaluation_dict_key]["create"].append(create_time)
                     self.is_create_stable = is_stable(self.time_store[evaluation_dict_key]["create"])
                 assert_features_and_labels = num_nodes <= 10_000 ## Tested separaely but costs too much RAM here
                 read_times, read_times_mem = dict(), dict()
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '1']):
 
-                    read_time, test_time = self.neo4j_col_1000_20_read_1(crud_evaluator, 1, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_1000_20_read_1(crud_evaluator, 1, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '1'].append(read_time)
                     read_times['1'] = read_time
                     read_times_mem['1'] = test_time
@@ -7129,7 +7093,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '2']):
 
-                    read_time, test_time = self.neo4j_col_1000_20_read_2(crud_evaluator, 2, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_1000_20_read_2(crud_evaluator, 2, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '2'].append(read_time)
                     read_times['2'] = read_time
                     read_times_mem['2'] = test_time
@@ -7140,7 +7104,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '3']):
 
-                    read_time, test_time = self.neo4j_col_1000_20_read_3(crud_evaluator, 3, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_1000_20_read_3(crud_evaluator, 3, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '3'].append(read_time)
                     read_times['3'] = read_time
                     read_times_mem['3'] = test_time
@@ -7151,25 +7115,26 @@ class DBMSEvaluator:
                 
                 update_node_time, update_edge_time, delete_time = None, None, None
                 if not is_stable(self.time_store[evaluation_dict_key]["update_nodes"]):
-                    update_node_time = self.neo4j_col_1000_20_update_nodes(crud_evaluator)
+                    update_node_time = self.neo4jce_col_1000_20_update_nodes(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_nodes"].append(update_node_time)
                     self.is_update_nodes_stable = True
                 if not is_stable(self.time_store[evaluation_dict_key]["update_edges"]):
-                    update_edge_time = self.neo4j_col_1000_20_update_edges(crud_evaluator)
+                    update_edge_time = self.neo4jce_col_1000_20_update_edges(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_edges"].append(update_edge_time)
                     self.is_update_edges_stable = True
                 if not everything_is_stable:
-                    delete_time = self.neo4j_col_1000_20_delete(crud_evaluator)
+                    delete_time = self.neo4jce_col_1000_20_delete(crud_evaluator)
                     self.time_store[evaluation_dict_key]["delete"].append(delete_time)
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "neo4j" == self.Dbms_evaluator_class.db_name() and "1000_SF" == dataset_name:
+            db_match = "neo4jce" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -7179,24 +7144,16 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
-                    create_time = self.neo4j_col_1000_SF_create(crud_evaluator)
+                    create_time = self.neo4jce_col_1000_SF_create(crud_evaluator)
                     self.time_store[evaluation_dict_key]["create"].append(create_time)
                     self.is_create_stable = is_stable(self.time_store[evaluation_dict_key]["create"])
                 assert_features_and_labels = num_nodes <= 10_000 ## Tested separaely but costs too much RAM here
                 read_times, read_times_mem = dict(), dict()
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '1']):
 
-                    read_time, test_time = self.neo4j_col_1000_SF_read_1(crud_evaluator, 1, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_1000_SF_read_1(crud_evaluator, 1, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '1'].append(read_time)
                     read_times['1'] = read_time
                     read_times_mem['1'] = test_time
@@ -7207,7 +7164,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '2']):
 
-                    read_time, test_time = self.neo4j_col_1000_SF_read_2(crud_evaluator, 2, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_1000_SF_read_2(crud_evaluator, 2, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '2'].append(read_time)
                     read_times['2'] = read_time
                     read_times_mem['2'] = test_time
@@ -7218,7 +7175,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '3']):
 
-                    read_time, test_time = self.neo4j_col_1000_SF_read_3(crud_evaluator, 3, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_1000_SF_read_3(crud_evaluator, 3, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '3'].append(read_time)
                     read_times['3'] = read_time
                     read_times_mem['3'] = test_time
@@ -7229,25 +7186,26 @@ class DBMSEvaluator:
                 
                 update_node_time, update_edge_time, delete_time = None, None, None
                 if not is_stable(self.time_store[evaluation_dict_key]["update_nodes"]):
-                    update_node_time = self.neo4j_col_1000_SF_update_nodes(crud_evaluator)
+                    update_node_time = self.neo4jce_col_1000_SF_update_nodes(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_nodes"].append(update_node_time)
                     self.is_update_nodes_stable = True
                 if not is_stable(self.time_store[evaluation_dict_key]["update_edges"]):
-                    update_edge_time = self.neo4j_col_1000_SF_update_edges(crud_evaluator)
+                    update_edge_time = self.neo4jce_col_1000_SF_update_edges(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_edges"].append(update_edge_time)
                     self.is_update_edges_stable = True
                 if not everything_is_stable:
-                    delete_time = self.neo4j_col_1000_SF_delete(crud_evaluator)
+                    delete_time = self.neo4jce_col_1000_SF_delete(crud_evaluator)
                     self.time_store[evaluation_dict_key]["delete"].append(delete_time)
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "neo4j" == self.Dbms_evaluator_class.db_name() and "10000_5" == dataset_name:
+            db_match = "neo4jce" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -7257,24 +7215,16 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
-                    create_time = self.neo4j_col_10000_5_create(crud_evaluator)
+                    create_time = self.neo4jce_col_10000_5_create(crud_evaluator)
                     self.time_store[evaluation_dict_key]["create"].append(create_time)
                     self.is_create_stable = is_stable(self.time_store[evaluation_dict_key]["create"])
                 assert_features_and_labels = num_nodes <= 10_000 ## Tested separaely but costs too much RAM here
                 read_times, read_times_mem = dict(), dict()
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '1']):
 
-                    read_time, test_time = self.neo4j_col_10000_5_read_1(crud_evaluator, 1, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_10000_5_read_1(crud_evaluator, 1, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '1'].append(read_time)
                     read_times['1'] = read_time
                     read_times_mem['1'] = test_time
@@ -7285,7 +7235,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '2']):
 
-                    read_time, test_time = self.neo4j_col_10000_5_read_2(crud_evaluator, 2, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_10000_5_read_2(crud_evaluator, 2, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '2'].append(read_time)
                     read_times['2'] = read_time
                     read_times_mem['2'] = test_time
@@ -7296,7 +7246,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '3']):
 
-                    read_time, test_time = self.neo4j_col_10000_5_read_3(crud_evaluator, 3, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_10000_5_read_3(crud_evaluator, 3, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '3'].append(read_time)
                     read_times['3'] = read_time
                     read_times_mem['3'] = test_time
@@ -7307,25 +7257,26 @@ class DBMSEvaluator:
                 
                 update_node_time, update_edge_time, delete_time = None, None, None
                 if not is_stable(self.time_store[evaluation_dict_key]["update_nodes"]):
-                    update_node_time = self.neo4j_col_10000_5_update_nodes(crud_evaluator)
+                    update_node_time = self.neo4jce_col_10000_5_update_nodes(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_nodes"].append(update_node_time)
                     self.is_update_nodes_stable = True
                 if not is_stable(self.time_store[evaluation_dict_key]["update_edges"]):
-                    update_edge_time = self.neo4j_col_10000_5_update_edges(crud_evaluator)
+                    update_edge_time = self.neo4jce_col_10000_5_update_edges(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_edges"].append(update_edge_time)
                     self.is_update_edges_stable = True
                 if not everything_is_stable:
-                    delete_time = self.neo4j_col_10000_5_delete(crud_evaluator)
+                    delete_time = self.neo4jce_col_10000_5_delete(crud_evaluator)
                     self.time_store[evaluation_dict_key]["delete"].append(delete_time)
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "neo4j" == self.Dbms_evaluator_class.db_name() and "10000_10" == dataset_name:
+            db_match = "neo4jce" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_10" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -7335,24 +7286,16 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
-                    create_time = self.neo4j_col_10000_10_create(crud_evaluator)
+                    create_time = self.neo4jce_col_10000_10_create(crud_evaluator)
                     self.time_store[evaluation_dict_key]["create"].append(create_time)
                     self.is_create_stable = is_stable(self.time_store[evaluation_dict_key]["create"])
                 assert_features_and_labels = num_nodes <= 10_000 ## Tested separaely but costs too much RAM here
                 read_times, read_times_mem = dict(), dict()
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '1']):
 
-                    read_time, test_time = self.neo4j_col_10000_10_read_1(crud_evaluator, 1, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_10000_10_read_1(crud_evaluator, 1, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '1'].append(read_time)
                     read_times['1'] = read_time
                     read_times_mem['1'] = test_time
@@ -7363,7 +7306,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '2']):
 
-                    read_time, test_time = self.neo4j_col_10000_10_read_2(crud_evaluator, 2, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_10000_10_read_2(crud_evaluator, 2, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '2'].append(read_time)
                     read_times['2'] = read_time
                     read_times_mem['2'] = test_time
@@ -7374,7 +7317,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '3']):
 
-                    read_time, test_time = self.neo4j_col_10000_10_read_3(crud_evaluator, 3, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_10000_10_read_3(crud_evaluator, 3, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '3'].append(read_time)
                     read_times['3'] = read_time
                     read_times_mem['3'] = test_time
@@ -7385,25 +7328,26 @@ class DBMSEvaluator:
                 
                 update_node_time, update_edge_time, delete_time = None, None, None
                 if not is_stable(self.time_store[evaluation_dict_key]["update_nodes"]):
-                    update_node_time = self.neo4j_col_10000_10_update_nodes(crud_evaluator)
+                    update_node_time = self.neo4jce_col_10000_10_update_nodes(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_nodes"].append(update_node_time)
                     self.is_update_nodes_stable = True
                 if not is_stable(self.time_store[evaluation_dict_key]["update_edges"]):
-                    update_edge_time = self.neo4j_col_10000_10_update_edges(crud_evaluator)
+                    update_edge_time = self.neo4jce_col_10000_10_update_edges(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_edges"].append(update_edge_time)
                     self.is_update_edges_stable = True
                 if not everything_is_stable:
-                    delete_time = self.neo4j_col_10000_10_delete(crud_evaluator)
+                    delete_time = self.neo4jce_col_10000_10_delete(crud_evaluator)
                     self.time_store[evaluation_dict_key]["delete"].append(delete_time)
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "neo4j" == self.Dbms_evaluator_class.db_name() and "10000_20" == dataset_name:
+            db_match = "neo4jce" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_20" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -7413,24 +7357,16 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
-                    create_time = self.neo4j_col_10000_20_create(crud_evaluator)
+                    create_time = self.neo4jce_col_10000_20_create(crud_evaluator)
                     self.time_store[evaluation_dict_key]["create"].append(create_time)
                     self.is_create_stable = is_stable(self.time_store[evaluation_dict_key]["create"])
                 assert_features_and_labels = num_nodes <= 10_000 ## Tested separaely but costs too much RAM here
                 read_times, read_times_mem = dict(), dict()
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '1']):
 
-                    read_time, test_time = self.neo4j_col_10000_20_read_1(crud_evaluator, 1, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_10000_20_read_1(crud_evaluator, 1, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '1'].append(read_time)
                     read_times['1'] = read_time
                     read_times_mem['1'] = test_time
@@ -7441,7 +7377,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '2']):
 
-                    read_time, test_time = self.neo4j_col_10000_20_read_2(crud_evaluator, 2, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_10000_20_read_2(crud_evaluator, 2, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '2'].append(read_time)
                     read_times['2'] = read_time
                     read_times_mem['2'] = test_time
@@ -7452,7 +7388,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '3']):
 
-                    read_time, test_time = self.neo4j_col_10000_20_read_3(crud_evaluator, 3, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_10000_20_read_3(crud_evaluator, 3, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '3'].append(read_time)
                     read_times['3'] = read_time
                     read_times_mem['3'] = test_time
@@ -7463,25 +7399,26 @@ class DBMSEvaluator:
                 
                 update_node_time, update_edge_time, delete_time = None, None, None
                 if not is_stable(self.time_store[evaluation_dict_key]["update_nodes"]):
-                    update_node_time = self.neo4j_col_10000_20_update_nodes(crud_evaluator)
+                    update_node_time = self.neo4jce_col_10000_20_update_nodes(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_nodes"].append(update_node_time)
                     self.is_update_nodes_stable = True
                 if not is_stable(self.time_store[evaluation_dict_key]["update_edges"]):
-                    update_edge_time = self.neo4j_col_10000_20_update_edges(crud_evaluator)
+                    update_edge_time = self.neo4jce_col_10000_20_update_edges(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_edges"].append(update_edge_time)
                     self.is_update_edges_stable = True
                 if not everything_is_stable:
-                    delete_time = self.neo4j_col_10000_20_delete(crud_evaluator)
+                    delete_time = self.neo4jce_col_10000_20_delete(crud_evaluator)
                     self.time_store[evaluation_dict_key]["delete"].append(delete_time)
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "neo4j" == self.Dbms_evaluator_class.db_name() and "10000_SF" == dataset_name:
+            db_match = "neo4jce" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -7491,24 +7428,16 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
-                    create_time = self.neo4j_col_10000_SF_create(crud_evaluator)
+                    create_time = self.neo4jce_col_10000_SF_create(crud_evaluator)
                     self.time_store[evaluation_dict_key]["create"].append(create_time)
                     self.is_create_stable = is_stable(self.time_store[evaluation_dict_key]["create"])
                 assert_features_and_labels = num_nodes <= 10_000 ## Tested separaely but costs too much RAM here
                 read_times, read_times_mem = dict(), dict()
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '1']):
 
-                    read_time, test_time = self.neo4j_col_10000_SF_read_1(crud_evaluator, 1, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_10000_SF_read_1(crud_evaluator, 1, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '1'].append(read_time)
                     read_times['1'] = read_time
                     read_times_mem['1'] = test_time
@@ -7519,7 +7448,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '2']):
 
-                    read_time, test_time = self.neo4j_col_10000_SF_read_2(crud_evaluator, 2, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_10000_SF_read_2(crud_evaluator, 2, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '2'].append(read_time)
                     read_times['2'] = read_time
                     read_times_mem['2'] = test_time
@@ -7530,7 +7459,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '3']):
 
-                    read_time, test_time = self.neo4j_col_10000_SF_read_3(crud_evaluator, 3, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_10000_SF_read_3(crud_evaluator, 3, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '3'].append(read_time)
                     read_times['3'] = read_time
                     read_times_mem['3'] = test_time
@@ -7541,25 +7470,26 @@ class DBMSEvaluator:
                 
                 update_node_time, update_edge_time, delete_time = None, None, None
                 if not is_stable(self.time_store[evaluation_dict_key]["update_nodes"]):
-                    update_node_time = self.neo4j_col_10000_SF_update_nodes(crud_evaluator)
+                    update_node_time = self.neo4jce_col_10000_SF_update_nodes(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_nodes"].append(update_node_time)
                     self.is_update_nodes_stable = True
                 if not is_stable(self.time_store[evaluation_dict_key]["update_edges"]):
-                    update_edge_time = self.neo4j_col_10000_SF_update_edges(crud_evaluator)
+                    update_edge_time = self.neo4jce_col_10000_SF_update_edges(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_edges"].append(update_edge_time)
                     self.is_update_edges_stable = True
                 if not everything_is_stable:
-                    delete_time = self.neo4j_col_10000_SF_delete(crud_evaluator)
+                    delete_time = self.neo4jce_col_10000_SF_delete(crud_evaluator)
                     self.time_store[evaluation_dict_key]["delete"].append(delete_time)
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "neo4j" == self.Dbms_evaluator_class.db_name() and "100000_5" == dataset_name:
+            db_match = "neo4jce" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -7569,24 +7499,16 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
-                    create_time = self.neo4j_col_100000_5_create(crud_evaluator)
+                    create_time = self.neo4jce_col_100000_5_create(crud_evaluator)
                     self.time_store[evaluation_dict_key]["create"].append(create_time)
                     self.is_create_stable = is_stable(self.time_store[evaluation_dict_key]["create"])
                 assert_features_and_labels = num_nodes <= 10_000 ## Tested separaely but costs too much RAM here
                 read_times, read_times_mem = dict(), dict()
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '1']):
 
-                    read_time, test_time = self.neo4j_col_100000_5_read_1(crud_evaluator, 1, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_100000_5_read_1(crud_evaluator, 1, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '1'].append(read_time)
                     read_times['1'] = read_time
                     read_times_mem['1'] = test_time
@@ -7597,7 +7519,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '2']):
 
-                    read_time, test_time = self.neo4j_col_100000_5_read_2(crud_evaluator, 2, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_100000_5_read_2(crud_evaluator, 2, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '2'].append(read_time)
                     read_times['2'] = read_time
                     read_times_mem['2'] = test_time
@@ -7608,7 +7530,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '3']):
 
-                    read_time, test_time = self.neo4j_col_100000_5_read_3(crud_evaluator, 3, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_100000_5_read_3(crud_evaluator, 3, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '3'].append(read_time)
                     read_times['3'] = read_time
                     read_times_mem['3'] = test_time
@@ -7619,25 +7541,26 @@ class DBMSEvaluator:
                 
                 update_node_time, update_edge_time, delete_time = None, None, None
                 if not is_stable(self.time_store[evaluation_dict_key]["update_nodes"]):
-                    update_node_time = self.neo4j_col_100000_5_update_nodes(crud_evaluator)
+                    update_node_time = self.neo4jce_col_100000_5_update_nodes(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_nodes"].append(update_node_time)
                     self.is_update_nodes_stable = True
                 if not is_stable(self.time_store[evaluation_dict_key]["update_edges"]):
-                    update_edge_time = self.neo4j_col_100000_5_update_edges(crud_evaluator)
+                    update_edge_time = self.neo4jce_col_100000_5_update_edges(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_edges"].append(update_edge_time)
                     self.is_update_edges_stable = True
                 if not everything_is_stable:
-                    delete_time = self.neo4j_col_100000_5_delete(crud_evaluator)
+                    delete_time = self.neo4jce_col_100000_5_delete(crud_evaluator)
                     self.time_store[evaluation_dict_key]["delete"].append(delete_time)
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "neo4j" == self.Dbms_evaluator_class.db_name() and "100000_10" == dataset_name:
+            db_match = "neo4jce" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_10" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -7647,24 +7570,16 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
-                    create_time = self.neo4j_col_100000_10_create(crud_evaluator)
+                    create_time = self.neo4jce_col_100000_10_create(crud_evaluator)
                     self.time_store[evaluation_dict_key]["create"].append(create_time)
                     self.is_create_stable = is_stable(self.time_store[evaluation_dict_key]["create"])
                 assert_features_and_labels = num_nodes <= 10_000 ## Tested separaely but costs too much RAM here
                 read_times, read_times_mem = dict(), dict()
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '1']):
 
-                    read_time, test_time = self.neo4j_col_100000_10_read_1(crud_evaluator, 1, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_100000_10_read_1(crud_evaluator, 1, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '1'].append(read_time)
                     read_times['1'] = read_time
                     read_times_mem['1'] = test_time
@@ -7675,7 +7590,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '2']):
 
-                    read_time, test_time = self.neo4j_col_100000_10_read_2(crud_evaluator, 2, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_100000_10_read_2(crud_evaluator, 2, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '2'].append(read_time)
                     read_times['2'] = read_time
                     read_times_mem['2'] = test_time
@@ -7686,7 +7601,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '3']):
 
-                    read_time, test_time = self.neo4j_col_100000_10_read_3(crud_evaluator, 3, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_100000_10_read_3(crud_evaluator, 3, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '3'].append(read_time)
                     read_times['3'] = read_time
                     read_times_mem['3'] = test_time
@@ -7697,25 +7612,26 @@ class DBMSEvaluator:
                 
                 update_node_time, update_edge_time, delete_time = None, None, None
                 if not is_stable(self.time_store[evaluation_dict_key]["update_nodes"]):
-                    update_node_time = self.neo4j_col_100000_10_update_nodes(crud_evaluator)
+                    update_node_time = self.neo4jce_col_100000_10_update_nodes(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_nodes"].append(update_node_time)
                     self.is_update_nodes_stable = True
                 if not is_stable(self.time_store[evaluation_dict_key]["update_edges"]):
-                    update_edge_time = self.neo4j_col_100000_10_update_edges(crud_evaluator)
+                    update_edge_time = self.neo4jce_col_100000_10_update_edges(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_edges"].append(update_edge_time)
                     self.is_update_edges_stable = True
                 if not everything_is_stable:
-                    delete_time = self.neo4j_col_100000_10_delete(crud_evaluator)
+                    delete_time = self.neo4jce_col_100000_10_delete(crud_evaluator)
                     self.time_store[evaluation_dict_key]["delete"].append(delete_time)
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "neo4j" == self.Dbms_evaluator_class.db_name() and "100000_20" == dataset_name:
+            db_match = "neo4jce" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_20" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -7725,24 +7641,16 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
-                    create_time = self.neo4j_col_100000_20_create(crud_evaluator)
+                    create_time = self.neo4jce_col_100000_20_create(crud_evaluator)
                     self.time_store[evaluation_dict_key]["create"].append(create_time)
                     self.is_create_stable = is_stable(self.time_store[evaluation_dict_key]["create"])
                 assert_features_and_labels = num_nodes <= 10_000 ## Tested separaely but costs too much RAM here
                 read_times, read_times_mem = dict(), dict()
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '1']):
 
-                    read_time, test_time = self.neo4j_col_100000_20_read_1(crud_evaluator, 1, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_100000_20_read_1(crud_evaluator, 1, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '1'].append(read_time)
                     read_times['1'] = read_time
                     read_times_mem['1'] = test_time
@@ -7753,7 +7661,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '2']):
 
-                    read_time, test_time = self.neo4j_col_100000_20_read_2(crud_evaluator, 2, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_100000_20_read_2(crud_evaluator, 2, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '2'].append(read_time)
                     read_times['2'] = read_time
                     read_times_mem['2'] = test_time
@@ -7764,7 +7672,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '3']):
 
-                    read_time, test_time = self.neo4j_col_100000_20_read_3(crud_evaluator, 3, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_100000_20_read_3(crud_evaluator, 3, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '3'].append(read_time)
                     read_times['3'] = read_time
                     read_times_mem['3'] = test_time
@@ -7775,25 +7683,26 @@ class DBMSEvaluator:
                 
                 update_node_time, update_edge_time, delete_time = None, None, None
                 if not is_stable(self.time_store[evaluation_dict_key]["update_nodes"]):
-                    update_node_time = self.neo4j_col_100000_20_update_nodes(crud_evaluator)
+                    update_node_time = self.neo4jce_col_100000_20_update_nodes(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_nodes"].append(update_node_time)
                     self.is_update_nodes_stable = True
                 if not is_stable(self.time_store[evaluation_dict_key]["update_edges"]):
-                    update_edge_time = self.neo4j_col_100000_20_update_edges(crud_evaluator)
+                    update_edge_time = self.neo4jce_col_100000_20_update_edges(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_edges"].append(update_edge_time)
                     self.is_update_edges_stable = True
                 if not everything_is_stable:
-                    delete_time = self.neo4j_col_100000_20_delete(crud_evaluator)
+                    delete_time = self.neo4jce_col_100000_20_delete(crud_evaluator)
                     self.time_store[evaluation_dict_key]["delete"].append(delete_time)
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "neo4j" == self.Dbms_evaluator_class.db_name() and "100000_SF" == dataset_name:
+            db_match = "neo4jce" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -7803,24 +7712,16 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
-                    create_time = self.neo4j_col_100000_SF_create(crud_evaluator)
+                    create_time = self.neo4jce_col_100000_SF_create(crud_evaluator)
                     self.time_store[evaluation_dict_key]["create"].append(create_time)
                     self.is_create_stable = is_stable(self.time_store[evaluation_dict_key]["create"])
                 assert_features_and_labels = num_nodes <= 10_000 ## Tested separaely but costs too much RAM here
                 read_times, read_times_mem = dict(), dict()
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '1']):
 
-                    read_time, test_time = self.neo4j_col_100000_SF_read_1(crud_evaluator, 1, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_100000_SF_read_1(crud_evaluator, 1, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '1'].append(read_time)
                     read_times['1'] = read_time
                     read_times_mem['1'] = test_time
@@ -7831,7 +7732,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '2']):
 
-                    read_time, test_time = self.neo4j_col_100000_SF_read_2(crud_evaluator, 2, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_100000_SF_read_2(crud_evaluator, 2, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '2'].append(read_time)
                     read_times['2'] = read_time
                     read_times_mem['2'] = test_time
@@ -7842,7 +7743,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '3']):
 
-                    read_time, test_time = self.neo4j_col_100000_SF_read_3(crud_evaluator, 3, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_100000_SF_read_3(crud_evaluator, 3, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '3'].append(read_time)
                     read_times['3'] = read_time
                     read_times_mem['3'] = test_time
@@ -7853,25 +7754,26 @@ class DBMSEvaluator:
                 
                 update_node_time, update_edge_time, delete_time = None, None, None
                 if not is_stable(self.time_store[evaluation_dict_key]["update_nodes"]):
-                    update_node_time = self.neo4j_col_100000_SF_update_nodes(crud_evaluator)
+                    update_node_time = self.neo4jce_col_100000_SF_update_nodes(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_nodes"].append(update_node_time)
                     self.is_update_nodes_stable = True
                 if not is_stable(self.time_store[evaluation_dict_key]["update_edges"]):
-                    update_edge_time = self.neo4j_col_100000_SF_update_edges(crud_evaluator)
+                    update_edge_time = self.neo4jce_col_100000_SF_update_edges(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_edges"].append(update_edge_time)
                     self.is_update_edges_stable = True
                 if not everything_is_stable:
-                    delete_time = self.neo4j_col_100000_SF_delete(crud_evaluator)
+                    delete_time = self.neo4jce_col_100000_SF_delete(crud_evaluator)
                     self.time_store[evaluation_dict_key]["delete"].append(delete_time)
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "neo4j" == self.Dbms_evaluator_class.db_name() and "1000000_5" == dataset_name:
+            db_match = "neo4jce" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -7881,24 +7783,16 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
-                    create_time = self.neo4j_col_1000000_5_create(crud_evaluator)
+                    create_time = self.neo4jce_col_1000000_5_create(crud_evaluator)
                     self.time_store[evaluation_dict_key]["create"].append(create_time)
                     self.is_create_stable = is_stable(self.time_store[evaluation_dict_key]["create"])
                 assert_features_and_labels = num_nodes <= 10_000 ## Tested separaely but costs too much RAM here
                 read_times, read_times_mem = dict(), dict()
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '1']):
 
-                    read_time, test_time = self.neo4j_col_1000000_5_read_1(crud_evaluator, 1, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_1000000_5_read_1(crud_evaluator, 1, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '1'].append(read_time)
                     read_times['1'] = read_time
                     read_times_mem['1'] = test_time
@@ -7909,7 +7803,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '2']):
 
-                    read_time, test_time = self.neo4j_col_1000000_5_read_2(crud_evaluator, 2, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_1000000_5_read_2(crud_evaluator, 2, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '2'].append(read_time)
                     read_times['2'] = read_time
                     read_times_mem['2'] = test_time
@@ -7920,7 +7814,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '3']):
 
-                    read_time, test_time = self.neo4j_col_1000000_5_read_3(crud_evaluator, 3, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_1000000_5_read_3(crud_evaluator, 3, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '3'].append(read_time)
                     read_times['3'] = read_time
                     read_times_mem['3'] = test_time
@@ -7931,25 +7825,26 @@ class DBMSEvaluator:
                 
                 update_node_time, update_edge_time, delete_time = None, None, None
                 if not is_stable(self.time_store[evaluation_dict_key]["update_nodes"]):
-                    update_node_time = self.neo4j_col_1000000_5_update_nodes(crud_evaluator)
+                    update_node_time = self.neo4jce_col_1000000_5_update_nodes(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_nodes"].append(update_node_time)
                     self.is_update_nodes_stable = True
                 if not is_stable(self.time_store[evaluation_dict_key]["update_edges"]):
-                    update_edge_time = self.neo4j_col_1000000_5_update_edges(crud_evaluator)
+                    update_edge_time = self.neo4jce_col_1000000_5_update_edges(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_edges"].append(update_edge_time)
                     self.is_update_edges_stable = True
                 if not everything_is_stable:
-                    delete_time = self.neo4j_col_1000000_5_delete(crud_evaluator)
+                    delete_time = self.neo4jce_col_1000000_5_delete(crud_evaluator)
                     self.time_store[evaluation_dict_key]["delete"].append(delete_time)
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "neo4j" == self.Dbms_evaluator_class.db_name() and "1000000_SF" == dataset_name:
+            db_match = "neo4jce" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -7959,24 +7854,16 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
-                    create_time = self.neo4j_col_1000000_SF_create(crud_evaluator)
+                    create_time = self.neo4jce_col_1000000_SF_create(crud_evaluator)
                     self.time_store[evaluation_dict_key]["create"].append(create_time)
                     self.is_create_stable = is_stable(self.time_store[evaluation_dict_key]["create"])
                 assert_features_and_labels = num_nodes <= 10_000 ## Tested separaely but costs too much RAM here
                 read_times, read_times_mem = dict(), dict()
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '1']):
 
-                    read_time, test_time = self.neo4j_col_1000000_SF_read_1(crud_evaluator, 1, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_1000000_SF_read_1(crud_evaluator, 1, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '1'].append(read_time)
                     read_times['1'] = read_time
                     read_times_mem['1'] = test_time
@@ -7987,7 +7874,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '2']):
 
-                    read_time, test_time = self.neo4j_col_1000000_SF_read_2(crud_evaluator, 2, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_1000000_SF_read_2(crud_evaluator, 2, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '2'].append(read_time)
                     read_times['2'] = read_time
                     read_times_mem['2'] = test_time
@@ -7998,7 +7885,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '3']):
 
-                    read_time, test_time = self.neo4j_col_1000000_SF_read_3(crud_evaluator, 3, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_col_1000000_SF_read_3(crud_evaluator, 3, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '3'].append(read_time)
                     read_times['3'] = read_time
                     read_times_mem['3'] = test_time
@@ -8009,25 +7896,26 @@ class DBMSEvaluator:
                 
                 update_node_time, update_edge_time, delete_time = None, None, None
                 if not is_stable(self.time_store[evaluation_dict_key]["update_nodes"]):
-                    update_node_time = self.neo4j_col_1000000_SF_update_nodes(crud_evaluator)
+                    update_node_time = self.neo4jce_col_1000000_SF_update_nodes(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_nodes"].append(update_node_time)
                     self.is_update_nodes_stable = True
                 if not is_stable(self.time_store[evaluation_dict_key]["update_edges"]):
-                    update_edge_time = self.neo4j_col_1000000_SF_update_edges(crud_evaluator)
+                    update_edge_time = self.neo4jce_col_1000000_SF_update_edges(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_edges"].append(update_edge_time)
                     self.is_update_edges_stable = True
                 if not everything_is_stable:
-                    delete_time = self.neo4j_col_1000000_SF_delete(crud_evaluator)
+                    delete_time = self.neo4jce_col_1000000_SF_delete(crud_evaluator)
                     self.time_store[evaluation_dict_key]["delete"].append(delete_time)
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "neo4j" == self.Dbms_evaluator_class.db_name() and "1015074_SBC" == dataset_name:
+            db_match = "neo4jce" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "1015074_SBC" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -8037,24 +7925,16 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
-                    create_time = self.neo4j_list_1015074_SBC_create(crud_evaluator)
+                    create_time = self.neo4jce_list_1015074_SBC_create(crud_evaluator)
                     self.time_store[evaluation_dict_key]["create"].append(create_time)
                     self.is_create_stable = is_stable(self.time_store[evaluation_dict_key]["create"])
                 assert_features_and_labels = num_nodes <= 10_000 ## Tested separaely but costs too much RAM here
                 read_times, read_times_mem = dict(), dict()
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '1']):
 
-                    read_time, test_time = self.neo4j_list_1015074_SBC_read_1(crud_evaluator, 1, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_1015074_SBC_read_1(crud_evaluator, 1, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '1'].append(read_time)
                     read_times['1'] = read_time
                     read_times_mem['1'] = test_time
@@ -8065,7 +7945,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '2']):
 
-                    read_time, test_time = self.neo4j_list_1015074_SBC_read_2(crud_evaluator, 2, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_1015074_SBC_read_2(crud_evaluator, 2, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '2'].append(read_time)
                     read_times['2'] = read_time
                     read_times_mem['2'] = test_time
@@ -8076,7 +7956,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '3']):
 
-                    read_time, test_time = self.neo4j_list_1015074_SBC_read_3(crud_evaluator, 3, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_1015074_SBC_read_3(crud_evaluator, 3, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '3'].append(read_time)
                     read_times['3'] = read_time
                     read_times_mem['3'] = test_time
@@ -8087,25 +7967,26 @@ class DBMSEvaluator:
                 
                 update_node_time, update_edge_time, delete_time = None, None, None
                 if not is_stable(self.time_store[evaluation_dict_key]["update_nodes"]):
-                    update_node_time = self.neo4j_list_1015074_SBC_update_nodes(crud_evaluator)
+                    update_node_time = self.neo4jce_list_1015074_SBC_update_nodes(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_nodes"].append(update_node_time)
                     self.is_update_nodes_stable = True
                 if not is_stable(self.time_store[evaluation_dict_key]["update_edges"]):
-                    update_edge_time = self.neo4j_list_1015074_SBC_update_edges(crud_evaluator)
+                    update_edge_time = self.neo4jce_list_1015074_SBC_update_edges(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_edges"].append(update_edge_time)
                     self.is_update_edges_stable = True
                 if not everything_is_stable:
-                    delete_time = self.neo4j_list_1015074_SBC_delete(crud_evaluator)
+                    delete_time = self.neo4jce_list_1015074_SBC_delete(crud_evaluator)
                     self.time_store[evaluation_dict_key]["delete"].append(delete_time)
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "neo4j" == self.Dbms_evaluator_class.db_name() and "ppi" == dataset_name:
+            db_match = "neo4jce" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "ppi" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -8115,24 +7996,16 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
-                    create_time = self.neo4j_list_ppi_create(crud_evaluator)
+                    create_time = self.neo4jce_list_ppi_create(crud_evaluator)
                     self.time_store[evaluation_dict_key]["create"].append(create_time)
                     self.is_create_stable = is_stable(self.time_store[evaluation_dict_key]["create"])
                 assert_features_and_labels = num_nodes <= 10_000 ## Tested separaely but costs too much RAM here
                 read_times, read_times_mem = dict(), dict()
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '1']):
 
-                    read_time, test_time = self.neo4j_list_ppi_read_1(crud_evaluator, 1, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_ppi_read_1(crud_evaluator, 1, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '1'].append(read_time)
                     read_times['1'] = read_time
                     read_times_mem['1'] = test_time
@@ -8143,7 +8016,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '2']):
 
-                    read_time, test_time = self.neo4j_list_ppi_read_2(crud_evaluator, 2, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_ppi_read_2(crud_evaluator, 2, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '2'].append(read_time)
                     read_times['2'] = read_time
                     read_times_mem['2'] = test_time
@@ -8154,7 +8027,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '3']):
 
-                    read_time, test_time = self.neo4j_list_ppi_read_3(crud_evaluator, 3, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_ppi_read_3(crud_evaluator, 3, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '3'].append(read_time)
                     read_times['3'] = read_time
                     read_times_mem['3'] = test_time
@@ -8165,25 +8038,26 @@ class DBMSEvaluator:
                 
                 update_node_time, update_edge_time, delete_time = None, None, None
                 if not is_stable(self.time_store[evaluation_dict_key]["update_nodes"]):
-                    update_node_time = self.neo4j_list_ppi_update_nodes(crud_evaluator)
+                    update_node_time = self.neo4jce_list_ppi_update_nodes(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_nodes"].append(update_node_time)
                     self.is_update_nodes_stable = True
                 if not is_stable(self.time_store[evaluation_dict_key]["update_edges"]):
-                    update_edge_time = self.neo4j_list_ppi_update_edges(crud_evaluator)
+                    update_edge_time = self.neo4jce_list_ppi_update_edges(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_edges"].append(update_edge_time)
                     self.is_update_edges_stable = True
                 if not everything_is_stable:
-                    delete_time = self.neo4j_list_ppi_delete(crud_evaluator)
+                    delete_time = self.neo4jce_list_ppi_delete(crud_evaluator)
                     self.time_store[evaluation_dict_key]["delete"].append(delete_time)
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "neo4j" == self.Dbms_evaluator_class.db_name() and "1000_5" == dataset_name:
+            db_match = "neo4jce" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -8193,24 +8067,16 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
-                    create_time = self.neo4j_list_1000_5_create(crud_evaluator)
+                    create_time = self.neo4jce_list_1000_5_create(crud_evaluator)
                     self.time_store[evaluation_dict_key]["create"].append(create_time)
                     self.is_create_stable = is_stable(self.time_store[evaluation_dict_key]["create"])
                 assert_features_and_labels = num_nodes <= 10_000 ## Tested separaely but costs too much RAM here
                 read_times, read_times_mem = dict(), dict()
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '1']):
 
-                    read_time, test_time = self.neo4j_list_1000_5_read_1(crud_evaluator, 1, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_1000_5_read_1(crud_evaluator, 1, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '1'].append(read_time)
                     read_times['1'] = read_time
                     read_times_mem['1'] = test_time
@@ -8221,7 +8087,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '2']):
 
-                    read_time, test_time = self.neo4j_list_1000_5_read_2(crud_evaluator, 2, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_1000_5_read_2(crud_evaluator, 2, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '2'].append(read_time)
                     read_times['2'] = read_time
                     read_times_mem['2'] = test_time
@@ -8232,7 +8098,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '3']):
 
-                    read_time, test_time = self.neo4j_list_1000_5_read_3(crud_evaluator, 3, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_1000_5_read_3(crud_evaluator, 3, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '3'].append(read_time)
                     read_times['3'] = read_time
                     read_times_mem['3'] = test_time
@@ -8243,25 +8109,26 @@ class DBMSEvaluator:
                 
                 update_node_time, update_edge_time, delete_time = None, None, None
                 if not is_stable(self.time_store[evaluation_dict_key]["update_nodes"]):
-                    update_node_time = self.neo4j_list_1000_5_update_nodes(crud_evaluator)
+                    update_node_time = self.neo4jce_list_1000_5_update_nodes(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_nodes"].append(update_node_time)
                     self.is_update_nodes_stable = True
                 if not is_stable(self.time_store[evaluation_dict_key]["update_edges"]):
-                    update_edge_time = self.neo4j_list_1000_5_update_edges(crud_evaluator)
+                    update_edge_time = self.neo4jce_list_1000_5_update_edges(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_edges"].append(update_edge_time)
                     self.is_update_edges_stable = True
                 if not everything_is_stable:
-                    delete_time = self.neo4j_list_1000_5_delete(crud_evaluator)
+                    delete_time = self.neo4jce_list_1000_5_delete(crud_evaluator)
                     self.time_store[evaluation_dict_key]["delete"].append(delete_time)
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "neo4j" == self.Dbms_evaluator_class.db_name() and "1000_10" == dataset_name:
+            db_match = "neo4jce" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_10" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -8271,24 +8138,16 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
-                    create_time = self.neo4j_list_1000_10_create(crud_evaluator)
+                    create_time = self.neo4jce_list_1000_10_create(crud_evaluator)
                     self.time_store[evaluation_dict_key]["create"].append(create_time)
                     self.is_create_stable = is_stable(self.time_store[evaluation_dict_key]["create"])
                 assert_features_and_labels = num_nodes <= 10_000 ## Tested separaely but costs too much RAM here
                 read_times, read_times_mem = dict(), dict()
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '1']):
 
-                    read_time, test_time = self.neo4j_list_1000_10_read_1(crud_evaluator, 1, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_1000_10_read_1(crud_evaluator, 1, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '1'].append(read_time)
                     read_times['1'] = read_time
                     read_times_mem['1'] = test_time
@@ -8299,7 +8158,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '2']):
 
-                    read_time, test_time = self.neo4j_list_1000_10_read_2(crud_evaluator, 2, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_1000_10_read_2(crud_evaluator, 2, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '2'].append(read_time)
                     read_times['2'] = read_time
                     read_times_mem['2'] = test_time
@@ -8310,7 +8169,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '3']):
 
-                    read_time, test_time = self.neo4j_list_1000_10_read_3(crud_evaluator, 3, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_1000_10_read_3(crud_evaluator, 3, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '3'].append(read_time)
                     read_times['3'] = read_time
                     read_times_mem['3'] = test_time
@@ -8321,25 +8180,26 @@ class DBMSEvaluator:
                 
                 update_node_time, update_edge_time, delete_time = None, None, None
                 if not is_stable(self.time_store[evaluation_dict_key]["update_nodes"]):
-                    update_node_time = self.neo4j_list_1000_10_update_nodes(crud_evaluator)
+                    update_node_time = self.neo4jce_list_1000_10_update_nodes(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_nodes"].append(update_node_time)
                     self.is_update_nodes_stable = True
                 if not is_stable(self.time_store[evaluation_dict_key]["update_edges"]):
-                    update_edge_time = self.neo4j_list_1000_10_update_edges(crud_evaluator)
+                    update_edge_time = self.neo4jce_list_1000_10_update_edges(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_edges"].append(update_edge_time)
                     self.is_update_edges_stable = True
                 if not everything_is_stable:
-                    delete_time = self.neo4j_list_1000_10_delete(crud_evaluator)
+                    delete_time = self.neo4jce_list_1000_10_delete(crud_evaluator)
                     self.time_store[evaluation_dict_key]["delete"].append(delete_time)
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "neo4j" == self.Dbms_evaluator_class.db_name() and "1000_20" == dataset_name:
+            db_match = "neo4jce" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_20" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -8349,24 +8209,16 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
-                    create_time = self.neo4j_list_1000_20_create(crud_evaluator)
+                    create_time = self.neo4jce_list_1000_20_create(crud_evaluator)
                     self.time_store[evaluation_dict_key]["create"].append(create_time)
                     self.is_create_stable = is_stable(self.time_store[evaluation_dict_key]["create"])
                 assert_features_and_labels = num_nodes <= 10_000 ## Tested separaely but costs too much RAM here
                 read_times, read_times_mem = dict(), dict()
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '1']):
 
-                    read_time, test_time = self.neo4j_list_1000_20_read_1(crud_evaluator, 1, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_1000_20_read_1(crud_evaluator, 1, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '1'].append(read_time)
                     read_times['1'] = read_time
                     read_times_mem['1'] = test_time
@@ -8377,7 +8229,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '2']):
 
-                    read_time, test_time = self.neo4j_list_1000_20_read_2(crud_evaluator, 2, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_1000_20_read_2(crud_evaluator, 2, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '2'].append(read_time)
                     read_times['2'] = read_time
                     read_times_mem['2'] = test_time
@@ -8388,7 +8240,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '3']):
 
-                    read_time, test_time = self.neo4j_list_1000_20_read_3(crud_evaluator, 3, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_1000_20_read_3(crud_evaluator, 3, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '3'].append(read_time)
                     read_times['3'] = read_time
                     read_times_mem['3'] = test_time
@@ -8399,25 +8251,26 @@ class DBMSEvaluator:
                 
                 update_node_time, update_edge_time, delete_time = None, None, None
                 if not is_stable(self.time_store[evaluation_dict_key]["update_nodes"]):
-                    update_node_time = self.neo4j_list_1000_20_update_nodes(crud_evaluator)
+                    update_node_time = self.neo4jce_list_1000_20_update_nodes(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_nodes"].append(update_node_time)
                     self.is_update_nodes_stable = True
                 if not is_stable(self.time_store[evaluation_dict_key]["update_edges"]):
-                    update_edge_time = self.neo4j_list_1000_20_update_edges(crud_evaluator)
+                    update_edge_time = self.neo4jce_list_1000_20_update_edges(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_edges"].append(update_edge_time)
                     self.is_update_edges_stable = True
                 if not everything_is_stable:
-                    delete_time = self.neo4j_list_1000_20_delete(crud_evaluator)
+                    delete_time = self.neo4jce_list_1000_20_delete(crud_evaluator)
                     self.time_store[evaluation_dict_key]["delete"].append(delete_time)
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "neo4j" == self.Dbms_evaluator_class.db_name() and "1000_SF" == dataset_name:
+            db_match = "neo4jce" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -8427,24 +8280,16 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
-                    create_time = self.neo4j_list_1000_SF_create(crud_evaluator)
+                    create_time = self.neo4jce_list_1000_SF_create(crud_evaluator)
                     self.time_store[evaluation_dict_key]["create"].append(create_time)
                     self.is_create_stable = is_stable(self.time_store[evaluation_dict_key]["create"])
                 assert_features_and_labels = num_nodes <= 10_000 ## Tested separaely but costs too much RAM here
                 read_times, read_times_mem = dict(), dict()
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '1']):
 
-                    read_time, test_time = self.neo4j_list_1000_SF_read_1(crud_evaluator, 1, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_1000_SF_read_1(crud_evaluator, 1, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '1'].append(read_time)
                     read_times['1'] = read_time
                     read_times_mem['1'] = test_time
@@ -8455,7 +8300,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '2']):
 
-                    read_time, test_time = self.neo4j_list_1000_SF_read_2(crud_evaluator, 2, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_1000_SF_read_2(crud_evaluator, 2, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '2'].append(read_time)
                     read_times['2'] = read_time
                     read_times_mem['2'] = test_time
@@ -8466,7 +8311,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '3']):
 
-                    read_time, test_time = self.neo4j_list_1000_SF_read_3(crud_evaluator, 3, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_1000_SF_read_3(crud_evaluator, 3, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '3'].append(read_time)
                     read_times['3'] = read_time
                     read_times_mem['3'] = test_time
@@ -8477,25 +8322,26 @@ class DBMSEvaluator:
                 
                 update_node_time, update_edge_time, delete_time = None, None, None
                 if not is_stable(self.time_store[evaluation_dict_key]["update_nodes"]):
-                    update_node_time = self.neo4j_list_1000_SF_update_nodes(crud_evaluator)
+                    update_node_time = self.neo4jce_list_1000_SF_update_nodes(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_nodes"].append(update_node_time)
                     self.is_update_nodes_stable = True
                 if not is_stable(self.time_store[evaluation_dict_key]["update_edges"]):
-                    update_edge_time = self.neo4j_list_1000_SF_update_edges(crud_evaluator)
+                    update_edge_time = self.neo4jce_list_1000_SF_update_edges(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_edges"].append(update_edge_time)
                     self.is_update_edges_stable = True
                 if not everything_is_stable:
-                    delete_time = self.neo4j_list_1000_SF_delete(crud_evaluator)
+                    delete_time = self.neo4jce_list_1000_SF_delete(crud_evaluator)
                     self.time_store[evaluation_dict_key]["delete"].append(delete_time)
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "neo4j" == self.Dbms_evaluator_class.db_name() and "10000_5" == dataset_name:
+            db_match = "neo4jce" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -8505,24 +8351,16 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
-                    create_time = self.neo4j_list_10000_5_create(crud_evaluator)
+                    create_time = self.neo4jce_list_10000_5_create(crud_evaluator)
                     self.time_store[evaluation_dict_key]["create"].append(create_time)
                     self.is_create_stable = is_stable(self.time_store[evaluation_dict_key]["create"])
                 assert_features_and_labels = num_nodes <= 10_000 ## Tested separaely but costs too much RAM here
                 read_times, read_times_mem = dict(), dict()
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '1']):
 
-                    read_time, test_time = self.neo4j_list_10000_5_read_1(crud_evaluator, 1, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_10000_5_read_1(crud_evaluator, 1, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '1'].append(read_time)
                     read_times['1'] = read_time
                     read_times_mem['1'] = test_time
@@ -8533,7 +8371,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '2']):
 
-                    read_time, test_time = self.neo4j_list_10000_5_read_2(crud_evaluator, 2, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_10000_5_read_2(crud_evaluator, 2, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '2'].append(read_time)
                     read_times['2'] = read_time
                     read_times_mem['2'] = test_time
@@ -8544,7 +8382,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '3']):
 
-                    read_time, test_time = self.neo4j_list_10000_5_read_3(crud_evaluator, 3, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_10000_5_read_3(crud_evaluator, 3, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '3'].append(read_time)
                     read_times['3'] = read_time
                     read_times_mem['3'] = test_time
@@ -8555,25 +8393,26 @@ class DBMSEvaluator:
                 
                 update_node_time, update_edge_time, delete_time = None, None, None
                 if not is_stable(self.time_store[evaluation_dict_key]["update_nodes"]):
-                    update_node_time = self.neo4j_list_10000_5_update_nodes(crud_evaluator)
+                    update_node_time = self.neo4jce_list_10000_5_update_nodes(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_nodes"].append(update_node_time)
                     self.is_update_nodes_stable = True
                 if not is_stable(self.time_store[evaluation_dict_key]["update_edges"]):
-                    update_edge_time = self.neo4j_list_10000_5_update_edges(crud_evaluator)
+                    update_edge_time = self.neo4jce_list_10000_5_update_edges(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_edges"].append(update_edge_time)
                     self.is_update_edges_stable = True
                 if not everything_is_stable:
-                    delete_time = self.neo4j_list_10000_5_delete(crud_evaluator)
+                    delete_time = self.neo4jce_list_10000_5_delete(crud_evaluator)
                     self.time_store[evaluation_dict_key]["delete"].append(delete_time)
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "neo4j" == self.Dbms_evaluator_class.db_name() and "10000_10" == dataset_name:
+            db_match = "neo4jce" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_10" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -8583,24 +8422,16 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
-                    create_time = self.neo4j_list_10000_10_create(crud_evaluator)
+                    create_time = self.neo4jce_list_10000_10_create(crud_evaluator)
                     self.time_store[evaluation_dict_key]["create"].append(create_time)
                     self.is_create_stable = is_stable(self.time_store[evaluation_dict_key]["create"])
                 assert_features_and_labels = num_nodes <= 10_000 ## Tested separaely but costs too much RAM here
                 read_times, read_times_mem = dict(), dict()
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '1']):
 
-                    read_time, test_time = self.neo4j_list_10000_10_read_1(crud_evaluator, 1, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_10000_10_read_1(crud_evaluator, 1, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '1'].append(read_time)
                     read_times['1'] = read_time
                     read_times_mem['1'] = test_time
@@ -8611,7 +8442,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '2']):
 
-                    read_time, test_time = self.neo4j_list_10000_10_read_2(crud_evaluator, 2, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_10000_10_read_2(crud_evaluator, 2, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '2'].append(read_time)
                     read_times['2'] = read_time
                     read_times_mem['2'] = test_time
@@ -8622,7 +8453,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '3']):
 
-                    read_time, test_time = self.neo4j_list_10000_10_read_3(crud_evaluator, 3, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_10000_10_read_3(crud_evaluator, 3, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '3'].append(read_time)
                     read_times['3'] = read_time
                     read_times_mem['3'] = test_time
@@ -8633,25 +8464,26 @@ class DBMSEvaluator:
                 
                 update_node_time, update_edge_time, delete_time = None, None, None
                 if not is_stable(self.time_store[evaluation_dict_key]["update_nodes"]):
-                    update_node_time = self.neo4j_list_10000_10_update_nodes(crud_evaluator)
+                    update_node_time = self.neo4jce_list_10000_10_update_nodes(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_nodes"].append(update_node_time)
                     self.is_update_nodes_stable = True
                 if not is_stable(self.time_store[evaluation_dict_key]["update_edges"]):
-                    update_edge_time = self.neo4j_list_10000_10_update_edges(crud_evaluator)
+                    update_edge_time = self.neo4jce_list_10000_10_update_edges(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_edges"].append(update_edge_time)
                     self.is_update_edges_stable = True
                 if not everything_is_stable:
-                    delete_time = self.neo4j_list_10000_10_delete(crud_evaluator)
+                    delete_time = self.neo4jce_list_10000_10_delete(crud_evaluator)
                     self.time_store[evaluation_dict_key]["delete"].append(delete_time)
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "neo4j" == self.Dbms_evaluator_class.db_name() and "10000_20" == dataset_name:
+            db_match = "neo4jce" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_20" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -8661,24 +8493,16 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
-                    create_time = self.neo4j_list_10000_20_create(crud_evaluator)
+                    create_time = self.neo4jce_list_10000_20_create(crud_evaluator)
                     self.time_store[evaluation_dict_key]["create"].append(create_time)
                     self.is_create_stable = is_stable(self.time_store[evaluation_dict_key]["create"])
                 assert_features_and_labels = num_nodes <= 10_000 ## Tested separaely but costs too much RAM here
                 read_times, read_times_mem = dict(), dict()
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '1']):
 
-                    read_time, test_time = self.neo4j_list_10000_20_read_1(crud_evaluator, 1, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_10000_20_read_1(crud_evaluator, 1, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '1'].append(read_time)
                     read_times['1'] = read_time
                     read_times_mem['1'] = test_time
@@ -8689,7 +8513,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '2']):
 
-                    read_time, test_time = self.neo4j_list_10000_20_read_2(crud_evaluator, 2, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_10000_20_read_2(crud_evaluator, 2, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '2'].append(read_time)
                     read_times['2'] = read_time
                     read_times_mem['2'] = test_time
@@ -8700,7 +8524,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '3']):
 
-                    read_time, test_time = self.neo4j_list_10000_20_read_3(crud_evaluator, 3, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_10000_20_read_3(crud_evaluator, 3, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '3'].append(read_time)
                     read_times['3'] = read_time
                     read_times_mem['3'] = test_time
@@ -8711,25 +8535,26 @@ class DBMSEvaluator:
                 
                 update_node_time, update_edge_time, delete_time = None, None, None
                 if not is_stable(self.time_store[evaluation_dict_key]["update_nodes"]):
-                    update_node_time = self.neo4j_list_10000_20_update_nodes(crud_evaluator)
+                    update_node_time = self.neo4jce_list_10000_20_update_nodes(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_nodes"].append(update_node_time)
                     self.is_update_nodes_stable = True
                 if not is_stable(self.time_store[evaluation_dict_key]["update_edges"]):
-                    update_edge_time = self.neo4j_list_10000_20_update_edges(crud_evaluator)
+                    update_edge_time = self.neo4jce_list_10000_20_update_edges(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_edges"].append(update_edge_time)
                     self.is_update_edges_stable = True
                 if not everything_is_stable:
-                    delete_time = self.neo4j_list_10000_20_delete(crud_evaluator)
+                    delete_time = self.neo4jce_list_10000_20_delete(crud_evaluator)
                     self.time_store[evaluation_dict_key]["delete"].append(delete_time)
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "neo4j" == self.Dbms_evaluator_class.db_name() and "10000_SF" == dataset_name:
+            db_match = "neo4jce" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -8739,24 +8564,16 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
-                    create_time = self.neo4j_list_10000_SF_create(crud_evaluator)
+                    create_time = self.neo4jce_list_10000_SF_create(crud_evaluator)
                     self.time_store[evaluation_dict_key]["create"].append(create_time)
                     self.is_create_stable = is_stable(self.time_store[evaluation_dict_key]["create"])
                 assert_features_and_labels = num_nodes <= 10_000 ## Tested separaely but costs too much RAM here
                 read_times, read_times_mem = dict(), dict()
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '1']):
 
-                    read_time, test_time = self.neo4j_list_10000_SF_read_1(crud_evaluator, 1, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_10000_SF_read_1(crud_evaluator, 1, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '1'].append(read_time)
                     read_times['1'] = read_time
                     read_times_mem['1'] = test_time
@@ -8767,7 +8584,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '2']):
 
-                    read_time, test_time = self.neo4j_list_10000_SF_read_2(crud_evaluator, 2, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_10000_SF_read_2(crud_evaluator, 2, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '2'].append(read_time)
                     read_times['2'] = read_time
                     read_times_mem['2'] = test_time
@@ -8778,7 +8595,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '3']):
 
-                    read_time, test_time = self.neo4j_list_10000_SF_read_3(crud_evaluator, 3, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_10000_SF_read_3(crud_evaluator, 3, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '3'].append(read_time)
                     read_times['3'] = read_time
                     read_times_mem['3'] = test_time
@@ -8789,25 +8606,26 @@ class DBMSEvaluator:
                 
                 update_node_time, update_edge_time, delete_time = None, None, None
                 if not is_stable(self.time_store[evaluation_dict_key]["update_nodes"]):
-                    update_node_time = self.neo4j_list_10000_SF_update_nodes(crud_evaluator)
+                    update_node_time = self.neo4jce_list_10000_SF_update_nodes(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_nodes"].append(update_node_time)
                     self.is_update_nodes_stable = True
                 if not is_stable(self.time_store[evaluation_dict_key]["update_edges"]):
-                    update_edge_time = self.neo4j_list_10000_SF_update_edges(crud_evaluator)
+                    update_edge_time = self.neo4jce_list_10000_SF_update_edges(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_edges"].append(update_edge_time)
                     self.is_update_edges_stable = True
                 if not everything_is_stable:
-                    delete_time = self.neo4j_list_10000_SF_delete(crud_evaluator)
+                    delete_time = self.neo4jce_list_10000_SF_delete(crud_evaluator)
                     self.time_store[evaluation_dict_key]["delete"].append(delete_time)
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "neo4j" == self.Dbms_evaluator_class.db_name() and "100000_5" == dataset_name:
+            db_match = "neo4jce" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -8817,24 +8635,16 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
-                    create_time = self.neo4j_list_100000_5_create(crud_evaluator)
+                    create_time = self.neo4jce_list_100000_5_create(crud_evaluator)
                     self.time_store[evaluation_dict_key]["create"].append(create_time)
                     self.is_create_stable = is_stable(self.time_store[evaluation_dict_key]["create"])
                 assert_features_and_labels = num_nodes <= 10_000 ## Tested separaely but costs too much RAM here
                 read_times, read_times_mem = dict(), dict()
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '1']):
 
-                    read_time, test_time = self.neo4j_list_100000_5_read_1(crud_evaluator, 1, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_100000_5_read_1(crud_evaluator, 1, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '1'].append(read_time)
                     read_times['1'] = read_time
                     read_times_mem['1'] = test_time
@@ -8845,7 +8655,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '2']):
 
-                    read_time, test_time = self.neo4j_list_100000_5_read_2(crud_evaluator, 2, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_100000_5_read_2(crud_evaluator, 2, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '2'].append(read_time)
                     read_times['2'] = read_time
                     read_times_mem['2'] = test_time
@@ -8856,7 +8666,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '3']):
 
-                    read_time, test_time = self.neo4j_list_100000_5_read_3(crud_evaluator, 3, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_100000_5_read_3(crud_evaluator, 3, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '3'].append(read_time)
                     read_times['3'] = read_time
                     read_times_mem['3'] = test_time
@@ -8867,25 +8677,26 @@ class DBMSEvaluator:
                 
                 update_node_time, update_edge_time, delete_time = None, None, None
                 if not is_stable(self.time_store[evaluation_dict_key]["update_nodes"]):
-                    update_node_time = self.neo4j_list_100000_5_update_nodes(crud_evaluator)
+                    update_node_time = self.neo4jce_list_100000_5_update_nodes(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_nodes"].append(update_node_time)
                     self.is_update_nodes_stable = True
                 if not is_stable(self.time_store[evaluation_dict_key]["update_edges"]):
-                    update_edge_time = self.neo4j_list_100000_5_update_edges(crud_evaluator)
+                    update_edge_time = self.neo4jce_list_100000_5_update_edges(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_edges"].append(update_edge_time)
                     self.is_update_edges_stable = True
                 if not everything_is_stable:
-                    delete_time = self.neo4j_list_100000_5_delete(crud_evaluator)
+                    delete_time = self.neo4jce_list_100000_5_delete(crud_evaluator)
                     self.time_store[evaluation_dict_key]["delete"].append(delete_time)
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "neo4j" == self.Dbms_evaluator_class.db_name() and "100000_10" == dataset_name:
+            db_match = "neo4jce" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_10" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -8895,24 +8706,16 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
-                    create_time = self.neo4j_list_100000_10_create(crud_evaluator)
+                    create_time = self.neo4jce_list_100000_10_create(crud_evaluator)
                     self.time_store[evaluation_dict_key]["create"].append(create_time)
                     self.is_create_stable = is_stable(self.time_store[evaluation_dict_key]["create"])
                 assert_features_and_labels = num_nodes <= 10_000 ## Tested separaely but costs too much RAM here
                 read_times, read_times_mem = dict(), dict()
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '1']):
 
-                    read_time, test_time = self.neo4j_list_100000_10_read_1(crud_evaluator, 1, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_100000_10_read_1(crud_evaluator, 1, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '1'].append(read_time)
                     read_times['1'] = read_time
                     read_times_mem['1'] = test_time
@@ -8923,7 +8726,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '2']):
 
-                    read_time, test_time = self.neo4j_list_100000_10_read_2(crud_evaluator, 2, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_100000_10_read_2(crud_evaluator, 2, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '2'].append(read_time)
                     read_times['2'] = read_time
                     read_times_mem['2'] = test_time
@@ -8934,7 +8737,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '3']):
 
-                    read_time, test_time = self.neo4j_list_100000_10_read_3(crud_evaluator, 3, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_100000_10_read_3(crud_evaluator, 3, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '3'].append(read_time)
                     read_times['3'] = read_time
                     read_times_mem['3'] = test_time
@@ -8945,25 +8748,26 @@ class DBMSEvaluator:
                 
                 update_node_time, update_edge_time, delete_time = None, None, None
                 if not is_stable(self.time_store[evaluation_dict_key]["update_nodes"]):
-                    update_node_time = self.neo4j_list_100000_10_update_nodes(crud_evaluator)
+                    update_node_time = self.neo4jce_list_100000_10_update_nodes(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_nodes"].append(update_node_time)
                     self.is_update_nodes_stable = True
                 if not is_stable(self.time_store[evaluation_dict_key]["update_edges"]):
-                    update_edge_time = self.neo4j_list_100000_10_update_edges(crud_evaluator)
+                    update_edge_time = self.neo4jce_list_100000_10_update_edges(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_edges"].append(update_edge_time)
                     self.is_update_edges_stable = True
                 if not everything_is_stable:
-                    delete_time = self.neo4j_list_100000_10_delete(crud_evaluator)
+                    delete_time = self.neo4jce_list_100000_10_delete(crud_evaluator)
                     self.time_store[evaluation_dict_key]["delete"].append(delete_time)
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "neo4j" == self.Dbms_evaluator_class.db_name() and "100000_20" == dataset_name:
+            db_match = "neo4jce" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_20" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -8973,24 +8777,16 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
-                    create_time = self.neo4j_list_100000_20_create(crud_evaluator)
+                    create_time = self.neo4jce_list_100000_20_create(crud_evaluator)
                     self.time_store[evaluation_dict_key]["create"].append(create_time)
                     self.is_create_stable = is_stable(self.time_store[evaluation_dict_key]["create"])
                 assert_features_and_labels = num_nodes <= 10_000 ## Tested separaely but costs too much RAM here
                 read_times, read_times_mem = dict(), dict()
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '1']):
 
-                    read_time, test_time = self.neo4j_list_100000_20_read_1(crud_evaluator, 1, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_100000_20_read_1(crud_evaluator, 1, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '1'].append(read_time)
                     read_times['1'] = read_time
                     read_times_mem['1'] = test_time
@@ -9001,7 +8797,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '2']):
 
-                    read_time, test_time = self.neo4j_list_100000_20_read_2(crud_evaluator, 2, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_100000_20_read_2(crud_evaluator, 2, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '2'].append(read_time)
                     read_times['2'] = read_time
                     read_times_mem['2'] = test_time
@@ -9012,7 +8808,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '3']):
 
-                    read_time, test_time = self.neo4j_list_100000_20_read_3(crud_evaluator, 3, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_100000_20_read_3(crud_evaluator, 3, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '3'].append(read_time)
                     read_times['3'] = read_time
                     read_times_mem['3'] = test_time
@@ -9023,25 +8819,26 @@ class DBMSEvaluator:
                 
                 update_node_time, update_edge_time, delete_time = None, None, None
                 if not is_stable(self.time_store[evaluation_dict_key]["update_nodes"]):
-                    update_node_time = self.neo4j_list_100000_20_update_nodes(crud_evaluator)
+                    update_node_time = self.neo4jce_list_100000_20_update_nodes(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_nodes"].append(update_node_time)
                     self.is_update_nodes_stable = True
                 if not is_stable(self.time_store[evaluation_dict_key]["update_edges"]):
-                    update_edge_time = self.neo4j_list_100000_20_update_edges(crud_evaluator)
+                    update_edge_time = self.neo4jce_list_100000_20_update_edges(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_edges"].append(update_edge_time)
                     self.is_update_edges_stable = True
                 if not everything_is_stable:
-                    delete_time = self.neo4j_list_100000_20_delete(crud_evaluator)
+                    delete_time = self.neo4jce_list_100000_20_delete(crud_evaluator)
                     self.time_store[evaluation_dict_key]["delete"].append(delete_time)
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "neo4j" == self.Dbms_evaluator_class.db_name() and "100000_SF" == dataset_name:
+            db_match = "neo4jce" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -9051,24 +8848,16 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
-                    create_time = self.neo4j_list_100000_SF_create(crud_evaluator)
+                    create_time = self.neo4jce_list_100000_SF_create(crud_evaluator)
                     self.time_store[evaluation_dict_key]["create"].append(create_time)
                     self.is_create_stable = is_stable(self.time_store[evaluation_dict_key]["create"])
                 assert_features_and_labels = num_nodes <= 10_000 ## Tested separaely but costs too much RAM here
                 read_times, read_times_mem = dict(), dict()
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '1']):
 
-                    read_time, test_time = self.neo4j_list_100000_SF_read_1(crud_evaluator, 1, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_100000_SF_read_1(crud_evaluator, 1, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '1'].append(read_time)
                     read_times['1'] = read_time
                     read_times_mem['1'] = test_time
@@ -9079,7 +8868,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '2']):
 
-                    read_time, test_time = self.neo4j_list_100000_SF_read_2(crud_evaluator, 2, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_100000_SF_read_2(crud_evaluator, 2, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '2'].append(read_time)
                     read_times['2'] = read_time
                     read_times_mem['2'] = test_time
@@ -9090,7 +8879,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '3']):
 
-                    read_time, test_time = self.neo4j_list_100000_SF_read_3(crud_evaluator, 3, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_100000_SF_read_3(crud_evaluator, 3, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '3'].append(read_time)
                     read_times['3'] = read_time
                     read_times_mem['3'] = test_time
@@ -9101,25 +8890,26 @@ class DBMSEvaluator:
                 
                 update_node_time, update_edge_time, delete_time = None, None, None
                 if not is_stable(self.time_store[evaluation_dict_key]["update_nodes"]):
-                    update_node_time = self.neo4j_list_100000_SF_update_nodes(crud_evaluator)
+                    update_node_time = self.neo4jce_list_100000_SF_update_nodes(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_nodes"].append(update_node_time)
                     self.is_update_nodes_stable = True
                 if not is_stable(self.time_store[evaluation_dict_key]["update_edges"]):
-                    update_edge_time = self.neo4j_list_100000_SF_update_edges(crud_evaluator)
+                    update_edge_time = self.neo4jce_list_100000_SF_update_edges(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_edges"].append(update_edge_time)
                     self.is_update_edges_stable = True
                 if not everything_is_stable:
-                    delete_time = self.neo4j_list_100000_SF_delete(crud_evaluator)
+                    delete_time = self.neo4jce_list_100000_SF_delete(crud_evaluator)
                     self.time_store[evaluation_dict_key]["delete"].append(delete_time)
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "neo4j" == self.Dbms_evaluator_class.db_name() and "1000000_5" == dataset_name:
+            db_match = "neo4jce" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -9129,24 +8919,16 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
-                    create_time = self.neo4j_list_1000000_5_create(crud_evaluator)
+                    create_time = self.neo4jce_list_1000000_5_create(crud_evaluator)
                     self.time_store[evaluation_dict_key]["create"].append(create_time)
                     self.is_create_stable = is_stable(self.time_store[evaluation_dict_key]["create"])
                 assert_features_and_labels = num_nodes <= 10_000 ## Tested separaely but costs too much RAM here
                 read_times, read_times_mem = dict(), dict()
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '1']):
 
-                    read_time, test_time = self.neo4j_list_1000000_5_read_1(crud_evaluator, 1, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_1000000_5_read_1(crud_evaluator, 1, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '1'].append(read_time)
                     read_times['1'] = read_time
                     read_times_mem['1'] = test_time
@@ -9157,7 +8939,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '2']):
 
-                    read_time, test_time = self.neo4j_list_1000000_5_read_2(crud_evaluator, 2, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_1000000_5_read_2(crud_evaluator, 2, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '2'].append(read_time)
                     read_times['2'] = read_time
                     read_times_mem['2'] = test_time
@@ -9168,7 +8950,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '3']):
 
-                    read_time, test_time = self.neo4j_list_1000000_5_read_3(crud_evaluator, 3, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_1000000_5_read_3(crud_evaluator, 3, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '3'].append(read_time)
                     read_times['3'] = read_time
                     read_times_mem['3'] = test_time
@@ -9179,25 +8961,26 @@ class DBMSEvaluator:
                 
                 update_node_time, update_edge_time, delete_time = None, None, None
                 if not is_stable(self.time_store[evaluation_dict_key]["update_nodes"]):
-                    update_node_time = self.neo4j_list_1000000_5_update_nodes(crud_evaluator)
+                    update_node_time = self.neo4jce_list_1000000_5_update_nodes(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_nodes"].append(update_node_time)
                     self.is_update_nodes_stable = True
                 if not is_stable(self.time_store[evaluation_dict_key]["update_edges"]):
-                    update_edge_time = self.neo4j_list_1000000_5_update_edges(crud_evaluator)
+                    update_edge_time = self.neo4jce_list_1000000_5_update_edges(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_edges"].append(update_edge_time)
                     self.is_update_edges_stable = True
                 if not everything_is_stable:
-                    delete_time = self.neo4j_list_1000000_5_delete(crud_evaluator)
+                    delete_time = self.neo4jce_list_1000000_5_delete(crud_evaluator)
                     self.time_store[evaluation_dict_key]["delete"].append(delete_time)
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "neo4j" == self.Dbms_evaluator_class.db_name() and "1000000_SF" == dataset_name:
+            db_match = "neo4jce" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -9207,24 +8990,16 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
-                    create_time = self.neo4j_list_1000000_SF_create(crud_evaluator)
+                    create_time = self.neo4jce_list_1000000_SF_create(crud_evaluator)
                     self.time_store[evaluation_dict_key]["create"].append(create_time)
                     self.is_create_stable = is_stable(self.time_store[evaluation_dict_key]["create"])
                 assert_features_and_labels = num_nodes <= 10_000 ## Tested separaely but costs too much RAM here
                 read_times, read_times_mem = dict(), dict()
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '1']):
 
-                    read_time, test_time = self.neo4j_list_1000000_SF_read_1(crud_evaluator, 1, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_1000000_SF_read_1(crud_evaluator, 1, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '1'].append(read_time)
                     read_times['1'] = read_time
                     read_times_mem['1'] = test_time
@@ -9235,7 +9010,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '2']):
 
-                    read_time, test_time = self.neo4j_list_1000000_SF_read_2(crud_evaluator, 2, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_1000000_SF_read_2(crud_evaluator, 2, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '2'].append(read_time)
                     read_times['2'] = read_time
                     read_times_mem['2'] = test_time
@@ -9246,7 +9021,7 @@ class DBMSEvaluator:
                 
                 if not is_stable(self.time_store[evaluation_dict_key]["read_" + '3']):
 
-                    read_time, test_time = self.neo4j_list_1000000_SF_read_3(crud_evaluator, 3, assert_features_and_labels)
+                    read_time, test_time = self.neo4jce_list_1000000_SF_read_3(crud_evaluator, 3, assert_features_and_labels)
                     self.time_store[evaluation_dict_key]["read_" + '3'].append(read_time)
                     read_times['3'] = read_time
                     read_times_mem['3'] = test_time
@@ -9257,25 +9032,26 @@ class DBMSEvaluator:
                 
                 update_node_time, update_edge_time, delete_time = None, None, None
                 if not is_stable(self.time_store[evaluation_dict_key]["update_nodes"]):
-                    update_node_time = self.neo4j_list_1000000_SF_update_nodes(crud_evaluator)
+                    update_node_time = self.neo4jce_list_1000000_SF_update_nodes(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_nodes"].append(update_node_time)
                     self.is_update_nodes_stable = True
                 if not is_stable(self.time_store[evaluation_dict_key]["update_edges"]):
-                    update_edge_time = self.neo4j_list_1000000_SF_update_edges(crud_evaluator)
+                    update_edge_time = self.neo4jce_list_1000000_SF_update_edges(crud_evaluator)
                     self.time_store[evaluation_dict_key]["update_edges"].append(update_edge_time)
                     self.is_update_edges_stable = True
                 if not everything_is_stable:
-                    delete_time = self.neo4j_list_1000000_SF_delete(crud_evaluator)
+                    delete_time = self.neo4jce_list_1000000_SF_delete(crud_evaluator)
                     self.time_store[evaluation_dict_key]["delete"].append(delete_time)
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "neo4jee" == self.Dbms_evaluator_class.db_name() and "1015074_SBC" == dataset_name:
+            db_match = "neo4jee" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "1015074_SBC" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -9285,14 +9061,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.neo4jee_col_1015074_SBC_create(crud_evaluator)
@@ -9348,12 +9116,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "neo4jee" == self.Dbms_evaluator_class.db_name() and "ppi" == dataset_name:
+            db_match = "neo4jee" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "ppi" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -9363,14 +9132,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.neo4jee_col_ppi_create(crud_evaluator)
@@ -9426,12 +9187,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "neo4jee" == self.Dbms_evaluator_class.db_name() and "1000_5" == dataset_name:
+            db_match = "neo4jee" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -9441,14 +9203,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.neo4jee_col_1000_5_create(crud_evaluator)
@@ -9504,12 +9258,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "neo4jee" == self.Dbms_evaluator_class.db_name() and "1000_10" == dataset_name:
+            db_match = "neo4jee" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_10" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -9519,14 +9274,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.neo4jee_col_1000_10_create(crud_evaluator)
@@ -9582,12 +9329,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "neo4jee" == self.Dbms_evaluator_class.db_name() and "1000_20" == dataset_name:
+            db_match = "neo4jee" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_20" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -9597,14 +9345,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.neo4jee_col_1000_20_create(crud_evaluator)
@@ -9660,12 +9400,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "neo4jee" == self.Dbms_evaluator_class.db_name() and "1000_SF" == dataset_name:
+            db_match = "neo4jee" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -9675,14 +9416,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.neo4jee_col_1000_SF_create(crud_evaluator)
@@ -9738,12 +9471,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "neo4jee" == self.Dbms_evaluator_class.db_name() and "10000_5" == dataset_name:
+            db_match = "neo4jee" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -9753,14 +9487,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.neo4jee_col_10000_5_create(crud_evaluator)
@@ -9816,12 +9542,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "neo4jee" == self.Dbms_evaluator_class.db_name() and "10000_10" == dataset_name:
+            db_match = "neo4jee" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_10" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -9831,14 +9558,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.neo4jee_col_10000_10_create(crud_evaluator)
@@ -9894,12 +9613,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "neo4jee" == self.Dbms_evaluator_class.db_name() and "10000_20" == dataset_name:
+            db_match = "neo4jee" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_20" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -9909,14 +9629,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.neo4jee_col_10000_20_create(crud_evaluator)
@@ -9972,12 +9684,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "neo4jee" == self.Dbms_evaluator_class.db_name() and "10000_SF" == dataset_name:
+            db_match = "neo4jee" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -9987,14 +9700,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.neo4jee_col_10000_SF_create(crud_evaluator)
@@ -10050,12 +9755,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "neo4jee" == self.Dbms_evaluator_class.db_name() and "100000_5" == dataset_name:
+            db_match = "neo4jee" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -10065,14 +9771,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.neo4jee_col_100000_5_create(crud_evaluator)
@@ -10128,12 +9826,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "neo4jee" == self.Dbms_evaluator_class.db_name() and "100000_10" == dataset_name:
+            db_match = "neo4jee" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_10" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -10143,14 +9842,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.neo4jee_col_100000_10_create(crud_evaluator)
@@ -10206,12 +9897,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "neo4jee" == self.Dbms_evaluator_class.db_name() and "100000_20" == dataset_name:
+            db_match = "neo4jee" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_20" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -10221,14 +9913,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.neo4jee_col_100000_20_create(crud_evaluator)
@@ -10284,12 +9968,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "neo4jee" == self.Dbms_evaluator_class.db_name() and "100000_SF" == dataset_name:
+            db_match = "neo4jee" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -10299,14 +9984,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.neo4jee_col_100000_SF_create(crud_evaluator)
@@ -10362,12 +10039,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "neo4jee" == self.Dbms_evaluator_class.db_name() and "1000000_5" == dataset_name:
+            db_match = "neo4jee" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -10377,14 +10055,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.neo4jee_col_1000000_5_create(crud_evaluator)
@@ -10440,12 +10110,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "neo4jee" == self.Dbms_evaluator_class.db_name() and "1000000_SF" == dataset_name:
+            db_match = "neo4jee" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -10455,14 +10126,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.neo4jee_col_1000000_SF_create(crud_evaluator)
@@ -10518,12 +10181,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "neo4jee" == self.Dbms_evaluator_class.db_name() and "1015074_SBC" == dataset_name:
+            db_match = "neo4jee" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "1015074_SBC" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -10533,14 +10197,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.neo4jee_list_1015074_SBC_create(crud_evaluator)
@@ -10596,12 +10252,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "neo4jee" == self.Dbms_evaluator_class.db_name() and "ppi" == dataset_name:
+            db_match = "neo4jee" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "ppi" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -10611,14 +10268,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.neo4jee_list_ppi_create(crud_evaluator)
@@ -10674,12 +10323,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "neo4jee" == self.Dbms_evaluator_class.db_name() and "1000_5" == dataset_name:
+            db_match = "neo4jee" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -10689,14 +10339,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.neo4jee_list_1000_5_create(crud_evaluator)
@@ -10752,12 +10394,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "neo4jee" == self.Dbms_evaluator_class.db_name() and "1000_10" == dataset_name:
+            db_match = "neo4jee" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_10" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -10767,14 +10410,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.neo4jee_list_1000_10_create(crud_evaluator)
@@ -10830,12 +10465,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "neo4jee" == self.Dbms_evaluator_class.db_name() and "1000_20" == dataset_name:
+            db_match = "neo4jee" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_20" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -10845,14 +10481,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.neo4jee_list_1000_20_create(crud_evaluator)
@@ -10908,12 +10536,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "neo4jee" == self.Dbms_evaluator_class.db_name() and "1000_SF" == dataset_name:
+            db_match = "neo4jee" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -10923,14 +10552,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.neo4jee_list_1000_SF_create(crud_evaluator)
@@ -10986,12 +10607,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "neo4jee" == self.Dbms_evaluator_class.db_name() and "10000_5" == dataset_name:
+            db_match = "neo4jee" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -11001,14 +10623,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.neo4jee_list_10000_5_create(crud_evaluator)
@@ -11064,12 +10678,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "neo4jee" == self.Dbms_evaluator_class.db_name() and "10000_10" == dataset_name:
+            db_match = "neo4jee" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_10" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -11079,14 +10694,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.neo4jee_list_10000_10_create(crud_evaluator)
@@ -11142,12 +10749,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "neo4jee" == self.Dbms_evaluator_class.db_name() and "10000_20" == dataset_name:
+            db_match = "neo4jee" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_20" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -11157,14 +10765,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.neo4jee_list_10000_20_create(crud_evaluator)
@@ -11220,12 +10820,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "neo4jee" == self.Dbms_evaluator_class.db_name() and "10000_SF" == dataset_name:
+            db_match = "neo4jee" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -11235,14 +10836,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.neo4jee_list_10000_SF_create(crud_evaluator)
@@ -11298,12 +10891,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "neo4jee" == self.Dbms_evaluator_class.db_name() and "100000_5" == dataset_name:
+            db_match = "neo4jee" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -11313,14 +10907,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.neo4jee_list_100000_5_create(crud_evaluator)
@@ -11376,12 +10962,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "neo4jee" == self.Dbms_evaluator_class.db_name() and "100000_10" == dataset_name:
+            db_match = "neo4jee" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_10" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -11391,14 +10978,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.neo4jee_list_100000_10_create(crud_evaluator)
@@ -11454,12 +11033,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "neo4jee" == self.Dbms_evaluator_class.db_name() and "100000_20" == dataset_name:
+            db_match = "neo4jee" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_20" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -11469,14 +11049,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.neo4jee_list_100000_20_create(crud_evaluator)
@@ -11532,12 +11104,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "neo4jee" == self.Dbms_evaluator_class.db_name() and "100000_SF" == dataset_name:
+            db_match = "neo4jee" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -11547,14 +11120,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.neo4jee_list_100000_SF_create(crud_evaluator)
@@ -11610,12 +11175,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "neo4jee" == self.Dbms_evaluator_class.db_name() and "1000000_5" == dataset_name:
+            db_match = "neo4jee" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -11625,14 +11191,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.neo4jee_list_1000000_5_create(crud_evaluator)
@@ -11688,12 +11246,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "neo4jee" == self.Dbms_evaluator_class.db_name() and "1000000_SF" == dataset_name:
+            db_match = "neo4jee" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -11703,14 +11262,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.neo4jee_list_1000000_SF_create(crud_evaluator)
@@ -11766,12 +11317,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "mysql" == self.Dbms_evaluator_class.db_name() and "1015074_SBC" == dataset_name:
+            db_match = "mysql" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "1015074_SBC" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -11781,14 +11333,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.mysql_col_1015074_SBC_create(crud_evaluator)
@@ -11844,12 +11388,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "mysql" == self.Dbms_evaluator_class.db_name() and "ppi" == dataset_name:
+            db_match = "mysql" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "ppi" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -11859,14 +11404,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.mysql_col_ppi_create(crud_evaluator)
@@ -11922,12 +11459,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "mysql" == self.Dbms_evaluator_class.db_name() and "1000_5" == dataset_name:
+            db_match = "mysql" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -11937,14 +11475,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.mysql_col_1000_5_create(crud_evaluator)
@@ -12000,12 +11530,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "mysql" == self.Dbms_evaluator_class.db_name() and "1000_10" == dataset_name:
+            db_match = "mysql" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_10" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -12015,14 +11546,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.mysql_col_1000_10_create(crud_evaluator)
@@ -12078,12 +11601,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "mysql" == self.Dbms_evaluator_class.db_name() and "1000_20" == dataset_name:
+            db_match = "mysql" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_20" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -12093,14 +11617,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.mysql_col_1000_20_create(crud_evaluator)
@@ -12156,12 +11672,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "mysql" == self.Dbms_evaluator_class.db_name() and "1000_SF" == dataset_name:
+            db_match = "mysql" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -12171,14 +11688,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.mysql_col_1000_SF_create(crud_evaluator)
@@ -12234,12 +11743,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "mysql" == self.Dbms_evaluator_class.db_name() and "10000_5" == dataset_name:
+            db_match = "mysql" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -12249,14 +11759,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.mysql_col_10000_5_create(crud_evaluator)
@@ -12312,12 +11814,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "mysql" == self.Dbms_evaluator_class.db_name() and "10000_10" == dataset_name:
+            db_match = "mysql" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_10" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -12327,14 +11830,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.mysql_col_10000_10_create(crud_evaluator)
@@ -12390,12 +11885,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "mysql" == self.Dbms_evaluator_class.db_name() and "10000_20" == dataset_name:
+            db_match = "mysql" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_20" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -12405,14 +11901,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.mysql_col_10000_20_create(crud_evaluator)
@@ -12468,12 +11956,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "mysql" == self.Dbms_evaluator_class.db_name() and "10000_SF" == dataset_name:
+            db_match = "mysql" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -12483,14 +11972,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.mysql_col_10000_SF_create(crud_evaluator)
@@ -12546,12 +12027,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "mysql" == self.Dbms_evaluator_class.db_name() and "100000_5" == dataset_name:
+            db_match = "mysql" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -12561,14 +12043,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.mysql_col_100000_5_create(crud_evaluator)
@@ -12624,12 +12098,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "mysql" == self.Dbms_evaluator_class.db_name() and "100000_10" == dataset_name:
+            db_match = "mysql" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_10" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -12639,14 +12114,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.mysql_col_100000_10_create(crud_evaluator)
@@ -12702,12 +12169,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "mysql" == self.Dbms_evaluator_class.db_name() and "100000_20" == dataset_name:
+            db_match = "mysql" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_20" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -12717,14 +12185,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.mysql_col_100000_20_create(crud_evaluator)
@@ -12780,12 +12240,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "mysql" == self.Dbms_evaluator_class.db_name() and "100000_SF" == dataset_name:
+            db_match = "mysql" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -12795,14 +12256,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.mysql_col_100000_SF_create(crud_evaluator)
@@ -12858,12 +12311,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "mysql" == self.Dbms_evaluator_class.db_name() and "1000000_5" == dataset_name:
+            db_match = "mysql" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -12873,14 +12327,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.mysql_col_1000000_5_create(crud_evaluator)
@@ -12936,12 +12382,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "mysql" == self.Dbms_evaluator_class.db_name() and "1000000_SF" == dataset_name:
+            db_match = "mysql" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -12951,14 +12398,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.mysql_col_1000000_SF_create(crud_evaluator)
@@ -13014,12 +12453,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "mysql" == self.Dbms_evaluator_class.db_name() and "1015074_SBC" == dataset_name:
+            db_match = "mysql" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "1015074_SBC" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -13029,14 +12469,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.mysql_list_1015074_SBC_create(crud_evaluator)
@@ -13092,12 +12524,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "mysql" == self.Dbms_evaluator_class.db_name() and "ppi" == dataset_name:
+            db_match = "mysql" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "ppi" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -13107,14 +12540,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.mysql_list_ppi_create(crud_evaluator)
@@ -13170,12 +12595,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "mysql" == self.Dbms_evaluator_class.db_name() and "1000_5" == dataset_name:
+            db_match = "mysql" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -13185,14 +12611,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.mysql_list_1000_5_create(crud_evaluator)
@@ -13248,12 +12666,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "mysql" == self.Dbms_evaluator_class.db_name() and "1000_10" == dataset_name:
+            db_match = "mysql" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_10" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -13263,14 +12682,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.mysql_list_1000_10_create(crud_evaluator)
@@ -13326,12 +12737,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "mysql" == self.Dbms_evaluator_class.db_name() and "1000_20" == dataset_name:
+            db_match = "mysql" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_20" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -13341,14 +12753,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.mysql_list_1000_20_create(crud_evaluator)
@@ -13404,12 +12808,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "mysql" == self.Dbms_evaluator_class.db_name() and "1000_SF" == dataset_name:
+            db_match = "mysql" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -13419,14 +12824,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.mysql_list_1000_SF_create(crud_evaluator)
@@ -13482,12 +12879,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "mysql" == self.Dbms_evaluator_class.db_name() and "10000_5" == dataset_name:
+            db_match = "mysql" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -13497,14 +12895,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.mysql_list_10000_5_create(crud_evaluator)
@@ -13560,12 +12950,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "mysql" == self.Dbms_evaluator_class.db_name() and "10000_10" == dataset_name:
+            db_match = "mysql" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_10" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -13575,14 +12966,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.mysql_list_10000_10_create(crud_evaluator)
@@ -13638,12 +13021,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "mysql" == self.Dbms_evaluator_class.db_name() and "10000_20" == dataset_name:
+            db_match = "mysql" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_20" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -13653,14 +13037,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.mysql_list_10000_20_create(crud_evaluator)
@@ -13716,12 +13092,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "mysql" == self.Dbms_evaluator_class.db_name() and "10000_SF" == dataset_name:
+            db_match = "mysql" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -13731,14 +13108,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.mysql_list_10000_SF_create(crud_evaluator)
@@ -13794,12 +13163,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "mysql" == self.Dbms_evaluator_class.db_name() and "100000_5" == dataset_name:
+            db_match = "mysql" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -13809,14 +13179,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.mysql_list_100000_5_create(crud_evaluator)
@@ -13872,12 +13234,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "mysql" == self.Dbms_evaluator_class.db_name() and "100000_10" == dataset_name:
+            db_match = "mysql" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_10" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -13887,14 +13250,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.mysql_list_100000_10_create(crud_evaluator)
@@ -13950,12 +13305,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "mysql" == self.Dbms_evaluator_class.db_name() and "100000_20" == dataset_name:
+            db_match = "mysql" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_20" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -13965,14 +13321,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.mysql_list_100000_20_create(crud_evaluator)
@@ -14028,12 +13376,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "mysql" == self.Dbms_evaluator_class.db_name() and "100000_SF" == dataset_name:
+            db_match = "mysql" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -14043,14 +13392,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.mysql_list_100000_SF_create(crud_evaluator)
@@ -14106,12 +13447,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "mysql" == self.Dbms_evaluator_class.db_name() and "1000000_5" == dataset_name:
+            db_match = "mysql" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -14121,14 +13463,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.mysql_list_1000000_5_create(crud_evaluator)
@@ -14184,12 +13518,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "mysql" == self.Dbms_evaluator_class.db_name() and "1000000_SF" == dataset_name:
+            db_match = "mysql" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -14199,14 +13534,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.mysql_list_1000000_SF_create(crud_evaluator)
@@ -14262,12 +13589,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "postgres" == self.Dbms_evaluator_class.db_name() and "1015074_SBC" == dataset_name:
+            db_match = "postgres" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "1015074_SBC" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -14277,14 +13605,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.postgres_col_1015074_SBC_create(crud_evaluator)
@@ -14340,12 +13660,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "postgres" == self.Dbms_evaluator_class.db_name() and "ppi" == dataset_name:
+            db_match = "postgres" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "ppi" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -14355,14 +13676,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.postgres_col_ppi_create(crud_evaluator)
@@ -14418,12 +13731,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "postgres" == self.Dbms_evaluator_class.db_name() and "1000_5" == dataset_name:
+            db_match = "postgres" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -14433,14 +13747,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.postgres_col_1000_5_create(crud_evaluator)
@@ -14496,12 +13802,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "postgres" == self.Dbms_evaluator_class.db_name() and "1000_10" == dataset_name:
+            db_match = "postgres" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_10" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -14511,14 +13818,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.postgres_col_1000_10_create(crud_evaluator)
@@ -14574,12 +13873,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "postgres" == self.Dbms_evaluator_class.db_name() and "1000_20" == dataset_name:
+            db_match = "postgres" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_20" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -14589,14 +13889,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.postgres_col_1000_20_create(crud_evaluator)
@@ -14652,12 +13944,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "postgres" == self.Dbms_evaluator_class.db_name() and "1000_SF" == dataset_name:
+            db_match = "postgres" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -14667,14 +13960,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.postgres_col_1000_SF_create(crud_evaluator)
@@ -14730,12 +14015,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "postgres" == self.Dbms_evaluator_class.db_name() and "10000_5" == dataset_name:
+            db_match = "postgres" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -14745,14 +14031,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.postgres_col_10000_5_create(crud_evaluator)
@@ -14808,12 +14086,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "postgres" == self.Dbms_evaluator_class.db_name() and "10000_10" == dataset_name:
+            db_match = "postgres" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_10" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -14823,14 +14102,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.postgres_col_10000_10_create(crud_evaluator)
@@ -14886,12 +14157,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "postgres" == self.Dbms_evaluator_class.db_name() and "10000_20" == dataset_name:
+            db_match = "postgres" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_20" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -14901,14 +14173,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.postgres_col_10000_20_create(crud_evaluator)
@@ -14964,12 +14228,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "postgres" == self.Dbms_evaluator_class.db_name() and "10000_SF" == dataset_name:
+            db_match = "postgres" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -14979,14 +14244,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.postgres_col_10000_SF_create(crud_evaluator)
@@ -15042,12 +14299,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "postgres" == self.Dbms_evaluator_class.db_name() and "100000_5" == dataset_name:
+            db_match = "postgres" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -15057,14 +14315,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.postgres_col_100000_5_create(crud_evaluator)
@@ -15120,12 +14370,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "postgres" == self.Dbms_evaluator_class.db_name() and "100000_10" == dataset_name:
+            db_match = "postgres" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_10" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -15135,14 +14386,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.postgres_col_100000_10_create(crud_evaluator)
@@ -15198,12 +14441,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "postgres" == self.Dbms_evaluator_class.db_name() and "100000_20" == dataset_name:
+            db_match = "postgres" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_20" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -15213,14 +14457,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.postgres_col_100000_20_create(crud_evaluator)
@@ -15276,12 +14512,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "postgres" == self.Dbms_evaluator_class.db_name() and "100000_SF" == dataset_name:
+            db_match = "postgres" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -15291,14 +14528,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.postgres_col_100000_SF_create(crud_evaluator)
@@ -15354,12 +14583,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "postgres" == self.Dbms_evaluator_class.db_name() and "1000000_5" == dataset_name:
+            db_match = "postgres" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -15369,14 +14599,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.postgres_col_1000000_5_create(crud_evaluator)
@@ -15432,12 +14654,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "postgres" == self.Dbms_evaluator_class.db_name() and "1000000_SF" == dataset_name:
+            db_match = "postgres" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -15447,14 +14670,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.postgres_col_1000000_SF_create(crud_evaluator)
@@ -15510,12 +14725,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "postgres" == self.Dbms_evaluator_class.db_name() and "1015074_SBC" == dataset_name:
+            db_match = "postgres" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "1015074_SBC" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -15525,14 +14741,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.postgres_list_1015074_SBC_create(crud_evaluator)
@@ -15588,12 +14796,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "postgres" == self.Dbms_evaluator_class.db_name() and "ppi" == dataset_name:
+            db_match = "postgres" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "ppi" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -15603,14 +14812,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.postgres_list_ppi_create(crud_evaluator)
@@ -15666,12 +14867,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "postgres" == self.Dbms_evaluator_class.db_name() and "1000_5" == dataset_name:
+            db_match = "postgres" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -15681,14 +14883,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.postgres_list_1000_5_create(crud_evaluator)
@@ -15744,12 +14938,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "postgres" == self.Dbms_evaluator_class.db_name() and "1000_10" == dataset_name:
+            db_match = "postgres" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_10" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -15759,14 +14954,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.postgres_list_1000_10_create(crud_evaluator)
@@ -15822,12 +15009,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "postgres" == self.Dbms_evaluator_class.db_name() and "1000_20" == dataset_name:
+            db_match = "postgres" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_20" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -15837,14 +15025,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.postgres_list_1000_20_create(crud_evaluator)
@@ -15900,12 +15080,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "postgres" == self.Dbms_evaluator_class.db_name() and "1000_SF" == dataset_name:
+            db_match = "postgres" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -15915,14 +15096,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.postgres_list_1000_SF_create(crud_evaluator)
@@ -15978,12 +15151,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "postgres" == self.Dbms_evaluator_class.db_name() and "10000_5" == dataset_name:
+            db_match = "postgres" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -15993,14 +15167,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.postgres_list_10000_5_create(crud_evaluator)
@@ -16056,12 +15222,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "postgres" == self.Dbms_evaluator_class.db_name() and "10000_10" == dataset_name:
+            db_match = "postgres" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_10" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -16071,14 +15238,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.postgres_list_10000_10_create(crud_evaluator)
@@ -16134,12 +15293,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "postgres" == self.Dbms_evaluator_class.db_name() and "10000_20" == dataset_name:
+            db_match = "postgres" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_20" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -16149,14 +15309,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.postgres_list_10000_20_create(crud_evaluator)
@@ -16212,12 +15364,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "postgres" == self.Dbms_evaluator_class.db_name() and "10000_SF" == dataset_name:
+            db_match = "postgres" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -16227,14 +15380,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.postgres_list_10000_SF_create(crud_evaluator)
@@ -16290,12 +15435,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "postgres" == self.Dbms_evaluator_class.db_name() and "100000_5" == dataset_name:
+            db_match = "postgres" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -16305,14 +15451,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.postgres_list_100000_5_create(crud_evaluator)
@@ -16368,12 +15506,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "postgres" == self.Dbms_evaluator_class.db_name() and "100000_10" == dataset_name:
+            db_match = "postgres" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_10" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -16383,14 +15522,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.postgres_list_100000_10_create(crud_evaluator)
@@ -16446,12 +15577,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "postgres" == self.Dbms_evaluator_class.db_name() and "100000_20" == dataset_name:
+            db_match = "postgres" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_20" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -16461,14 +15593,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.postgres_list_100000_20_create(crud_evaluator)
@@ -16524,12 +15648,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "postgres" == self.Dbms_evaluator_class.db_name() and "100000_SF" == dataset_name:
+            db_match = "postgres" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -16539,14 +15664,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.postgres_list_100000_SF_create(crud_evaluator)
@@ -16602,12 +15719,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "postgres" == self.Dbms_evaluator_class.db_name() and "1000000_5" == dataset_name:
+            db_match = "postgres" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -16617,14 +15735,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.postgres_list_1000000_5_create(crud_evaluator)
@@ -16680,12 +15790,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "postgres" == self.Dbms_evaluator_class.db_name() and "1000000_SF" == dataset_name:
+            db_match = "postgres" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -16695,14 +15806,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.postgres_list_1000000_SF_create(crud_evaluator)
@@ -16758,12 +15861,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "sqlite" == self.Dbms_evaluator_class.db_name() and "1015074_SBC" == dataset_name:
+            db_match = "sqlite" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "1015074_SBC" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -16773,14 +15877,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.sqlite_col_1015074_SBC_create(crud_evaluator)
@@ -16836,12 +15932,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "sqlite" == self.Dbms_evaluator_class.db_name() and "ppi" == dataset_name:
+            db_match = "sqlite" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "ppi" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -16851,14 +15948,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.sqlite_col_ppi_create(crud_evaluator)
@@ -16914,12 +16003,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "sqlite" == self.Dbms_evaluator_class.db_name() and "1000_5" == dataset_name:
+            db_match = "sqlite" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -16929,14 +16019,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.sqlite_col_1000_5_create(crud_evaluator)
@@ -16992,12 +16074,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "sqlite" == self.Dbms_evaluator_class.db_name() and "1000_10" == dataset_name:
+            db_match = "sqlite" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_10" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -17007,14 +16090,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.sqlite_col_1000_10_create(crud_evaluator)
@@ -17070,12 +16145,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "sqlite" == self.Dbms_evaluator_class.db_name() and "1000_20" == dataset_name:
+            db_match = "sqlite" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_20" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -17085,14 +16161,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.sqlite_col_1000_20_create(crud_evaluator)
@@ -17148,12 +16216,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "sqlite" == self.Dbms_evaluator_class.db_name() and "1000_SF" == dataset_name:
+            db_match = "sqlite" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -17163,14 +16232,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.sqlite_col_1000_SF_create(crud_evaluator)
@@ -17226,12 +16287,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "sqlite" == self.Dbms_evaluator_class.db_name() and "10000_5" == dataset_name:
+            db_match = "sqlite" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -17241,14 +16303,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.sqlite_col_10000_5_create(crud_evaluator)
@@ -17304,12 +16358,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "sqlite" == self.Dbms_evaluator_class.db_name() and "10000_10" == dataset_name:
+            db_match = "sqlite" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_10" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -17319,14 +16374,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.sqlite_col_10000_10_create(crud_evaluator)
@@ -17382,12 +16429,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "sqlite" == self.Dbms_evaluator_class.db_name() and "10000_20" == dataset_name:
+            db_match = "sqlite" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_20" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -17397,14 +16445,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.sqlite_col_10000_20_create(crud_evaluator)
@@ -17460,12 +16500,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "sqlite" == self.Dbms_evaluator_class.db_name() and "10000_SF" == dataset_name:
+            db_match = "sqlite" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -17475,14 +16516,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.sqlite_col_10000_SF_create(crud_evaluator)
@@ -17538,12 +16571,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "sqlite" == self.Dbms_evaluator_class.db_name() and "100000_5" == dataset_name:
+            db_match = "sqlite" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -17553,14 +16587,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.sqlite_col_100000_5_create(crud_evaluator)
@@ -17616,12 +16642,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "sqlite" == self.Dbms_evaluator_class.db_name() and "100000_10" == dataset_name:
+            db_match = "sqlite" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_10" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -17631,14 +16658,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.sqlite_col_100000_10_create(crud_evaluator)
@@ -17694,12 +16713,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "sqlite" == self.Dbms_evaluator_class.db_name() and "100000_20" == dataset_name:
+            db_match = "sqlite" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_20" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -17709,14 +16729,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.sqlite_col_100000_20_create(crud_evaluator)
@@ -17772,12 +16784,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "sqlite" == self.Dbms_evaluator_class.db_name() and "100000_SF" == dataset_name:
+            db_match = "sqlite" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -17787,14 +16800,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.sqlite_col_100000_SF_create(crud_evaluator)
@@ -17850,12 +16855,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "sqlite" == self.Dbms_evaluator_class.db_name() and "1000000_5" == dataset_name:
+            db_match = "sqlite" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -17865,14 +16871,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.sqlite_col_1000000_5_create(crud_evaluator)
@@ -17928,12 +16926,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "col" == self.Dbms_evaluator_class.file_suffix() and "sqlite" == self.Dbms_evaluator_class.db_name() and "1000000_SF" == dataset_name:
+            db_match = "sqlite" == self.Dbms_evaluator_class.db_name() 
+
+            if "col" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -17943,14 +16942,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.sqlite_col_1000000_SF_create(crud_evaluator)
@@ -18006,12 +16997,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "sqlite" == self.Dbms_evaluator_class.db_name() and "1015074_SBC" == dataset_name:
+            db_match = "sqlite" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "1015074_SBC" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -18021,14 +17013,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.sqlite_list_1015074_SBC_create(crud_evaluator)
@@ -18084,12 +17068,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "sqlite" == self.Dbms_evaluator_class.db_name() and "ppi" == dataset_name:
+            db_match = "sqlite" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "ppi" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -18099,14 +17084,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.sqlite_list_ppi_create(crud_evaluator)
@@ -18162,12 +17139,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "sqlite" == self.Dbms_evaluator_class.db_name() and "1000_5" == dataset_name:
+            db_match = "sqlite" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -18177,14 +17155,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.sqlite_list_1000_5_create(crud_evaluator)
@@ -18240,12 +17210,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "sqlite" == self.Dbms_evaluator_class.db_name() and "1000_10" == dataset_name:
+            db_match = "sqlite" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_10" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -18255,14 +17226,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.sqlite_list_1000_10_create(crud_evaluator)
@@ -18318,12 +17281,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "sqlite" == self.Dbms_evaluator_class.db_name() and "1000_20" == dataset_name:
+            db_match = "sqlite" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_20" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -18333,14 +17297,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.sqlite_list_1000_20_create(crud_evaluator)
@@ -18396,12 +17352,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "sqlite" == self.Dbms_evaluator_class.db_name() and "1000_SF" == dataset_name:
+            db_match = "sqlite" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -18411,14 +17368,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.sqlite_list_1000_SF_create(crud_evaluator)
@@ -18474,12 +17423,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "sqlite" == self.Dbms_evaluator_class.db_name() and "10000_5" == dataset_name:
+            db_match = "sqlite" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -18489,14 +17439,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.sqlite_list_10000_5_create(crud_evaluator)
@@ -18552,12 +17494,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "sqlite" == self.Dbms_evaluator_class.db_name() and "10000_10" == dataset_name:
+            db_match = "sqlite" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_10" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -18567,14 +17510,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.sqlite_list_10000_10_create(crud_evaluator)
@@ -18630,12 +17565,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "sqlite" == self.Dbms_evaluator_class.db_name() and "10000_20" == dataset_name:
+            db_match = "sqlite" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_20" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -18645,14 +17581,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.sqlite_list_10000_20_create(crud_evaluator)
@@ -18708,12 +17636,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "sqlite" == self.Dbms_evaluator_class.db_name() and "10000_SF" == dataset_name:
+            db_match = "sqlite" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "10000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -18723,14 +17652,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.sqlite_list_10000_SF_create(crud_evaluator)
@@ -18786,12 +17707,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "sqlite" == self.Dbms_evaluator_class.db_name() and "100000_5" == dataset_name:
+            db_match = "sqlite" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -18801,14 +17723,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.sqlite_list_100000_5_create(crud_evaluator)
@@ -18864,12 +17778,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "sqlite" == self.Dbms_evaluator_class.db_name() and "100000_10" == dataset_name:
+            db_match = "sqlite" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_10" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -18879,14 +17794,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.sqlite_list_100000_10_create(crud_evaluator)
@@ -18942,12 +17849,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "sqlite" == self.Dbms_evaluator_class.db_name() and "100000_20" == dataset_name:
+            db_match = "sqlite" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_20" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -18957,14 +17865,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.sqlite_list_100000_20_create(crud_evaluator)
@@ -19020,12 +17920,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "sqlite" == self.Dbms_evaluator_class.db_name() and "100000_SF" == dataset_name:
+            db_match = "sqlite" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "100000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -19035,14 +17936,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.sqlite_list_100000_SF_create(crud_evaluator)
@@ -19098,12 +17991,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "sqlite" == self.Dbms_evaluator_class.db_name() and "1000000_5" == dataset_name:
+            db_match = "sqlite" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000000_5" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -19113,14 +18007,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.sqlite_list_1000000_5_create(crud_evaluator)
@@ -19176,12 +18062,13 @@ class DBMSEvaluator:
                     self.is_delete_stable = is_stable(self.time_store[evaluation_dict_key]["delete"])
             
 
-            if "list" == self.Dbms_evaluator_class.file_suffix() and "sqlite" == self.Dbms_evaluator_class.db_name() and "1000000_SF" == dataset_name:
+            db_match = "sqlite" == self.Dbms_evaluator_class.db_name() 
+
+            if "list" == self.Dbms_evaluator_class.file_suffix() and db_match and "1000000_SF" == dataset_name:
                 evaluation_dict_key = self.Dbms_evaluator_class.db_name() + self.Dbms_evaluator_class.file_suffix() + X_y_name
                 if evaluation_dict_key not in self.time_store:
                     self.time_store[evaluation_dict_key] = {
                         "create": [],
-                        "read_0": [],
                         "read_1": [],
                         "read_2": [],
                         "read_3": [],
@@ -19191,14 +18078,6 @@ class DBMSEvaluator:
                     }
                 reads_finished = (len(self.is_read_stable) == 3 and all(self.is_read_stable.values()))
                 everything_is_stable = reads_finished and self.is_update_edges_stable and self.is_update_nodes_stable and self.is_delete_stable and self.is_create_stable
-                print(f"--- Stability Check [{dataset_name}] ---\n"
-                      f"  [GLOBAL] All Stable : {everything_is_stable}\n"
-                      f"  ---------------------------------------\n"
-                      f"  [R] Reads (3/3)     : {reads_finished} -> {self.is_read_stable}\n"
-                      f"  [C] Create          : {self.is_create_stable}\n"
-                      f"  [U] Update (N / E)  : {self.is_update_nodes_stable} / {self.is_update_edges_stable}\n"
-                      f"  [D] Delete          : {self.is_delete_stable}\n"
-                      f"=========================================")
                 create_time = None
                 if not everything_is_stable:
                     create_time = self.sqlite_list_1000000_SF_create(crud_evaluator)

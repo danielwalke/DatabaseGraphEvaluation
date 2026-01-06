@@ -65,6 +65,7 @@ class CRUD_Evaluator(InMemSubGraphReader):
             
 
     def update_nodes(self, random_sample_size = 1_000):
+        random_sample_size = 10
         print("Update nodes")            
         np.random.seed(42)
         node_ids = np.random.choice(np.arange(self.X_and_y.shape[0]), size = random_sample_size, replace = False).tolist()

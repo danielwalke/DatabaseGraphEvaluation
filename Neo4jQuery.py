@@ -27,14 +27,14 @@ class Neo4jQuery(Data):
                     LOAD CSV WITH HEADERS FROM $file AS line
                     WITH line, linenumber() AS index
                     CALL (line, index) {{
-                      MERGE (p:Node {{id: index - 2}})
+                      CREATE (p:Node {{id: index - 2}})
                       {self.label_columns_setter}
                       {self.feature_columns_setter}
                     }} IN TRANSACTIONS OF 1000 ROWS
                     """
 
     def set_create_node_id_index_query(self):
-        self.create_node_id_index_query = "CREATE INDEX IF NOT EXISTS FOR (n:Node) ON (n.id)"
+        self.create_node_id_index_query = "CREATE INDEX node_id_index IF NOT EXISTS FOR (n:Node) ON (n.id)"
 
     def set_create_edges_query(self):
         self.create_edges_query = """

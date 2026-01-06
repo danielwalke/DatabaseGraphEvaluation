@@ -28,7 +28,7 @@ class SQLiteList(SQLiteQueryList, SQLiteConnector):
 
     @staticmethod
     def file_suffix():
-        return "sqlite_list_json"
+        return "list"
 
     @staticmethod
     def db_name():

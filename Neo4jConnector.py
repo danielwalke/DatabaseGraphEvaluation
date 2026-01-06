@@ -28,3 +28,4 @@ class Neo4jConnector:
         password = "password"
         
         self.driver = Neo4jConnector.connect_to_neo4j(uri, username, password)
+            
