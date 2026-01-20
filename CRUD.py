@@ -18,7 +18,6 @@ class CRUD_Evaluator(InMemSubGraphReader):
         return create_time
 
     def read(self, hops, assert_ids = True,assert_edge_index = True, assert_features = True, assert_labels = True, random_sample_size = 1_000):
-        random_sample_size = 10
         print("Read")
         np.random.seed(42)
         seed_node_ids = np.random.choice(np.arange(self.X_and_y.shape[0]), size = random_sample_size, replace = False).tolist()
@@ -65,7 +64,6 @@ class CRUD_Evaluator(InMemSubGraphReader):
             
 
     def update_nodes(self, random_sample_size = 1_000):
-        random_sample_size = 10
         print("Update nodes")            
         np.random.seed(42)
         node_ids = np.random.choice(np.arange(self.X_and_y.shape[0]), size = random_sample_size, replace = False).tolist()
@@ -76,7 +74,6 @@ class CRUD_Evaluator(InMemSubGraphReader):
         return overall_update_time
 
     def update_edges(self, random_sample_size = 1_000):
-        random_sample_size = 10
         print("Update edges")
         np.random.seed(42)
         edge_ids = np.random.choice(np.arange(self.edge_index.shape[-1]),

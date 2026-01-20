@@ -213,9 +213,9 @@ class Evaluator:
         file_numbers = list(map(lambda f: int(f.split(".")[0].split("_")[-1]), files))
         off_set = 0 if len(files) == 0 else (max(file_numbers) + 1)
         for i in range(off_set, num_iterations + off_set):
-            #self.eval_neighborloader_list(i)
-            # self.eval_sqlite_list(i, time_store)
-            # self.eval_sqlite_col(i, time_store)
+            self.eval_neighborloader_list(i)
+            self.eval_sqlite_list(i, time_store)
+            self.eval_sqlite_col(i, time_store)
             
             self.eval_neo4j_col(i, time_store)
             self.eval_neo4j_list(i, time_store)
@@ -223,11 +223,11 @@ class Evaluator:
             self.eval_neo4j_ee_col(i, time_store)
             self.eval_neo4j_ee_list(i, time_store)
             
-            # self.eval_postgres_col(i, time_store)
-            # self.eval_postgres_list(i, time_store)
+            self.eval_postgres_col(i, time_store)
+            self.eval_postgres_list(i, time_store)
     
-            # self.eval_mysql_col(i, time_store)
-            # self.eval_mysql_list(i, time_store)
+            self.eval_mysql_col(i, time_store)
+            self.eval_mysql_list(i, time_store)
 
             print(20*"_")
             print(generate_markdown(time_store))
