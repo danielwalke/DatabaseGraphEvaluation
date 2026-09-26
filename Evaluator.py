@@ -213,7 +213,8 @@ class Evaluator:
         file_numbers = list(map(lambda f: int(f.split(".")[0].split("_")[-1]), files))
         off_set = 0 if len(files) == 0 else (max(file_numbers) + 1)
         for i in range(off_set, num_iterations + off_set):
-            self.eval_neighborloader_list(i)
+            print(i)
+            # self.eval_neighborloader_list(i, time_store)
             self.eval_sqlite_list(i, time_store)
             self.eval_sqlite_col(i, time_store)
             

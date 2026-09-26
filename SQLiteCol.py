@@ -98,7 +98,6 @@ class SQLiteCol(SQLiteQuery, SQLiteConnector):
     def read(self, seed_node_id, hops):
         """Reads a k-hop subgraph, processes the result, and returns a Subgraph object."""
         start = time.time()
-               
         self.session.execute(self.read_subgraph_query_dict[hops], (seed_node_id,))
         results = self.session.fetchone()
         if results is None or results[-1] is None:
